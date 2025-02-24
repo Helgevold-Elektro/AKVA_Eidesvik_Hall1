@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LeftSideBusMaster>
+  <Type MajorVersion="1" MinorVersion="66" Name="NX502-1500" />
+  <Id>41ec1286-c107-45a0-a3e4-2ef3eaed37c3</Id>
+  <DeviceName>XBus</DeviceName>
+  <SerialNumberCheckMethod>NoCheck</SerialNumberCheckMethod>
+</LeftSideBusMaster>

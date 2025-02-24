@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Manifest manifestSchemaVersion="1" modelSchemaVersion="1">
+  <Application applicationName="sysmac" applicationVersion="Infinity" />
+  <Solution solutionName="Eidesvik_Mal" id="d33ab4c0-97fb-4cdf-bb14-17abf0a5ed12" trackingId="4ca374d1-bc4a-41f8-b28a-84f6aca208a0" solutionSchemaVersion="2">
+    <ApplicationFeatures>
+      <ApplicationFeature name="V102Project" />
+      <ApplicationFeature name="DBCon V2.04" />
+      <ApplicationFeature name="SetUnit NX502-1500 Ver. 1.66" />
+      <ApplicationFeature name="TransferInfoAndBuildResultsEntitiesReduced" />
+    </ApplicationFeatures>
+  </Solution>
+</Manifest>
