@@ -6,6 +6,7 @@
       <ApplicationFeature name="V102Project" />
       <ApplicationFeature name="DBCon V2.04" />
       <ApplicationFeature name="SetUnit NX502-1500 Ver. 1.66" />
+      <ApplicationFeature name="NexLibraryInternalUsed" />
       <ApplicationFeature name="TransferInfoAndBuildResultsEntitiesReduced" />
     </ApplicationFeatures>
   </Solution>

@@ -1,0 +1,17 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=TON	N=TON_ForsinkelseAlarm	G=VAR
+++D=TON	N=TON_ForsinkelseFeilfri	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=BOOL	N=ENI	Ord=1	G=VAR_INPUT
+++D=STRING[152]	N=Meldingstekst	Ord=2	G=VAR_INPUT	Com="<Meldingstekst>: <Suffiks>" 
+++D=STRING[152]	N=Suffiks	IV='FEIL'	Ord=3	G=VAR_INPUT	Com="<Meldingstekst>: <Suffiks>" (Default='FEIL')
+++D=BOOL	N=DigitalVerdi	Ord=4	G=VAR_INPUT
+++D=BOOL	N=NormalVerdi	Ord=5	G=VAR_INPUT
+++D=Library_ST\ST_Alarm	N=Alarm	Ord=6	G=VAR_IN_OUT
+++D=OEN\nEth\nSMS\sSMSMessages	N=SMSMessage	Ord=7	G=VAR_IN_OUT	Com=Indeks lik alarm
+++D=TIME	N=Forsinkelse	Ord=8	G=VAR_INPUT	Com=Tid feil må ligge inne/ute før alarm aktiveres/deaktiveres
+++D=BOOL	N=Bypass	Ord=9	G=VAR_INPUT	Com=TRUE = Ingen alarmering
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

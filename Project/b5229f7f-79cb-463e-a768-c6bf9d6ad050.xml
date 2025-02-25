@@ -1,0 +1,42 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=STRING[16]	N=MessageHeader	G=VAR
+++D=DINT	N=i	G=VAR
+++D=RT1SendSMS	N=FB_SendSMSAlarm	G=VAR
+++D=UINT	N=ActiveReceiver	G=VAR
+++D=TON	N=TON_MessageGap	G=VAR
+++D=DINT	N=SMSReceiversSize	G=VAR
+++D=DINT	N=SMSMessagesSize	G=VAR
+++D=OEN\nEth\nSMS\eSteps	N=ProgStep	G=VAR
+++D=HTTP_GET	N=FB_ReadDeleteSMS	G=VAR
+++D=STRING[20]	N=Get_URL	G=VAR
+++D=UINT	N=FoundAstrxPos	G=VAR
+++D=UINT	N=FoundAlarmNo	G=VAR
+++D=STRING[4]	N=FoundReceiverInit	G=VAR
+++D=ARRAY[0..0] OF UINT	N=FoundReceiverID	G=VAR
+++D=UINT	N=FoundNum	G=VAR
+++D=RT1SendSMS	N=FB_SendSMSAck	G=VAR
+++D=BOOL	N=AlarmDetector	G=VAR
+++D=DINT	N=MessageNo	G=VAR
+++D=STRING[1986]	N=ConfigURL	G=VAR
+++D=LibHTTPS\HTTPS_GET	N=FB_ReadRT1Config	G=VAR
+++D=ARRAY[0..1986] OF BYTE	N=ConfigMessage	G=VAR
+++D=ARRAY[0..3] OF STRING[256]	N=ConfigHeader	G=VAR
+++D=STRING[1986]	N=ConfigString	G=VAR
+++D=TON	N=TON_SQReadDelay	G=VAR
+++D=UINT	N=SQPos	G=VAR
+++D=UINT	N=FoundPos	G=VAR
+++D=TON	N=TON_ReadDelay	G=VAR
+++D=BOOL	N=g	G=VAR
+++D=STRING[200]	N=ReadSMSString	Ord=8	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=BOOL	N=Enable	Ord=1	G=VAR_INPUT
+++D=ARRAY[*,*] OF OEN\nEth\nSMS\sSMSSendList	N=SMSSendList	Ord=2	G=VAR_IN_OUT	Com=[Messages,Receivers] Receivers priority and delays
+++D=ARRAY[*] OF OEN\nEth\nSMS\sSMSMessages	N=SMSMessage	Ord=3	G=VAR_IN_OUT	Com=Messages
+++D=ARRAY[*] OF OEN\nEth\nSMS\sSMSReceivers	N=SMSReceiver	Ord=4	G=VAR_IN_OUT	Com=Receivers List
+++D=ARRAY[*] OF OEN\nEth\nSMS\sSMSDynamic	N=SMSDynamic	Ord=5	G=VAR_IN_OUT	Com=Dynamic data
+++D=OEN\nEth\nSMS\sSMSSettings	N=SMSSettings	Ord=6	G=VAR_INPUT
+++D=OEN\nEth\nSMS\sSMSStatus	N=SMSStatus	Ord=7	G=VAR_OUTPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

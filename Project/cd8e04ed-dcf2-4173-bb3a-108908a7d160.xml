@@ -1,0 +1,15 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=REAL	N=Sample	G=VAR	Com=Sampler når pådraget oppdateres
+++D=REAL	N=FS_abs	G=VAR	Com=Absoluttverdi av full skala
+++D=REAL	N=FS	G=VAR	Com=Full skala
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=BOOL	N=ENI	Ord=1	G=VAR_INPUT	Com=Dødband er aktiv
+++D=REAL	N=Inn	Ord=2	G=VAR_INPUT	Com=Pådrag før dødband
+++D=REAL	N=ProsentBand	Ord=3	G=VAR_INPUT	Com=Dødband i % av fullskala
+++D=REAL	N=MinVerdi	Ord=4	G=VAR_INPUT	Com=Minimalt pådrag
+++D=REAL	N=MaksVerdi	Ord=5	G=VAR_INPUT	Com=Maksimalt pådrag
+++D=REAL	N=Ut	Ord=6	G=VAR_OUTPUT	Com=Pådrag etter dødband
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

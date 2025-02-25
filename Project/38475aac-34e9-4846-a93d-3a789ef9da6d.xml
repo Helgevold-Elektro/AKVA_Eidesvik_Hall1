@@ -1,0 +1,60 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=SktTCPConnect	N=SktTCPConn_2	G=VAR
+++D=UINT	N=SktTCPConn_2_LocalPort	G=VAR
+++D=BOOL	N=SktTCPConn_2_Done	G=VAR
+++D=BOOL	N=SktTCPConn_2_Busy	G=VAR
+++D=BOOL	N=SktTCPConn_2_Error	G=VAR
+++D=WORD	N=SktTCPConn_2_ErrorID	G=VAR
+++D=_sSOCKET	N=HTTP_Socket	G=VAR
+++D=SktGetTCPStatus	N=SktGetTCPSts_3	G=VAR
+++D=BOOL	N=SktGetTCPSts_3_Done	G=VAR
+++D=BOOL	N=SktGetTCPSts_3_Busy	G=VAR
+++D=BOOL	N=SktGetTCPSts_3_Error	G=VAR
+++D=WORD	N=SktGetTCPSts_3_ErrorID	G=VAR
+++D=_eCONNECTION_STATE	N=SktGetTCPSts_3_TcpStatus	G=VAR
+++D=BOOL	N=SktGetTCPSts_3_DatRcvFlag	G=VAR
+++D=TCP_SdRcv_wst	N=TCP_SdRcv_4	G=VAR
+++D=BOOL	N=TCP_SdRcv_4_Done	G=VAR
+++D=BOOL	N=TCP_SdRcv_4_Error	G=VAR
+++D=WORD	N=TCP_SdRcv_4_ErrID	G=VAR
+++D=SktClose	N=SktClose_100	G=VAR
+++D=BOOL	N=SktClose_100_Done	G=VAR
+++D=BOOL	N=SktClose_100_Busy	G=VAR
+++D=BOOL	N=SktClose_100_Error	G=VAR
+++D=WORD	N=SktClose_100_ErrorID	G=VAR
+++D=SktClose	N=SktClose_200	G=VAR
+++D=BOOL	N=SktClose_200_Done	G=VAR
+++D=BOOL	N=SktClose_200_Busy	G=VAR
+++D=BOOL	N=SktClose_200_Error	G=VAR
+++D=WORD	N=SktClose_200_ErrorID	G=VAR
+++D=INT	N=GET_Step	G=VAR
+++D=STRING[1986]	N=Request	G=VAR
+++D=STRING[1986]	N=Response	G=VAR
+++D=BOOL	N=old_Execute	G=VAR
+++D=INT	N=i	G=VAR
+++D=UINT	N=pos	G=VAR
+++D=UINT	N=StatCode	G=VAR
+++D=UINT	N=BodyLen	G=VAR
+++D=UINT	N=RespLen	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=Execute	Ord=0	G=VAR_INPUT
+++D=STRING[100]	N=Server_IPaddr	Ord=1	G=VAR_INPUT
+++D=UINT	N=HTTP_Port	IV=4096	Ord=2	G=VAR_INPUT
+++D=STRING[256]	N=Get_Url	Ord=3	G=VAR_INPUT
+++D=array[0..3] OF STRING[256]	N=Add_Headers	Ord=4	G=VAR_INPUT
+++D=INT	N=N_Headers	Ord=5	G=VAR_INPUT
+++D=BOOL	N=Use_Proxy	Ord=6	G=VAR_INPUT
+++D=STRING[100]	N=Proxy_Address	Ord=7	G=VAR_INPUT
+++D=UINT	N=Proxy_Port	IV=8080	Ord=8	G=VAR_INPUT
+++D=STRING[1024]	N=Message_Body	Ord=9	G=VAR_IN_OUT
+++D=BOOL	N=Output_Raw_Data	IV=False	Ord=10	G=VAR_INPUT
+++D=INT	N=Timeout	IV=10	Ord=11	G=VAR_INPUT
+++D=BOOL	N=Done	Ord=12	G=VAR_OUTPUT
+++D=BOOL	N=Busy	Ord=13	G=VAR_OUTPUT
+++D=STRING[60]	N=Status	Ord=14	G=VAR_OUTPUT
+++D=BOOL	N=Error	Ord=15	G=VAR_OUTPUT
+++D=WORD	N=ErrorID	Ord=16	G=VAR_OUTPUT
+++D=UINT	N=HttpStatCode	Ord=17	G=VAR_OUTPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

@@ -1,0 +1,56 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=DATE	N=Aktuell_Dato	G=VAR
+++D=HE_Ramp_Gain	N=Filter_Paadrag	G=VAR
+++D=TON	N=TON_Auto	G=VAR
+++D=HE_Statistics	N=Statistikk	G=VAR
+++D=TON	N=TON_KjøringTimer	G=VAR
+++D=R_TRIG	N=RE_ResetDatoOmformer	G=VAR
+++D=TIME_OF_DAY	N=Klokkeslett_Timer	G=VAR
+++D=REAL	N=Tilbakemelding_Hastighet	G=VAR
+++D=ARRAY[0..4] OF BYTE	N=ByteArray	G=VAR	Com=Mellomlagring av bit som skal lagres i DWORD
+++D=BOOL	N=Wrk_KommunikasjonFeil	G=VAR
+++D=BOOL	N=Wrk_PLS_Kontroll	G=VAR
+++D=INT	N=Wrk_Pådrag	G=VAR
+++D=BOOL	N=Wrk_Start	G=VAR
+++D=BOOL	N=Wrk_Kjører	G=VAR
+++D=BOOL	N=Wrk_Feil	G=VAR
+++D=REAL	N=Wrk_Strom	G=VAR
+++D=UDINT	N=Wrk_Driftstid	G=VAR
+++D=BOOL	N=Wrk_Klar	G=VAR
+++D=BOOL	N=Wrk_Online	G=VAR
+++D=INT	N=Wrk_Hastighet	G=VAR
+++D=REAL	N=Wrk_Effekt	G=VAR
+++D=BOOL	N=Wrk_Remote	G=VAR
+++D=BOOL	N=Wrk_Advarsel	G=VAR
+++D=WORD	N=Wrk_LastFault	G=VAR
+++D=BOOL	N=Wrk_Servicebryter	G=VAR
+++D=BOOL	N=Wrk_Nødstopp	G=VAR
+++D=REAL	N=Wrk_Pådrag_Aktuell	G=VAR
+++D=TIME	N=Wrk_RampTime	G=VAR
+++D=TIME_OF_DAY	N=Aktuell_Klokke	G=VAR
+++D=R_TRIG	N=RE_FirstCycle	G=VAR
+++D=TOF	N=TOF_FirstCycle	G=VAR
+++D=UDINT	N=Wrk_PåTid	G=VAR
+++D=TOF	N=TOF_KommFeil	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=BOOL	N=Run	Ord=1	G=VAR_INPUT
+++D=Library_ST\ST_VFD	N=FrekvOmf	Ord=2	G=VAR_IN_OUT	Com=Struktur for frekvensomformer
+++D=Library_ST\ST_VFD_CIM500_Input	N=Frekv_Input	Ord=3	G=VAR_INPUT	Com=Struktur for frekvensomformer input
+++D=Library_ST\ST_VFD_CIM500_Output	N=Frekv_Output	Ord=4	G=VAR_OUTPUT	Com=Struktur for frekvensomformer output
+++D=REAL	N=Pådrag_Auto	Ord=5	G=VAR_INPUT	Com=Pådrag for auto
+++D=BOOL	N=Start_Auto	Ord=6	G=VAR_INPUT	Com=For bruk med Singel_/MultiStyring (settes høy basert på kommunikasjon med frekv.omf og eventuelt alternering ved MultiStyring)
+++D=BOOL	N=Forrigling	Ord=7	G=VAR_INPUT	Com=TRUE = Forhindrer kjøring av frekvensomformer
+++D=BOOL	N=KommFeil_Ekstern	Ord=8	G=VAR_INPUT	Com=TRUE = Kommunikasjonsfeil
+++D=BOOL	N=Servicebryter	Ord=9	G=VAR_INPUT	Com=FALSE = Avslått/Feil
+++D=UINT	N=IP	Ord=10	G=VAR_INPUT	Com=Siste oktav på IP adresse
+++D=UINT	N=PORT	Ord=11	G=VAR_INPUT	Com=Port for tilkobling (1=port 1, 2=port 2)
+++D=TIME	N=Ramp_Tid	IV=T#0S	Ord=12	G=VAR_INPUT	Com=Rampetid ved overgang til auto. Rampetid fra forgje pådrag, til auto pådrag.
+++D=BOOL	N=Sts_TilgjengeligAuto	Ord=13	G=VAR_OUTPUT
+++D=BOOL	N=Sts_Forrigling	Ord=14	G=VAR_OUTPUT
+++D=INT	N=ScadaType	IV=0	Ord=15	G=VAR_INPUT	Com=0=Movicon, 1=Ignition
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
+++D=ARRAY[0..255] OF BOOL	N=_EIP1_TargetNodeErr	Const=1	G=VAR_EXTERNAL
+++D=ARRAY[0..255] OF BOOL	N=_EIP2_TargetNodeErr	Const=1	G=VAR_EXTERNAL

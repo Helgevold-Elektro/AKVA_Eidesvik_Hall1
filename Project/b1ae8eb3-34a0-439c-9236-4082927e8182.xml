@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <DataType Name="Data Types3" BaseType="" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="">
+    <DataType Name="sSMSSendList" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Upper Size as [Messages, Receivers]" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="10" OffsetType="NJ">
+      <DataType Name="ReceiverID" BaseType="UINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="ReceiverID in Prioritized Order for Message. [0] Reserved" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Delay_SV" BaseType="TIME" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Delay before Messaging next Receiver when UnAcked for Message" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="eSteps" BaseType="ENUM" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="">
+      <DataType Name="StandBy" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="0" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="LookForAlarms" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="1" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="SendSMS" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="2" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="PrepareReading" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="3" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="ReadSMS" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="4" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="IdentifySender" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="5" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="DeleteSMS" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="6" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="ReturnReply" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="7" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="ReadSignalStrength" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="8" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="sSMSReceivers" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Upper Size as number of Receivers" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="84" OffsetType="NJ">
+      <DataType Name="Phone" BaseType="STRING[25]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Receiver Phone Number.  [0] Reserved" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="INITs" BaseType="STRING[4]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="3 letters to identify Receiver.  [0] Reserved" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Group" BaseType="UINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Optional group number" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="sSMSMessages" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Upper Size as number of Messages" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="11" OffsetType="NJ">
+      <DataType Name="Message" BaseType="STRING[152]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="SMS Text Message. [0] reserved for Acknowledge reply" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="sSMSSettings" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="83" OffsetType="NJ">
+      <DataType Name="IP_RT100" BaseType="STRING[16]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="RT100 DEV-port IP-address" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="TLSSession" BaseType="STRING[17]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="TLS Session Name" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="UserAndPassword" BaseType="STRING[256]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Base64Encoded User:Password.        ex. admin:00C0A2010203=YWRtaW46MDBDMEEyMDEwMjAz" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="MessageGap" BaseType="TIME" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Minimum time between each message" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="ReadDelay" BaseType="TIME" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Delay before Reading to reduce traffic between CPU and RT100" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="TimeInStack" BaseType="TIME" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Time to keep SMS messages in Stack before they are deleted" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="ReadSMSFromStack" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Set TRUE to read SMS from a common SMSStack instead of RT100" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="sSMSDynamic" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Upper Size as Messages" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="9" OffsetType="NJ">
+      <DataType Name="Alarm" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="W Alarm activated. Write to set Alarm" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Disabled" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="W Do not send SMS. Write to Disable messaging" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="MessageSend" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="R Message sending has started" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Ack_Received" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="RW Receiver has Acked. Write to override SMS Acknowledge" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Ack_Returned" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="R Ack returned to Receiver" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Delay_PV" BaseType="TIME" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="R Remaining Delay before sending SMS to next receiver" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="SendListIndex" BaseType="UINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="R ActiveReceiver" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Ack_Receiver" BaseType="STRING[4]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="R Receiver INITs that Acked" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="sSMSStatus" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="82" OffsetType="NJ">
+      <DataType Name="ArraySizeError" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Check manual for setting correct Array Size" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="ErrorRT100" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Check IP, settings and connection to RT100" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="NoActiveAlarms" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="No active Alarms detected" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="NewMessage" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Switches state for every new incoming message" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="ProgStep" BaseType="OEN\nEth\nSMS\eSteps" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Monitor Program steps" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="SMSCommand" BaseType="STRING[200]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Incoming message for your own features" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="SQ" BaseType="STRING[6]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Signal quality as a string" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="SQNum" BaseType="UINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Signal quality as a number" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="IMEI" BaseType="STRING[20]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="IMEI from installed SIM-card" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="sSMSStack" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="81" OffsetType="NJ">
+      <DataType Name="SMS" BaseType="STRING[200]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Incoming SMS String" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="TimeLeft" BaseType="TIME" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Time left in Stack before deleted" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Read" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="TRUE when SMS has been read from Stack" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+  </DataType>
+</data>

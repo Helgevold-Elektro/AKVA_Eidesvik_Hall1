@@ -1,0 +1,21 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=STRING[65]	N=Base64Chars	IV='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'	G=VAR	Com=Symbols for the Base64 encoding
+++D=INT	N=Output_len	G=VAR	Com=Size of the encoded styring
+++D=INT	N=i	G=VAR	Com=Index of the main loop
+++D=BYTE	N=temp	G=VAR	Com=Temporary
+++D=UINT	N=cycles	G=VAR	Com=Total number of cycles for the main loop
+++D=UINT	N=offset	G=VAR	Com=Offset to acess the array 3 by 3
+++D=UINT	N=J	G=VAR	Com=Index for the inner loop
+++D=ARRAY[0..2] OF BYTE	N=block	G=VAR	Com=Block of 24 Bits
+++D=INT	N=k	G=VAR	Com=Character counter
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=EN	Ord=0	RO=1	G=VAR_INPUT
+++D=BOOL	N=ENO	Ord=1	RO=1	G=VAR_OUTPUT
+++D=ARRAY[0..191] OF BYTE	N=Buffer_IN	Ord=2	G=VAR_INPUT	Com=String of bytes to be encoded
+++D=INT	N=Input_len	Ord=3	G=VAR_INPUT	Com=Number of bytes to encode
+++D=INT	N=Out_Size	Ord=4	G=VAR_OUTPUT	Com=Size of the encoded string
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
++GN=RETURN	GA=Return	GVT=ReturnGroup
+++D=STRING[257]	N=AryBase64Enc	G=RETURN

@@ -8,7 +8,7 @@
     </ExecutionConditionCJUnit>
   </GeneralSettingsData>
   <Programs>
-    <AssociatedProgramData ProgramName="Program0" InstanceName="Program0" IniFileTrackingId="ff441eba61e9420b89a06b00913d3c15" StartupSetting="TRUE" SequenceNumber="1" IsDebugProgram="false" />
+    <AssociatedProgramData ProgramName="SMS" InstanceName="SMS" IniFileTrackingId="ff441eba61e9420b89a06b00913d3c15" StartupSetting="TRUE" SequenceNumber="1" IsDebugProgram="false" />
   </Programs>
   <RefreshUnitIds />
   <TaskInterfaceVariables version="1" />

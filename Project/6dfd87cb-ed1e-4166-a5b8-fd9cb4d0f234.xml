@@ -1,0 +1,94 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=USINT	N=Index_A	G=VAR
+++D=HE_PID	N=PID	G=VAR
+++D=R_TRIG	N=RE_ProsessverdiA_Alarm	G=VAR
+++D=R_TRIG	N=RE_ProsessverdiB_Alarm	G=VAR
+++D=TON	N=TON_StartAuto	G=VAR
+++D=TON	N=TON_TrinnOpp	G=VAR
+++D=TON	N=TON_TrinnNed	G=VAR
+++D=HE_Alternation	N=Alternering	G=VAR
+++D=BOOL	N=Trinn_Inn	G=VAR
+++D=BOOL	N=Trinn_Ut	G=VAR
+++D=WORD	N=Status_Ord	G=VAR
+++D=WORD	N=Drift_Ord	R=1	G=VAR
+++D=ARRAY[0..15] OF Library_ST\ST_VFD	N=FrekvOmfArr	G=VAR
+++D=TIME_OF_DAY	N=Klokkeslett_Alternering	G=VAR
+++D=BOOL	N=AutotuneStart	G=VAR
+++D=BOOL	N=AutotunePågår	G=VAR
+++D=BOOL	N=AutotuneFullført	G=VAR
+++D=REAL	N=Gain_Threshold	R=1	IV=0.5	G=VAR
+++D=TIME	N=Gain_Timeout	R=1	IV=5s	G=VAR
+++D=BOOL	N=Wrk_NewOnLoss	R=1	IV=True	G=VAR
+++D=USINT	N=Wrk_NumberOfReady	R=1	G=VAR
+++D=USINT	N=Wrk_NumberOfRunning	R=1	G=VAR
+++D=R_TRIG	N=RE_Alterner	G=VAR
+++D=BOOL	N=Wrk_Alterner	G=VAR
+++D=TIME_OF_DAY	N=Aktuell_Klokke	G=VAR
+++D=TON	N=TON_TrinnUt_FirstCycle	G=VAR
+++D=R_TRIG	N=RE_TrinnInn	G=VAR
+++D=R_TRIG	N=RE_TrinnUt	G=VAR
+++D=R_TRIG	N=RE_Prosessverdi1_Alarm	G=VAR
+++D=R_TRIG	N=RE_Prosessverdi2_Alarm	G=VAR
+++D=R_TRIG	N=RE_Prosessverdi3_Alarm	G=VAR
+++D=R_TRIG	N=RE_Prosessverdi4_Alarm	G=VAR
+++D=R_TRIG	N=RE_Prosessverdi5_Alarm	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=BOOL	N=Run	Ord=1	G=VAR_INPUT
+++D=Library_ST\ST_MotorControl	N=MultiStyring	Ord=2	G=VAR_IN_OUT
+++D=BOOL	N=Forrigling	Ord=3	G=VAR_INPUT	Com=TRUE = Forhindrer kjøring av styringen
+++D=REAL	N=Pådrag	Ord=4	G=VAR_OUTPUT	Com=Pådrag med prosess i operasjonsmodus auto eller manuell
+++D=Library_ST\ST_VFD	N=FrekvOmf1	Ord=5	G=VAR_INPUT
+++D=BOOL	N=Start1	Ord=6	G=VAR_OUTPUT	Com=Startbit for frekvensomformer 1
+++D=Library_ST\ST_VFD	N=FrekvOmf2	Ord=7	G=VAR_INPUT
+++D=BOOL	N=Start2	Ord=8	G=VAR_OUTPUT	Com=Startbit for frekvensomformer 2
+++D=Library_ST\ST_VFD	N=FrekvOmf3	Ord=9	G=VAR_INPUT
+++D=BOOL	N=Start3	Ord=10	G=VAR_OUTPUT	Com=Startbit for frekvensomformer 3
+++D=Library_ST\ST_VFD	N=FrekvOmf4	Ord=11	G=VAR_INPUT
+++D=BOOL	N=Start4	Ord=12	G=VAR_OUTPUT	Com=Startbit for frekvensomformer 4
+++D=Library_ST\ST_VFD	N=FrekvOmf5	Ord=13	G=VAR_INPUT
+++D=BOOL	N=Start5	Ord=14	G=VAR_OUTPUT	Com=Startbit for frekvensomformer 5
+++D=Library_ST\ST_VFD	N=FrekvOmf6	Ord=15	G=VAR_INPUT
+++D=BOOL	N=Start6	Ord=16	G=VAR_OUTPUT	Com=Startbit for frekvensomformer 6
+++D=Library_ST\ST_VFD	N=FrekvOmf7	Ord=17	G=VAR_INPUT
+++D=BOOL	N=Start7	Ord=18	G=VAR_OUTPUT	Com=Startbit for frekvensomformer 7
+++D=Library_ST\ST_VFD	N=FrekvOmf8	Ord=19	G=VAR_INPUT
+++D=BOOL	N=Start8	Ord=20	G=VAR_OUTPUT	Com=Startbit for frekvensomformer 8
+++D=Library_ST\ST_VFD	N=FrekvOmf9	Ord=21	G=VAR_INPUT
+++D=BOOL	N=Start9	Ord=22	G=VAR_OUTPUT	Com=Startbit for frekvensomformer 9
+++D=Library_ST\ST_VFD	N=FrekvOmf10	Ord=23	G=VAR_INPUT
+++D=BOOL	N=Start10	Ord=24	G=VAR_OUTPUT	Com=Startbit for frekvensomformer 10
+++D=Library_ST\ST_VFD	N=FrekvOmf11	Ord=25	G=VAR_INPUT
+++D=BOOL	N=Start11	Ord=26	G=VAR_OUTPUT	Com=Startbit for frekvensomformer 11
+++D=Library_ST\ST_VFD	N=FrekvOmf12	Ord=27	G=VAR_INPUT
+++D=BOOL	N=Start12	Ord=28	G=VAR_OUTPUT	Com=Startbit for frekvensomformer 12
+++D=Library_ST\ST_VFD	N=FrekvOmf13	Ord=29	G=VAR_INPUT
+++D=BOOL	N=Start13	Ord=30	G=VAR_OUTPUT	Com=Startbit for frekvensomformer 13
+++D=Library_ST\ST_VFD	N=FrekvOmf14	Ord=31	G=VAR_INPUT
+++D=BOOL	N=Start14	Ord=32	G=VAR_OUTPUT	Com=Startbit for frekvensomformer 14
+++D=Library_ST\ST_VFD	N=FrekvOmf15	Ord=33	G=VAR_INPUT
+++D=BOOL	N=Start15	Ord=34	G=VAR_OUTPUT	Com=Startbit for frekvensomformer 15
+++D=Library_ST\ST_VFD	N=FrekvOmf16	Ord=35	G=VAR_INPUT
+++D=BOOL	N=Start16	Ord=36	G=VAR_OUTPUT	Com=Startbit for frekvensomformer 16
+++D=REAL	N=Maks_Input	IV=100.0	Ord=37	G=VAR_INPUT	Com=Maksimalt settpunkt/prosessverdi. Påvirker proporsjonalband.
+++D=REAL	N=Min_Input	IV=0.0	Ord=38	G=VAR_INPUT	Com=Minste settpunkt/prosessverdi. Påvirker proporsjonalband.
+++D=REAL	N=Maks_Output	IV=100.0	Ord=39	G=VAR_INPUT	Com=Maks output verdi (MV)
+++D=REAL	N=Min_Output	IV=0.0	Ord=40	G=VAR_INPUT	Com=Min output verdi (MV)
+++D=REAL	N=ResetVal	IV=0.0	Ord=41	G=VAR_INPUT	Com=Pådrag når verdi er på settpunkt. Til fjerning av avvik for P / PD regulering.
+++D=BOOL	N=Retning	Ord=42	G=VAR_INPUT	Com=TRUE=direkte retning, FALSE=revers retning
+++D=REAL	N=Pådrag_Error	Ord=43	G=VAR_INPUT	Com=Pådrag ved error
+++D=Library_ST\ST_AnalogValue	N=Prosessverdi_1	Ord=44	G=VAR_INPUT	Com=Prosessverdi alternativ A
+++D=Library_ST\ST_Alarm	N=SensorAlarm_1	Ord=45	G=VAR_INPUT	Com=Brukes til automatisk bytte av prosessverdi om det er feil på sensor
+++D=Library_ST\ST_AnalogValue	N=Prosessverdi_2	Ord=46	G=VAR_INPUT	Com=Prosessverdi alternativ B
+++D=Library_ST\ST_Alarm	N=SensorAlarm_2	Ord=47	G=VAR_INPUT	Com=Brukes til automatisk bytte av prosessverdi om det er feil på sensor
+++D=Library_ST\ST_AnalogValue	N=Prosessverdi_3	Ord=48	G=VAR_INPUT	Com=Prosessverdi alternativ B
+++D=Library_ST\ST_Alarm	N=SensorAlarm_3	Ord=49	G=VAR_INPUT	Com=Brukes til automatisk bytte av prosessverdi om det er feil på sensor
+++D=Library_ST\ST_AnalogValue	N=Prosessverdi_4	Ord=50	G=VAR_INPUT	Com=Prosessverdi alternativ B
+++D=Library_ST\ST_Alarm	N=SensorAlarm_4	Ord=51	G=VAR_INPUT	Com=Brukes til automatisk bytte av prosessverdi om det er feil på sensor
+++D=Library_ST\ST_AnalogValue	N=Prosessverdi_5	Ord=52	G=VAR_INPUT	Com=Prosessverdi alternativ B
+++D=Library_ST\ST_Alarm	N=SensorAlarm_5	Ord=53	G=VAR_INPUT	Com=Brukes til automatisk bytte av prosessverdi om det er feil på sensor
+++D=BOOL	N=Modus_Trinning	Ord=54	G=VAR_INPUT	Com=0: DISABLED, 1: ENABLED
+++D=TIME	N=Forsinkelse_TrinnUt	IV=T#60s	Ord=55	G=VAR_INPUT	Com=Forsinkelse før Trinn Ut ved First Cycle (Default: 60s)
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

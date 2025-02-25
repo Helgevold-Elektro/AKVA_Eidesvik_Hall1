@@ -1,0 +1,49 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=BOOL	N=startSeq	G=VAR	Com=Start Sequence lock flag
+++D=array[0..3] OF STRING[256]	N=header	G=VAR
+++D=HTTP_GET_wst	N=fb_HTTP_Get_v0	G=VAR
+++D=BOOL	N=fb_HTTP_Get_v0_Done	G=VAR
+++D=BOOL	N=fb_HTTP_Get_v0_Busy	G=VAR
+++D=STRING[60]	N=fb_HTTP_Get_v0_Status	G=VAR
+++D=BOOL	N=fb_HTTP_Get_v0_Error	G=VAR
+++D=WORD	N=fb_HTTP_Get_v0_ErrorID	G=VAR
+++D=UINT	N=fb_HTTP_Get_v0_HttpStatCode	G=VAR
+++D=STRING[256]	N=GetUrl_text	G=VAR
+++D=STRING[1024]	N=Msg_Body	G=VAR
+++D=BOOL	N=dummyFlag	G=VAR
+++D=UINT	N=Rt1Step	G=VAR
+++D=BOOL	N=Lock20	G=VAR
+++D=BOOL	N=Lock30	G=VAR
+++D=STRING[1986]	N=Ask	G=VAR
+++D=array[0..3] of string[256]	N=Header2Ask	G=VAR
+++D=BOOL	N=fb_rt1Mod_Done	G=VAR
+++D=rt1Mod	N=fb_rt1Mod	G=VAR
+++D=ARRAY[0..3999] OF BYTE	N=MsgBody	G=VAR
+++D=BOOL	N=fb_rt1Mod_Busy	G=VAR
+++D=BOOL	N=fb_rt1Mod_Error	G=VAR
+++D=WORD	N=fb_rt1Mod_ErrorID	G=VAR
+++D=UINT	N=fb_rt1Mod_HttpStatCode	G=VAR
+++D=STRING[80]	N=fb_rt1Mod_Status	G=VAR
+++D=UINT	N=fb_rt1Mod_Recv_BodySize	G=VAR
+++D=STRING[1986]	N=fb_rt1Mod_Recv_Header	G=VAR
+++D=STRING[1984]	N=MsgBody_HTTPS2_1	G=VAR
+++D=STRING[1984]	N=MsgBody_HTTPS2_2	G=VAR
+++D=UINT	N=mypos	G=VAR
+++D=STRING[1986]	N=myString	G=VAR
+++D=BOOL	N=Lock912	G=VAR
+++D=BOOL	N=lock910	G=VAR
+++D=BOOL	N=Lock920	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=Execute	Ord=0	G=VAR_INPUT	Com=Execution starts on the rising edge
+++D=STRING[16]	N=RT1_IpAddress	Ord=1	G=VAR_INPUT	Com=RT1 Router IP Address ex '192.168.250.200'
+++D=STRING[17]	N=TLS_Session	Ord=2	G=VAR_INPUT	Com=Specifies the TLS session name ex 'TLSSession0'
+++D=STRING[256]	N=SmsMessage	Ord=3	G=VAR_INPUT
+++D=STRING[256]	N=PhoneNumber	Ord=4	G=VAR_INPUT
+++D=BOOL	N=Done	Ord=5	G=VAR_OUTPUT	Com=FB completed without errors
+++D=BOOL	N=Busy	Ord=6	G=VAR_OUTPUT	Com=TRUE during the execution of the FB
+++D=BOOL	N=Error	Ord=7	G=VAR_OUTPUT	Com=Error during execution of the FB
+++D=STRING[1024]	N=Status	Ord=8	G=VAR_OUTPUT	Com=Current FB status
+++D=WORD	N=ErrorID	Ord=9	G=VAR_OUTPUT	Com=Error code
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

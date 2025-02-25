@@ -2,7 +2,213 @@
 <data>
   <data>
     <ReferredLibrariesModel>
-      <ReferredLibraries />
+      <ReferredLibraries>
+        <ReferredLibrary>
+          <data>
+            <LibraryModel>
+              <Name>HE_Library</Name>
+              <NameSpace></NameSpace>
+              <Version>1.0.0</Version>
+              <Revision>1</Revision>
+              <LibraryId>fcb2908d-6d2a-4a41-b6cd-61c92ea5070b</LibraryId>
+              <Author>William, Daniel, Ruben &amp; Jan Magne</Author>
+              <Company>HELGEVOLD ELEKTRO</Company>
+              <DateCreated>2025-01-15T13:32:05.7446511+01:00</DateCreated>
+              <DateModified>2025-02-25T15:28:16.3497024+01:00</DateModified>
+              <Comment>Release notes ligger i seperat dokument</Comment>
+              <Password></Password>
+              <AttachedFiles />
+              <AttachedFilesRelativePaths />
+              <PublicPartsNames>
+                <PublicName>HE_Difference</PublicName>
+                <PublicName>HE_Volume_Cube</PublicName>
+                <PublicName>HE_Str2TOD</PublicName>
+                <PublicName>HE_Str2TIME</PublicName>
+                <PublicName>HE_Str2Minutt</PublicName>
+                <PublicName>HE_StrAdd</PublicName>
+                <PublicName>HE_Sec2Str</PublicName>
+                <PublicName>HE_StrReplace</PublicName>
+                <PublicName>HE_TableScale</PublicName>
+                <PublicName>HE_ATV_Last_Fault</PublicName>
+                <PublicName>HE_ATV_Drive_State</PublicName>
+                <PublicName>HE_CIM500_Last_Fault</PublicName>
+                <PublicName>HE_SNMP_EncodeInteger</PublicName>
+                <PublicName>HE_SNMP_EncodeNull</PublicName>
+                <PublicName>HE_SNMP_EncodeString</PublicName>
+                <PublicName>HE_SNMP_EncodeOID</PublicName>
+                <PublicName>HE_SNMP_Decode</PublicName>
+                <PublicName>HE_WEG_Drive_State</PublicName>
+                <PublicName>HE_WEG_Drive_Fault</PublicName>
+                <PublicName>HE_CalcDewPoint</PublicName>
+                <PublicName>HE_WEG_Drive_Alarms</PublicName>
+                <PublicName>HE_FC202_Drive_State</PublicName>
+                <PublicName>HE_FC202_Drive_Fault</PublicName>
+                <PublicName>HE_LightControl</PublicName>
+                <PublicName>HE_OxygenControl</PublicName>
+                <PublicName>HE_MotorControl</PublicName>
+                <PublicName>HE_GeneralControl</PublicName>
+                <PublicName>HE_DigitalControl</PublicName>
+                <PublicName>HE_AnalogControl</PublicName>
+                <PublicName>HE_Alternation</PublicName>
+                <PublicName>HE_PID</PublicName>
+                <PublicName>HE_CommStatus</PublicName>
+                <PublicName>HE_Statistics</PublicName>
+                <PublicName>HE_Average</PublicName>
+                <PublicName>HE_PulseStat</PublicName>
+                <PublicName>HE_AnalogInput</PublicName>
+                <PublicName>HE_AnalogFault</PublicName>
+                <PublicName>HE_DigitalFault</PublicName>
+                <PublicName>HE_AnalogAlarm</PublicName>
+                <PublicName>HE_DigitalAlarm</PublicName>
+                <PublicName>HE_Deadband</PublicName>
+                <PublicName>HE_DiffCheck</PublicName>
+                <PublicName>HE_Consumption</PublicName>
+                <PublicName>HE_SMSNotification</PublicName>
+                <PublicName>HE_SMSBroadcast</PublicName>
+                <PublicName>HE_RateOfChange</PublicName>
+                <PublicName>HE_EWMA</PublicName>
+                <PublicName>HE_Interlock</PublicName>
+                <PublicName>HE_Ramp_Gain</PublicName>
+                <PublicName>HE_SD_Backup</PublicName>
+                <PublicName>HE_NXEIC202_Restart</PublicName>
+                <PublicName>HE_Watchdog</PublicName>
+                <PublicName>HE_TaskTimeMonitor</PublicName>
+                <PublicName>HE_NXEIC202_Status</PublicName>
+                <PublicName>HE_FeedControl</PublicName>
+                <PublicName>HE_FeedingCommon</PublicName>
+                <PublicName>HE_TimeSync</PublicName>
+                <PublicName>HE_SNMP_Get</PublicName>
+                <PublicName>HE_SNMP_GetAcyclic</PublicName>
+                <PublicName>HE_ControllerStat</PublicName>
+                <PublicName>HE_VFD_ATV3XX</PublicName>
+                <PublicName>HE_VFD_ATV6XX</PublicName>
+                <PublicName>HE_VFD_CIM500</PublicName>
+                <PublicName>HE_VFD_Vacon100F</PublicName>
+                <PublicName>HE_VFD_AnalogControl</PublicName>
+                <PublicName>HE_VFD_Simulation</PublicName>
+                <PublicName>HE_VFD_Logic</PublicName>
+                <PublicName>HE_VFD_Simulering_Wrapper</PublicName>
+                <PublicName>HE_VFD_Vacon100Flow_Wrapper</PublicName>
+                <PublicName>HE_VFD_WEG_CFW900_Wrapper</PublicName>
+                <PublicName>HE_VFD_FC202_Wrapper</PublicName>
+                <PublicName>HE_VFD_ATV320_RuntimeData</PublicName>
+                <PublicName>Library_ST\WORD2BYTE2BIT</PublicName>
+                <PublicName>Library_ST\BYTE2BIT</PublicName>
+                <PublicName>Library_ST\DWORD2WORD2BYTE2BIT</PublicName>
+                <PublicName>Library_ST\ST_VFD_ATV6xx_Input</PublicName>
+                <PublicName>Library_ST\ST_VFD_ATV6xx_Output</PublicName>
+                <PublicName>Library_ST\ST_VFD_ATV320_Input</PublicName>
+                <PublicName>Library_ST\ST_VFD_ATV320_Output</PublicName>
+                <PublicName>Library_ST\ST_VFD_CIM500_Input</PublicName>
+                <PublicName>Library_ST\ST_VFD_CIM500_Output</PublicName>
+                <PublicName>Library_ST\ST_VFD_Vacon100x_Input</PublicName>
+                <PublicName>Library_ST\ST_VFD_Vacon100x_Output</PublicName>
+                <PublicName>Library_ST\ST_VFD_FC202_Input</PublicName>
+                <PublicName>Library_ST\ST_VFD_FC202_Output</PublicName>
+                <PublicName>Library_ST\ST_VFD_CFW900_Input</PublicName>
+                <PublicName>Library_ST\ST_VFD_CFW900_Output</PublicName>
+                <PublicName>Library_ST\ST_OxygenControl</PublicName>
+                <PublicName>Library_ST\ST_ControllerStat</PublicName>
+                <PublicName>Library_ST\ST_VFD</PublicName>
+                <PublicName>Library_ST\ST_LightControl</PublicName>
+                <PublicName>Library_ST\ST_AnalogValue</PublicName>
+                <PublicName>Library_ST\ST_DigitalControl</PublicName>
+                <PublicName>Library_ST\ST_FeedControl</PublicName>
+                <PublicName>Library_ST\ST_FeedControl_Common</PublicName>
+                <PublicName>Library_ST\ST_Alarm</PublicName>
+                <PublicName>Library_ST\ST_ShiftTeam</PublicName>
+                <PublicName>Library_ST\ST_Calibration</PublicName>
+                <PublicName>Library_ST\ST_DigitalValue</PublicName>
+                <PublicName>Library_ST\ST_GeneralControl</PublicName>
+                <PublicName>Library_ST\ST_MotorControl</PublicName>
+                <PublicName>Library_ST\ST_SMS</PublicName>
+                <PublicName>Library_ST\ST_AccumulatedData</PublicName>
+                <PublicName>Library_ST\ST_AnalogControl</PublicName>
+                <PublicName>Library_ST\ST_Interlock</PublicName>
+                <PublicName>Library_ST\ENUM_LightControl</PublicName>
+                <PublicName>Library_ST\ENUM_OMA</PublicName>
+                <PublicName>Library_ST\SCADA_ST\SCADA_VFD</PublicName>
+                <PublicName>Library_ST\SCADA_ST\SCADA_DigitalValue</PublicName>
+                <PublicName>Library_ST\SCADA_ST\SCADA_AnalogValue</PublicName>
+                <PublicName>Library_ST\SCADA_ST\SCADA_AnalogAlarmLim</PublicName>
+                <PublicName>Library_ST\SCADA_ST\SCADA_OxygenControl</PublicName>
+                <PublicName>Library_ST\SCADA_ST\SCADA_ControllerStat</PublicName>
+                <PublicName>Library_ST\SCADA_ST\SCADA_LightControl</PublicName>
+                <PublicName>Library_ST\SCADA_ST\SCADA_Calibration</PublicName>
+                <PublicName>Library_ST\SCADA_ST\SCADA_Alarm</PublicName>
+                <PublicName>Library_ST\SCADA_ST\SCADA_FeedControl_Common</PublicName>
+                <PublicName>Library_ST\SCADA_ST\SCADA_FeedControl</PublicName>
+                <PublicName>Library_ST\SCADA_ST\SCADA_FeedDistribution</PublicName>
+                <PublicName>Library_ST\SCADA_ST\SCADA_FeedDistribution_Common</PublicName>
+                <PublicName>Library_ST\SCADA_ST\SCADA_FeedDistribution_Container</PublicName>
+                <PublicName>Library_ST\SCADA_ST\SCADA_GeneralControl</PublicName>
+                <PublicName>Library_ST\SCADA_ST\SCADA_MotorControl</PublicName>
+                <PublicName>Library_ST\SCADA_ST\SCADA_DigitalControl</PublicName>
+                <PublicName>Library_ST\SCADA_ST\SCADA_AnalogControl</PublicName>
+                <PublicName>Library_ST\SCADA_ST\SCADA_AccumulatedData</PublicName>
+                <PublicName>Library_ST\SCADA_ST\SCADA_Interlock</PublicName>
+                <PublicName>Library_ST\SCADA_ST\SCADA_SMS_ShiftTeam</PublicName>
+                <PublicName>Library_ST\SCADA_ST\SCADA_SMS_Emergency</PublicName>
+                <PublicName>Library_ST\SCADA_ST\SCADA_SMS_Notification</PublicName>
+                <PublicName>Library_ST\SCADA_ST\SCADA_SMS_Contacts</PublicName>
+                <PublicName>Library_ST\IO_ST\IO_ExplicitMessageTelegram</PublicName>
+                <PublicName>Library_ST\IO_ST\IO_VFD_Vacon100x_In</PublicName>
+                <PublicName>Library_ST\IO_ST\IO_VFD_FC202_In</PublicName>
+                <PublicName>Library_ST\IO_ST\IO_VFD_FC202_Out</PublicName>
+                <PublicName>Library_ST\IO_ST\IO_VFD_Vacon100x_Out</PublicName>
+                <PublicName>Library_ST\IO_ST\IO_VFD_ATV6xx_In</PublicName>
+                <PublicName>Library_ST\IO_ST\IO_VFD_ATV6xx_Out</PublicName>
+                <PublicName>Library_ST\IO_ST\IO_VFD_ATV320_In</PublicName>
+                <PublicName>Library_ST\IO_ST\IO_VFD_ATV320_Out</PublicName>
+                <PublicName>Library_ST\IO_ST\IO_VFD_CIM500_In</PublicName>
+                <PublicName>Library_ST\IO_ST\IO_VFD_CIM500_Out</PublicName>
+                <PublicName>Library_ST\IO_ST\IO_Dali_HD67840_Out</PublicName>
+                <PublicName>Library_ST\IO_ST\IO_Dali_HD67840_In</PublicName>
+                <PublicName>Library_ST\IO_ST\IO_VFD_WEG_CFW900_In</PublicName>
+                <PublicName>Library_ST\IO_ST\IO_VFD_WEG_CFW900_Out</PublicName>
+                <PublicName>Library_ST\Internal_ST\Internal_VFD</PublicName>
+                <PublicName>Library_ST\Internal_ST\Internal_AnalogControl</PublicName>
+                <PublicName>Library_ST\Internal_ST\Internal_DigitalControl</PublicName>
+                <PublicName>Library_ST\Internal_ST\Internal_GeneralControl</PublicName>
+                <PublicName>Library_ST\Internal_ST\Internal_MotorControl</PublicName>
+                <PublicName>Library_ST\Internal_ST\Internal_SMS</PublicName>
+                <PublicName>Library_ST\Internal_ST\Internal_Alarm</PublicName>
+                <PublicName>Library_ST\Internal_ST\Internal_SNMP_GetTelegram</PublicName>
+                <PublicName>Library_ST\Internal_ST\ENUM_SNMP_Get_States</PublicName>
+                <PublicName>Library_ST\Internal_ST\ENUM_SNMP_GetAcyclic_States</PublicName>
+              </PublicPartsNames>
+              <InternalPartsNames />
+              <BuildDevice>
+                <Category>Controller</Category>
+                <Family>Nex</Family>
+                <FullModel>NX502-1300</FullModel>
+                <MajorVersion>1</MajorVersion>
+                <MinorVersion>66</MinorVersion>
+                <Revision>0</Revision>
+                <DisplayVersion>1.66</DisplayVersion>
+                <Packages>
+                  <Package Name="DBCon" Version="2.4" />
+                  <Package Name="Motion" Version="1.66" />
+                  <Package Name="OPCUA" Version="1.66" />
+                  <Package Name="SecureSocket" Version="1.66" />
+                  <Package Name="jre8" Version="8.3" />
+                </Packages>
+              </BuildDevice>
+              <DependencyId>ad35a0d8-4097-4efe-bd46-9a33fa6e7c06</DependencyId>
+              <IsSource>true</IsSource>
+              <IsDisableSourceDisplay>true</IsDisableSourceDisplay>
+              <IsIncludeReferredLibraries>true</IsIncludeReferredLibraries>
+              <LibraryFilePath>C:\Users\WilliamVeim\Helgevold Elektro\Onedrive - Automasjon\Bruksanvisninger\Omron\Sysmac Studio\Sysmac Studio[Library]\INTERNAL\HE_Library.slr</LibraryFilePath>
+              <LibraryFileRelativePath>Helgevold Elektro\Onedrive - Automasjon\Bruksanvisninger\Omron\Sysmac Studio\Sysmac Studio[Library]\INTERNAL\HE_Library.slr</LibraryFileRelativePath>
+              <LibrarySourceControlRelativeFilePath>..\..\..\..\..\..\..\Users\WilliamVeim\Helgevold Elektro\Onedrive - Automasjon\Bruksanvisninger\Omron\Sysmac Studio\Sysmac Studio[Library]\INTERNAL\HE_Library.slr</LibrarySourceControlRelativeFilePath>
+              <AsOldVer>false</AsOldVer>
+              <SchemaVersion>3</SchemaVersion>
+              <Parameter1>false</Parameter1>
+              <ApplicationProductVersion>1.61.0.64007</ApplicationProductVersion>
+            </LibraryModel>
+          </data>
+        </ReferredLibrary>
+      </ReferredLibraries>
       <BuildOption>
         <data>
           <LibraryModel>

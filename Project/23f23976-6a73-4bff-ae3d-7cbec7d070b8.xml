@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <data>
+    <LibraryModel>
+      <Name>OEN_Communication_Secure</Name>
+      <NameSpace></NameSpace>
+      <Version>2.0.1</Version>
+      <Revision>1</Revision>
+      <LibraryId>b20024f1-3334-4e35-9d09-ccef7ea02e9c</LibraryId>
+      <Author>Kjell Baardsgaard</Author>
+      <Company>Omron Electronics Norway AS</Company>
+      <DateCreated>2023-03-08T08:30:13.2862544+01:00</DateCreated>
+      <DateModified>2024-08-20T15:25:57.6098321+02:00</DateModified>
+      <Comment>Communication FunctionBlocks that requires minimum Firmware 1.49 and are using TLS</Comment>
+      <Password></Password>
+      <AttachedFiles />
+      <AttachedFilesRelativePaths />
+      <PublicPartsNames>
+        <PublicName>OEN\Eth\SMS\RT100_SMSAlarm</PublicName>
+        <PublicName>Mail_Send</PublicName>
+        <PublicName>OEN\Eth\SMS\RT100_SMSAlarmAdv</PublicName>
+        <PublicName>OEN\nEth\nSMS\sSMSSendList</PublicName>
+        <PublicName>OEN\nEth\nSMS\sSMSMessages</PublicName>
+        <PublicName>OEN\nEth\nSMS\sSMSReceivers</PublicName>
+        <PublicName>OEN\nEth\nSMS\sSMSDynamic</PublicName>
+        <PublicName>OEN\nEth\nSMS\sSMSSettings</PublicName>
+        <PublicName>OEN\nEth\nSMS\eSteps</PublicName>
+        <PublicName>OEN\nEth\nSMS\sSMSStatus</PublicName>
+        <PublicName>OEN\nEth\nSMS\sSMSStack</PublicName>
+      </PublicPartsNames>
+      <InternalPartsNames>
+        <InternalName>LibHTTPS\StringFIND</InternalName>
+        <InternalName>LibHTTPS\HTTPS_GET</InternalName>
+        <InternalName>AuthToBase64</InternalName>
+        <InternalName>TCP_SdRcv0</InternalName>
+      </InternalPartsNames>
+      <BuildDevice>
+        <Category>Controller</Category>
+        <Family>Nex</Family>
+        <FullModel>NX1P2-9B40DT1</FullModel>
+        <MajorVersion>1</MajorVersion>
+        <MinorVersion>60</MinorVersion>
+        <Revision>0</Revision>
+        <DisplayVersion>1.60</DisplayVersion>
+        <Packages>
+          <Package Name="Motion" Version="1.60" />
+          <Package Name="SecureSocket" Version="1.60" />
+        </Packages>
+      </BuildDevice>
+      <DependencyId>cdee8467-9916-4b1a-97b3-a54b2a5696df</DependencyId>
+      <IsSource>true</IsSource>
+      <IsDisableSourceDisplay>true</IsDisableSourceDisplay>
+      <IsIncludeReferredLibraries>true</IsIncludeReferredLibraries>
+      <LibraryFilePath>C:\Users\WilliamVeim\Helgevold Elektro\Onedrive - Automasjon\Bruksanvisninger\Omron\Sysmac Studio\Sysmac Studio[Library]\OEN_Communication\OEN_CommunicationSecure 2.00.slr</LibraryFilePath>
+      <LibraryFileRelativePath>Helgevold Elektro\Onedrive - Automasjon\Bruksanvisninger\Omron\Sysmac Studio\Sysmac Studio[Library]\OEN_Communication\OEN_CommunicationSecure 2.00.slr</LibraryFileRelativePath>
+      <LibrarySourceControlRelativeFilePath>..\..\..\..\..\..\..\Users\WilliamVeim\Helgevold Elektro\Onedrive - Automasjon\Bruksanvisninger\Omron\Sysmac Studio\Sysmac Studio[Library]\OEN_Communication\OEN_CommunicationSecure 2.00.slr</LibrarySourceControlRelativeFilePath>
+      <AsOldVer>false</AsOldVer>
+      <SchemaVersion>3</SchemaVersion>
+      <Parameter1>false</Parameter1>
+      <ApplicationProductVersion>1.59.0.64007</ApplicationProductVersion>
+    </LibraryModel>
+  </data>
+</data>

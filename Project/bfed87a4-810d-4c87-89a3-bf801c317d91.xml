@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <data>
+    <LibraryModel>
+      <Name>HTTP Library -v1.3 (fw1.16)</Name>
+      <NameSpace></NameSpace>
+      <Version>1.3.2</Version>
+      <Revision>1</Revision>
+      <LibraryId>11bc06d4-a223-4ad7-8d0d-98c6bfb552e3</LibraryId>
+      <Author></Author>
+      <Company>Omron Electronics</Company>
+      <DateCreated>2014-01-17T11:00:31.2024532+01:00</DateCreated>
+      <DateModified>2021-01-27T09:07:15.5922776+01:00</DateModified>
+      <Comment>GET and POST function to interact with web services
+Added Proxy support
+Added Raw output for the GET method
+Added the possibility to disable default content type for the POST method
+Corrected 'host to 'Host'
+Removed EIP_OnlineSta Check</Comment>
+      <Password></Password>
+      <AttachedFiles />
+      <AttachedFilesRelativePaths />
+      <PublicPartsNames>
+        <PublicName>HTTP_GET</PublicName>
+        <PublicName>HTTP_POST</PublicName>
+        <PublicName>eHTTPSendType</PublicName>
+      </PublicPartsNames>
+      <InternalPartsNames>
+        <InternalName>TCP_SdRcv</InternalName>
+      </InternalPartsNames>
+      <BuildDevice>
+        <Category>Controller</Category>
+        <Family>Nex</Family>
+        <FullModel>NJ101-9000</FullModel>
+        <MajorVersion>1</MajorVersion>
+        <MinorVersion>16</MinorVersion>
+        <Revision>0</Revision>
+        <DisplayVersion>1.16</DisplayVersion>
+        <Packages />
+      </BuildDevice>
+      <DependencyId>445f15ff-87c0-4611-ba84-99acd09e136c</DependencyId>
+      <IsSource>true</IsSource>
+      <IsDisableSourceDisplay>false</IsDisableSourceDisplay>
+      <IsIncludeReferredLibraries>false</IsIncludeReferredLibraries>
+      <LibraryFilePath>D:\Users\baakje\OMRON\Omron Support Norway - Documents\1 Produkter\CPU og HMI\NY5 og NJ og NA og NX\Funksjonsblokker\OEIT HTTP\HTTP Library 1.3.2.slr</LibraryFilePath>
+      <LibraryFileRelativePath></LibraryFileRelativePath>
+      <LibrarySourceControlRelativeFilePath></LibrarySourceControlRelativeFilePath>
+      <AsOldVer>false</AsOldVer>
+      <SchemaVersion>3</SchemaVersion>
+      <Parameter1>false</Parameter1>
+    </LibraryModel>
+  </data>
+</data>

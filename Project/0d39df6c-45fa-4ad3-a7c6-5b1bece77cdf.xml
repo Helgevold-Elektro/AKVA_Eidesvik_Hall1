@@ -1,0 +1,54 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=R_TRIG	N=RE_MidnightPulse	G=VAR
+++D=R_TRIG	N=RE_SecondPulse	G=VAR
+++D=R_TRIG	N=RE_AVGWeight_Start_Registred	G=VAR
+++D=TIME_OF_DAY	N=Current_Time	G=VAR
+++D=DATE	N=Current_Date	G=VAR
+++D=STRING[17]	N=Current_TimeStamp	G=VAR
+++D=UINT	N=Index_A	G=VAR
+++D=DINT	N=Index_B	G=VAR
+++D=UINT	N=FeedColumn_Value	G=VAR
+++D=REAL	N=Current_ColAmount	G=VAR
+++D=DINT	N=Temperature_Current_Rounded	G=VAR
+++D=REAL	N=FeedCol_Value_SUM	G=VAR
+++D=REAL	N=Wrk_AppetiteFactor_Comp	R=1	G=VAR
+++D=DATE	N=Wrk_ResetGroup	R=1	G=VAR
+++D=REAL	N=Wrk_AVGWeight_Start	R=1	G=VAR
+++D=REAL	N=Wrk_TemperatureYesterday	R=1	G=VAR
+++D=UINT	N=Wrk_TemperatureSelect_Compare	R=1	G=VAR
+++D=REAL	N=Wrk_CurrentColAmount_TotalFeedTime	G=VAR
+++D=REAL	N=Wrk_CurrentColAmount_TotalFeedPulses	G=VAR
+++D=REAL	N=Wrk_CurrentColAmount_TotalFeedPauses	G=VAR
+++D=REAL	N=Wrk_FeedTotal_AmountPrSec	G=VAR
+++D=TON	N=TON_PauseTime	G=VAR
+++D=TON	N=TON_PulseTime	G=VAR
+++D=BOOL	N=Timer_Alternate	R=1	G=VAR
+++D=BOOL	N=Weight_AVG_StartRegistrerd	R=1	G=VAR
+++D=UINT	N=Wrk_FaultCode_Index	G=VAR
+++D=UINT	N=Wrk_Status_Index	G=VAR
+++D=TIME	N=Wrk_TotalTime_Today_FeedScrew1	R=1	G=VAR
+++D=TIME	N=Wrk_TotalTime_FeedScrew1	R=1	G=VAR
+++D=TIME	N=Wrk_TotalTime_Today_FeedScrew2	R=1	G=VAR
+++D=TIME	N=Wrk_TotalTime_FeedScrew2	R=1	G=VAR
+++D=BOOL	N=Wrk_FeedFactor_Found	G=VAR
+++D=BOOL	N=Wrk_SGRFactor_Found	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=BOOL	N=ENI	Ord=1	G=VAR_INPUT
+++D=Library_ST\ST_FeedControl	N=Forstyring	Ord=2	G=VAR_IN_OUT
+++D=Library_ST\ST_FeedControl_Common	N=Forstyring_Felles	Ord=3	G=VAR_IN_OUT
+++D=REAL	N=Temperature_A	Ord=4	G=VAR_INPUT	Com=Skalert verdi for temperatur A
+++D=REAL	N=Temperature_B	Ord=5	G=VAR_INPUT	Com=Skalert verdi for temperatur B
+++D=REAL	N=Temperature_C	Ord=6	G=VAR_INPUT	Com=Skalert verdi for temperatur C
+++D=UINT	N=FeedOption	Ord=7	G=VAR_INPUT	Com=0=ved feil på en forskrue skal motsatt gi dobbel mengde, 1=kjører normalt(vil bare fôre 50% av planlagt)
+++D=BOOL	N=Interlock	Ord=8	G=VAR_INPUT	Com=Forigling (TRUE=Hindrer kjøring)
+++D=BOOL	N=FeedScrew1_Feedback	Ord=9	G=VAR_INPUT	Com=Tilbakemelding kjører, kontaktor eller omformer
+++D=BOOL	N=FeedScrew1_Available	Ord=10	G=VAR_INPUT
+++D=BOOL	N=FeedScrew2_Feedback	Ord=11	G=VAR_INPUT	Com=Tilbakemelding kjører, kontaktor eller omformer
+++D=BOOL	N=FeedScrew2_Available	Ord=12	G=VAR_INPUT
+++D=BOOL	N=FeedScrew1_Start	Ord=13	G=VAR_OUTPUT	Com=Utgang for å starte omformer eller kontaktor
+++D=BOOL	N=FeedScrew2_Start	Ord=14	G=VAR_OUTPUT	Com=Utgang for å starte omformer eller kontaktor
+++D=BOOL	N=General_Fault	Ord=15	G=VAR_OUTPUT	Com=Generell feilmelding
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

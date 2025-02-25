@@ -1,0 +1,53 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=SktTCPConnect	N=SktTCPConnect_Inst	G=VAR
+++D=SktGetTCPStatus	N=SktGetTCPStatus_Inst	G=VAR
+++D=SktClose	N=TCPClose_Inst	G=VAR
+++D=INT	N=Mail_Step	G=VAR	Com=Current Step of the main state machine
+++D=Mail_TLS_SendRecv	N=SendReceive	G=VAR
+++D=WORD	N=ErrID	G=VAR	Com=Error code (Internal)
+++D=STRING[1986]	N=Request	G=VAR	Com=Message to the SMTP server
+++D=STRING[1000]	N=Response	G=VAR	Com=Reply from the SMTP server
+++D=_sSOCKET	N=SMTP_Socket	G=VAR	Com=Socket handle
+++D=BOOL	N=instDone	G=VAR	Com=Completion flag
+++D=BOOL	N=old_Execute	G=VAR	Com=Last value of Execute
+++D=INT	N=read_step	G=VAR	Com=Current step of the read file state machine
+++D=DWORD	N=handle	G=VAR	Com=File handle
+++D=ARRAY[0..191] OF BYTE	N=InputBuffer	G=VAR	Com=Bytes read from file
+++D=DINT	N=blocks	G=VAR	Com=Number of blocks (57 bytes each)
+++D=STRING[66]	N=FileName	G=VAR	Com=Filename of the attachment including the path
+++D=FileOpen	N=FileOpen_instance	G=VAR
+++D=UINT	N=BytesRead	G=VAR	Com=Number of bytes read from file
+++D=FileRead	N=FileRead_instance	G=VAR
+++D=FileSeek	N=FileSeek_instance	G=VAR
+++D=FileClose	N=FileClose_instance	G=VAR
+++D=BOOL	N=EndFile	G=VAR	Com=Stores the EOF flag
+++D=STRING[257]	N=AccountNameB64	G=VAR	Com=Account name encoded in Base64
+++D=STRING[257]	N=PasswordB64	G=VAR	Com=Password encoded in Base64
+++D=SktTLSConnect	N=SktTLSconnect_inst	G=VAR
+++D=DWORD	N=SMTP_TLS	G=VAR
+++D=SktTLSDisconnect	N=SktTLSDisconnect_Inst	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=Execute	Ord=0	G=VAR_INPUT	Com=Start the communication on the rising edge
+++D=STRING[201]	N=SMTP_Addr	Ord=1	G=VAR_INPUT	Com=Hostname or IP address of the SMTP server
+++D=UINT	N=SMTP_Port	IV=587	Ord=2	G=VAR_INPUT	Com=TLS TCP port of the SMTP server (default 587)
+++D=STRING[201]	N=Local_Addr	IV='sysmac.plc'	Ord=3	G=VAR_INPUT	Com=Local IP or Hostname of the CPU
+++D=STRING[17]	N=TLS_Session	Ord=4	G=VAR_INPUT
+++D=UINT	N=Timeout	IV=20	Ord=5	G=VAR_INPUT	Com=Response timeout in tenth of seconds (default 2s)
+++D=STRING[257]	N=Subject	Ord=6	G=VAR_INPUT	Com=Subject of the email message
+++D=BOOL	N=SMTP_AUTH	Ord=7	G=VAR_INPUT	Com=Enables authentication
+++D=STRING[61]	N=AccountName	Ord=8	G=VAR_INPUT	Com=Username of the SMTP account
+++D=STRING[31]	N=Password	Ord=9	G=VAR_INPUT	Com=Password of the SMTP account
+++D=STRING[61]	N=Mail_Source	Ord=10	G=VAR_INPUT	Com=Mail sender
+++D=STRING[61]	N=Mail_Dest	Ord=11	G=VAR_INPUT	Com=Mail recipient
+++D=STRING[1025]	N=Message	Ord=12	G=VAR_INPUT	Com=Message Body
+++D=BOOL	N=SendAttachment	Ord=13	G=VAR_INPUT	Com=When TRUE enables attachment
+++D=STRING[66]	N=AttachmentFile	Ord=14	G=VAR_INPUT	Com=File name of the attchment
+++D=STRING[66]	N=Path	Ord=15	G=VAR_INPUT	Com=Pathname of the attachment
+++D=BOOL	N=Done	Ord=16	G=VAR_OUTPUT	Com=FB completed without errors
+++D=BOOL	N=Busy	Ord=17	G=VAR_OUTPUT	Com=TRUE during the execution of the FB
+++D=BOOL	N=Error	Ord=18	G=VAR_OUTPUT	Com=Error during execution of the FB
+++D=STRING[1024]	N=Status	Ord=19	G=VAR_OUTPUT	Com=Current FB status
+++D=WORD	N=ErrorID	Ord=20	G=VAR_OUTPUT	Com=Error code
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
