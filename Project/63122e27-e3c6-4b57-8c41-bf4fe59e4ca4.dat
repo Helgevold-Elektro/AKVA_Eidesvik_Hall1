@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Module VenderID="1" ProductCode="2241027" Revision="16777216" IONodeID="10e88945-cfe4-4411-b37c-fa8b1c103206" DeviceName="N13_1" SerialNo="0" IsEnabled="1">
+  <Parameter Index="16385" SubIndex="1" Value="1693450240" />
+  <Parameter Index="16385" SubIndex="2" Value="4" />
+  <Parameter Index="16385" SubIndex="3" Value="1693974528" />
+  <Parameter Index="16385" SubIndex="4" Value="4" />
+  <Parameter Index="20496" SubIndex="1" Value="True" />
+  <Parameter Index="20496" SubIndex="2" Value="True" />
+  <Parameter Index="20496" SubIndex="3" Value="True" />
+  <Parameter Index="20496" SubIndex="4" Value="True" />
+  <Parameter Index="20497" SubIndex="1" Value="0" />
+  <Parameter Index="20497" SubIndex="2" Value="0" />
+  <Parameter Index="20497" SubIndex="3" Value="0" />
+  <Parameter Index="20497" SubIndex="4" Value="0" />
+  <Parameter Index="20498" SubIndex="1" Value="4" />
+  <Parameter Index="20498" SubIndex="2" Value="0" />
+  <Parameter Index="20498" SubIndex="3" Value="4" />
+  <Parameter Index="20498" SubIndex="4" Value="0" />
+  <Parameter Index="20498" SubIndex="5" Value="4" />
+  <Parameter Index="20498" SubIndex="6" Value="0" />
+  <Parameter Index="20498" SubIndex="7" Value="4" />
+  <Parameter Index="20498" SubIndex="8" Value="0" />
+  <IOPort IOPortID="eed9ba41-fa71-42b6-8d5f-8b078371f262" Index="28672" SubIndex="1" />
+  <IOPort IOPortID="8dfe62c4-881a-40c6-88e4-038b01afc48f" Index="28672" SubIndex="2" />
+  <IOPort IOPortID="8ecec9c9-40aa-4127-a6d8-5228628aca8e" Index="28672" SubIndex="3" />
+  <IOPort IOPortID="c74b63e6-db94-4692-b8c2-9a31273275b4" Index="28672" SubIndex="4" />
+  <IOAllocation Index="5632">
+    <IOEntry>
+      <IOPortReference IOPortID="eed9ba41-fa71-42b6-8d5f-8b078371f262" />
+    </IOEntry>
+    <IOEntry>
+      <IOPortReference IOPortID="8dfe62c4-881a-40c6-88e4-038b01afc48f" />
+    </IOEntry>
+    <IOEntry>
+      <IOPortReference IOPortID="8ecec9c9-40aa-4127-a6d8-5228628aca8e" />
+    </IOEntry>
+    <IOEntry>
+      <IOPortReference IOPortID="c74b63e6-db94-4692-b8c2-9a31273275b4" />
+    </IOEntry>
+  </IOAllocation>
+</Module>
