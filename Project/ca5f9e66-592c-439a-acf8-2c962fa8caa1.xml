@@ -1,0 +1,28 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=ARRAY[0..15] OF TIME	N=Wrk_ActuatorTimeStack	R=1	G=VAR	Com=Standby/Duty time for each actuator (+ = Duty time | - = Standby time)
+++D=TIME	N=Wrk_HighestDutyTime	G=VAR
+++D=INT	N=Wrk_IndexHighestDutyTime	G=VAR
+++D=TIME	N=Wrk_HighestStandbyTime	G=VAR
+++D=INT	N=Wrk_IndexHighestStandbyTime	G=VAR
+++D=INT	N=Index	G=VAR
+++D=BOOL	N=Event_Loss	G=VAR
+++D=BOOL	N=Tmp_StepIn	G=VAR
+++D=BOOL	N=Tmp_StepOut	G=VAR
+++D=TOF	N=TOF_BlockingDelay	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=BOOL	N=ENS	Ord=1	G=VAR_INPUT
+++D=BOOL	N=Inp_Block	Ord=2	G=VAR_INPUT	Com=Input for blocking logic (TRUE=Block)
+++D=BOOL	N=Cmd_Alternate	Ord=3	G=VAR_IN_OUT	Com=Alternates if one is available. Set low regardless of the outcome
+++D=BOOL	N=Cmd_StepIn	Ord=4	G=VAR_IN_OUT	Com=Step in the next available one. Set low upon stepping in
+++D=BOOL	N=Cmd_StepOut	Ord=5	G=VAR_IN_OUT	Com=Step out. Set low upon stepping out.
+++D=BOOL	N=Cfg_NewOnLoss	Ord=6	G=VAR_INPUT	Com=TRUE = If one stops due to status 'not ok,' it starts automatically
+++D=USINT	N=Cfg_MinimumCount	Ord=7	G=VAR_INPUT	Com=Minimum number of running
+++D=USINT	N=Cfg_MaximumCount	Ord=8	G=VAR_INPUT	Com=Maximum number of running
+++D=ARRAY[0..15] OF BOOL	N=Inp_State	Ord=9	G=VAR_INPUT	Com=Word = 16 status bit
+++D=ARRAY[0..15] OF BOOL	N=Out_Start	R=1	Ord=10	G=VAR_OUTPUT	Com=Word = 16 Running bit
+++D=USINT	N=Out_NumberOfReady	Ord=11	G=VAR_OUTPUT	Com=Number that are ready
+++D=USINT	N=Out_NumberOfRunning	Ord=12	G=VAR_OUTPUT	Com=Number that are running
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

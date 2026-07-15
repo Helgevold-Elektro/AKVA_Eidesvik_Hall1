@@ -1,0 +1,30 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=USINT	N=Index	G=VAR
+++D=ARRAY[0..9] OF TON	N=TON_Trig_Activate	G=VAR
+++D=ARRAY[0..9] OF TON	N=TON_Trig_Return	G=VAR
+++D=ARRAY[0..9] OF BOOL	N=Wrk_Trigger	G=VAR
+++D=BOOL	N=Wrk_FirstActiveFound	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=BOOL	N=ENS	Ord=1	G=VAR_INPUT
+++D=CTRL_ST\Interlock	N=Ext_Interlock	Ord=2	G=VAR_IN_OUT
+++D=ARRAY[*] OF CTRL_ST\AnalogValue	N=EXT_AnalogValue	Ord=3	G=VAR_IN_OUT	Com=Array of analog value for retriving PV values (Index set in SCADA)
+++D=ARRAY[*] OF CTRL_ST\DigitalValue	N=EXT_DigitalValue	Ord=4	G=VAR_IN_OUT	Com=Array of digial value for retriving PV values (Index set in SCADA)
+++D=ARRAY[*] OF CTRL_ST\VFDControl	N=EXT_VFD	Ord=5	G=VAR_IN_OUT	Com=Array of digial value for retriving PV values (Index set in SCADA)
+++D=BOOL	N=Inp_CustomTrigger1	Ord=6	G=VAR_INPUT
+++D=STRING[30]	N=Cfg_CustomSuffix1	Ord=7	G=VAR_INPUT
+++D=BOOL	N=Inp_CustomTrigger2	Ord=8	G=VAR_INPUT
+++D=STRING[30]	N=Cfg_CustomSuffix2	Ord=9	G=VAR_INPUT
+++D=BOOL	N=Inp_CustomTrigger3	Ord=10	G=VAR_INPUT
+++D=STRING[30]	N=Cfg_CustomSuffix3	Ord=11	G=VAR_INPUT
+++D=BOOL	N=Inp_CustomTrigger4	Ord=12	G=VAR_INPUT
+++D=STRING[30]	N=Cfg_CustomSuffix4	Ord=13	G=VAR_INPUT
+++D=BOOL	N=Inp_CustomTrigger5	Ord=14	G=VAR_INPUT
+++D=STRING[30]	N=Cfg_CustomSuffix5	Ord=15	G=VAR_INPUT
+++D=UINT	N=Cfg_MainLocation	Ord=16	G=VAR_INPUT	Com=Index of main location (Index translation is common for each IGN project)
+++D=BOOL	N=Sts_Interlock	Ord=17	G=VAR_OUTPUT	Com=Interlock status (0 = OK, 1 = Interlocked)
+++D=BOOL	N=Sts_Bypassed	Ord=18	G=VAR_OUTPUT	Com=Bypass status (0 = Not bypassed, 1 = Bypassed)
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
+++D=WORD	N=_ErrSta	Const=1	G=VAR_EXTERNAL

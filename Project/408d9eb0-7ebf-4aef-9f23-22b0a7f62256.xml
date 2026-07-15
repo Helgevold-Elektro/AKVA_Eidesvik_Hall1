@@ -1,0 +1,27 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=ULINT	N=Wrk_Number_Sample	G=VAR
+++D=DATE_AND_TIME	N=Wrk_LastTriggerTime	G=VAR
+++D=TIME	N=Wrk_TimeSinceTrigger	G=VAR
+++D=F_TRIG	N=Wrk_BOOL_FE	G=VAR
+++D=R_TRIG	N=Wrk_BOOL_RE	G=VAR
+++D=TIME	N=Wrk_TimeSinceLastHeartbeat	G=VAR
+++D=UINT	N=Wrk_Counter	G=VAR
+++D=BOOL	N=Wrk_BOOL	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=BOOL	N=ENS	Ord=1	G=VAR_INPUT
+++D=UINT	N=Cfg_Type	Ord=2	G=VAR_INPUT	Com=Setup watchdog type (0=Watch number value | 1= Watch bool value rising | 2= Watch bool value falling | 3= Control reset output | 4= Control counter output | 5= Control BOOL output (no alarm))
+++D=ULINT	N=Inp_Number	Ord=3	G=VAR_INPUT	Com=Input for number value ("Cfg_Type" = 1 or 3)
+++D=BOOL	N=Inp_Bool	Ord=4	G=VAR_INPUT	Com=Input for bool trigger ("Cfg_Type" = 2)
+++D=BOOL	N=Inp_Reset	Ord=5	G=VAR_INPUT	Com=Input to reset counter output
+++D=ULINT	N=Cfg_ResetValue	IV=10	Ord=6	G=VAR_INPUT	Com=Setup limit for reset ("Cfg_Type" = 3: If "Inp_Number" is above this number, "Out_Reset" = TRUE, "Cfg_Type" = 4: Out_Counter > this value AND this value not 0, triggers alarm after Cfg_Timeout
+++D=TIME	N=Cfg_TimeOut	R=1	IV=T#10s	Ord=7	G=VAR_INPUT	Com=Timeout for value change
+++D=BOOL	N=Sts_Timeout	Ord=8	G=VAR_OUTPUT	Com=Time since last change is above timeout time
+++D=BOOL	N=Out_Reset	Ord=9	G=VAR_OUTPUT	Com=Reset output ("Cfg_Type" = 3) (If "Inp_Number" is above "Cfg_ResetValue")
+++D=UINT	N=Out_Counter	Ord=10	G=VAR_OUTPUT	Com=Counter output ("Cfg_Type" = 4) (Reset by "Inp_Reset")
+++D=BOOL	N=Out_BOOL	Ord=11	G=VAR_OUTPUT	Com=BOOL output
+++D=TIME	N=Out_TimeSinceTrigger	Ord=12	G=VAR_OUTPUT	Com=Time since last change
+++D=DATE_AND_TIME	N=Out_LastTriggerTime	Ord=13	G=VAR_OUTPUT	Com=Timestamp last change
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

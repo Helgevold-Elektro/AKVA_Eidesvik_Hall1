@@ -1,0 +1,41 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=CTRL_ST\WORD2BYTE2BIT	N=WORD2BIT	G=VAR
+++D=CTRL_ST\DWORD2WORD2BYTE2BIT	N=DWORD2WORD	G=VAR
+++D=DINT	N=Wrk_LB	G=VAR
+++D=DINT	N=Wrk_UB	G=VAR
+++D=DINT	N=Wrk_Len	G=VAR
+++D=UINT	N=Num_NamedAlarms	G=VAR
+++D=ARRAY[0..3] OF BYTE	N=Wrk_NibbleArray	G=VAR
+++D=ARRAY[0..3] OF STRING[50]	N=Wrk_ActiveAlarms	G=VAR
+++D=USINT	N=a	G=VAR
+++D=UINT	N=Wrk_NumAlarmsStored	G=VAR
+++D=BOOL	N=Wrk_EmergencyStop	G=VAR
+++D=BOOL	N=Wrk_HighCoolantTemp	G=VAR
+++D=BOOL	N=Wrk_BatteryLowVolt	G=VAR
+++D=BOOL	N=Wrk_FailToStart	G=VAR
+++D=BOOL	N=Wrk_FailToStop	G=VAR
+++D=BOOL	N=Wrk_GenFailToClose	G=VAR
+++D=BOOL	N=Wrk_MainsFailToClose	G=VAR
+++D=BOOL	N=Wrk_GenBreakerFailedToOpen	G=VAR
+++D=BOOL	N=Wrk_MainsBreakerFailedToOpen	G=VAR
+++D=BOOL	N=Wrk_ShortCircuitAlarm	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=EN	Ord=0	RO=1	G=VAR_INPUT
+++D=ARRAY[*] OF WORD	N=Inp_HoldingRegister	Ord=1	G=VAR_IN_OUT	Com=Holding register from MTCP reading
+++D=UINT	N=Cfg_Page3_Offset	IV=0	Ord=2	G=VAR_INPUT
+++D=UINT	N=Cfg_Page4_Offset	IV=7	Ord=3	G=VAR_INPUT
+++D=UINT	N=Cfg_Page7_Offset	IV=73	Ord=4	G=VAR_INPUT
+++D=UINT	N=Cfg_Page154_Offset	IV=85	Ord=5	G=VAR_INPUT
+++D=UINT	N=Cfg_Page178_Offset	IV=123	Ord=6	G=VAR_INPUT
+++D=BOOL	N=Cfg_Telemetry_InUse	Ord=7	G=VAR_INPUT
+++D=BOOL	N=Inp_MTCP_ReqCycleDone	Ord=8	G=VAR_INPUT
+++D=BOOL	N=Inp_MTCP_ReqError	Ord=9	G=VAR_INPUT
+++D=INT_ST\Generator_DSE86xx	N=Out_GeneratorData	Ord=10	G=VAR_OUTPUT
+++D=BOOL	N=Out_CommOK	Ord=11	G=VAR_OUTPUT
+++D=ARRAY[0..149] OF STRING[50]	N=ActiveAlarms	Ord=12	G=VAR_OUTPUT
+++D=UINT	N=Num_ActiveAlarms	Ord=13	G=VAR_OUTPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
++GN=RETURN	GA=Return	GVT=ReturnGroup
+++D=BOOL	N=HE_ParseGenerator_DSE86xx	G=RETURN

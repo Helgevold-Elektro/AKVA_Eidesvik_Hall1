@@ -1,0 +1,21 @@
+<StructuredTextModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Text>//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------&#xD;
+//	NAME:				HE_Check_Valid&#xD;
+//	CREATOR:			Helgevold - William Veim&#xD;
+//&#xD;
+// REQUIREMENTS: NX controller&#xD;
+// DESCRTIPTION: 	Converts WORD-&gt;DWORD-&gt;REAL and check if data is valid&#xD;
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------&#xD;
+//  VERSION LOG:&#xD;
+//	 VERSION			DATE				SIGN						DESCRIPTION&#xD;
+//	 1.0.0				2026-03-02		William Veim			Initial release&#xD;
+//&#xD;
+//================================================================================================================================&#xD;
+&#xD;
+ConvertionWord.Wrd[0]:=Word_1;&#xD;
+ConvertionWord.Wrd[1]:=Word_2;&#xD;
+&#xD;
+IF ConvertionWord.DWrd &lt;&gt; UnvalidValue THEN&#xD;
+	HE_WORD_CheckValid:=DWORD_TO_REAL(ConvertionWord.DWrd);&#xD;
+ELSE&#xD;
+	HE_WORD_CheckValid:=-1;&#xD;
+END_IF;</Text></StructuredTextModel>

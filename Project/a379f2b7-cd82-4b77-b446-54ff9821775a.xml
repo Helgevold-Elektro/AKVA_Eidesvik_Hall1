@@ -1,0 +1,75 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=HE_AlarmLogic	N=FB_AlarmGeneral	G=VAR
+++D=_sDT	N=DateStruct	G=VAR
+++D=TIME_OF_DAY	N=Current_Time	G=VAR
+++D=USINT	N=Sample_Day	R=1	G=VAR
+++D=BOOL	N=Value_Sample	R=1	G=VAR
+++D=BOOL	N=Wrk_ModulFault	G=VAR
+++D=UINT	N=Wrk_ActionState	G=VAR
+++D=ARRAY[0..11] OF CTRL_ST\EXT_ALARM\EMBEDDED\AlarmData	N=Wrk_AlarmData	G=VAR
+++D=BOOL	N=Wrk_Value1	G=VAR
+++D=BOOL	N=Wrk_Value2	G=VAR
+++D=BOOL	N=Wrk_Value3	G=VAR
+++D=BOOL	N=Wrk_Value4	G=VAR
+++D=BOOL	N=Wrk_Value5	G=VAR
+++D=BOOL	N=Wrk_Value6	G=VAR
+++D=BOOL	N=Wrk_Value7	G=VAR
+++D=BOOL	N=Wrk_Value8	G=VAR
+++D=BOOL	N=Wrk_Value9	G=VAR
+++D=BOOL	N=Wrk_ValueStuck_CurrentValue	G=VAR
+++D=BOOL	N=Wrk_UnstableValue_CurrentValue	G=VAR
+++D=BOOL	N=Wrk_ValueStuck_CurrentValue_Sample	G=VAR
+++D=BOOL	N=Wrk_UnstableValue_CurrentValue_Sample	G=VAR
+++D=BOOL	N=Wrk_ValueStuck	G=VAR
+++D=BOOL	N=Wrk_UnstableValue	G=VAR
+++D=UINT	N=Wrk_CountChanges	G=VAR
+++D=TIME	N=Wrk_TimeSpan	G=VAR
+++D=BOOL	N=Wrk_Spare	G=VAR
+++D=UINT	N=Wrk_AlarmToken	G=VAR
+++D=BOOL	N=Wrk_AlarmTriggered	G=VAR
+++D=TON	N=TON_ValueSwitch	G=VAR
+++D=TON	N=TON_ValueStuck	G=VAR
+++D=TON	N=TON_InitialCycles	G=VAR
+++D=R_TRIG	N=RE_InpValue1	G=VAR
+++D=R_TRIG	N=RE_InpValue2	G=VAR
+++D=R_TRIG	N=RE_InpValue3	G=VAR
+++D=R_TRIG	N=RE_InpValue4	G=VAR
+++D=R_TRIG	N=RE_InpValue5	G=VAR
+++D=R_TRIG	N=RE_InpValue6	G=VAR
+++D=R_TRIG	N=RE_InpValue7	G=VAR
+++D=R_TRIG	N=RE_InpValue8	G=VAR
+++D=R_TRIG	N=RE_InpValue9	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=BOOL	N=ENS	Ord=1	G=VAR_INPUT
+++D=CTRL_ST\DigitalValue	N=Ext_DigitalValue	Ord=2	G=VAR_IN_OUT
+++D=ARRAY[*] OF INT_ST\Alarm	N=Int_Alarm	Ord=3	G=VAR_IN_OUT	Com=Internal alarm structure
+++D=BOOL	N=Inp_Value1	Ord=4	G=VAR_INPUT
+++D=STRING[30]	N=Inp_Value1_Suffix	Ord=5	G=VAR_INPUT
+++D=BOOL	N=Inp_Value2	Ord=6	G=VAR_INPUT
+++D=STRING[30]	N=Inp_Value2_Suffix	Ord=7	G=VAR_INPUT
+++D=BOOL	N=Inp_Value3	Ord=8	G=VAR_INPUT
+++D=STRING[30]	N=Inp_Value3_Suffix	Ord=9	G=VAR_INPUT
+++D=BOOL	N=Inp_Value4	Ord=10	G=VAR_INPUT
+++D=STRING[30]	N=Inp_Value4_Suffix	Ord=11	G=VAR_INPUT
+++D=BOOL	N=Inp_Value5	Ord=12	G=VAR_INPUT
+++D=STRING[30]	N=Inp_Value5_Suffix	Ord=13	G=VAR_INPUT
+++D=BOOL	N=Inp_Value6	Ord=14	G=VAR_INPUT
+++D=STRING[30]	N=Inp_Value6_Suffix	Ord=15	G=VAR_INPUT
+++D=BOOL	N=Inp_Value7	Ord=16	G=VAR_INPUT
+++D=STRING[30]	N=Inp_Value7_Suffix	Ord=17	G=VAR_INPUT
+++D=BOOL	N=Inp_Value8	Ord=18	G=VAR_INPUT
+++D=STRING[30]	N=Inp_Value8_Suffix	Ord=19	G=VAR_INPUT
+++D=BOOL	N=Inp_Value9	Ord=20	G=VAR_INPUT
+++D=STRING[30]	N=Inp_Value9_Suffix	Ord=21	G=VAR_INPUT
+++D=BOOL	N=Inp_ModuleFault	IV=False	Ord=22	G=VAR_INPUT	Com=State of RIO/IO module (FALSE= OK, TRUE= Fault)
+++D=STRING[20]	N=Cfg_ProcessTAG	Ord=23	G=VAR_INPUT
+++D=STRING[20]	N=Cfg_ControlCabinet	Ord=24	G=VAR_INPUT
+++D=STRING[20]	N=Cfg_ControllerTAG	Ord=25	G=VAR_INPUT
+++D=BOOL	N=Inp_AlmSuppress	Ord=26	G=VAR_INPUT	Com=Suppress alarm input
+++D=STRING[50]	N=Inp_AlmSuppressDesc	Ord=27	G=VAR_INPUT	Com=Alarm suppressed description
+++D=BOOL	N=Sts_AlarmTriggered	Ord=28	G=VAR_OUTPUT	Com=One or more active alarms
+++D=UINT	N=Sts_AlarmToken	Ord=29	G=VAR_OUTPUT	Com=Used alarm token/index
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

@@ -1,23 +1,22 @@
 [SLWD version=1.0]
 _EN=Variables
 +GN=VAR_GLOBAL	GVT=GlobalNamespaceGroup
-++D=ARRAY[0..200] OF Control_ST\INT_ST\INT_Alarm	N=INT_Alarm	R=1	G=VAR_GLOBAL
-++D=Control_ST\ST_ControllerStat	N=ControllerStat	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=ARRAY[0..10] OF Control_ST\ST_OxygenControl	N=OxygenControl	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=ARRAY[0..10] OF Control_ST\ST_LightControl	N=LightControl	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=ARRAY[0..10] OF Control_ST\ST_VFDControl	N=VFDControl	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=ARRAY[0..10] OF Control_ST\ST_MultiControl	N=MultiControl	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=ARRAY[0..10] OF Control_ST\ST_FeedControl	N=FeedControl	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=ARRAY[0..10] OF Control_ST\ST_AnalogValue	N=AnalogValue	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=ARRAY[0..10] OF Control_ST\ST_DigitalValue	N=DigitalValue	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=ARRAY[0..10] OF Control_ST\ST_AnalogControl	N=AnalogControl	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=ARRAY[0..10] OF Control_ST\ST_DigitalControl	N=DigitalControl	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=ARRAY[0..10] OF Control_ST\ST_AccumulatedData	N=AccumulatedData	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=ARRAY[0..10] OF Control_ST\ST_Interlock	N=Interlock	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=ARRAY[0..49] OF Control_ST\ST_SMS_Contacts	N=SMS_Contacts	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=ARRAY[0..10] OF Control_ST\ST_SMS_ShiftTeam	N=SMS_ShiftTeam	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=Control_ST\ST_SMS_Settings	N=SMS_Settings	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=Control_ST\ST_FeedControl_Common	N=FeedControl_Common	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=ARRAY[0..200] OF INT_ST\Alarm	N=Alarm	G=VAR_GLOBAL
+++D=CTRL_ST\ControllerStat	N=ControllerStat	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=ARRAY[0..10] OF CTRL_ST\OxygenControl	N=OxygenControl	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=ARRAY[0..10] OF CTRL_ST\LightControl	N=LightControl	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=ARRAY[0..10] OF CTRL_ST\VFDControl	N=VFDControl	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=ARRAY[0..10] OF CTRL_ST\MultiControl	N=MultiControl	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=ARRAY[0..10] OF CTRL_ST\FeedControl	N=FeedControl	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=ARRAY[0..10] OF CTRL_ST\AnalogValue	N=AnalogValue	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=ARRAY[0..10] OF CTRL_ST\DigitalValue	N=DigitalValue	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=ARRAY[0..10] OF CTRL_ST\AnalogControl	N=AnalogControl	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=ARRAY[0..10] OF CTRL_ST\DigitalControl	N=DigitalControl	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=ARRAY[0..10] OF CTRL_ST\AccumulatedData	N=AccumulatedData	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=ARRAY[0..10] OF CTRL_ST\Interlock	N=Interlock	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=ARRAY[0..49] OF CTRL_ST\SMS_Contact	N=SMS_Contact	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=CTRL_ST\SMS_Settings	N=SMS_Settings	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=CTRL_ST\FeedControl_Common	N=FeedControl_Common	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=BOOL	N=A10_0_SurgeArrestor_1S1	AT=IOBus://unit#3/Input Bit 16 bits/Input Bit 00	G=VAR_GLOBAL	Com=Fault
 ++D=BOOL	N=A10_1_RedundancyModule_1S1	AT=IOBus://unit#3/Input Bit 16 bits/Input Bit 01	G=VAR_GLOBAL	Com=Fault
 ++D=BOOL	N=A10_2_PowerSupply_1S1	AT=IOBus://unit#3/Input Bit 16 bits/Input Bit 02	G=VAR_GLOBAL	Com=Fault
@@ -25,7 +24,6 @@ _EN=Variables
 ++D=BOOL	N=A10_4_Switch2_1S1	AT=IOBus://unit#3/Input Bit 16 bits/Input Bit 04	G=VAR_GLOBAL	Com=Fault
 ++D=BOOL	N=A10_5_Switch3_1S1	AT=IOBus://unit#3/Input Bit 16 bits/Input Bit 05	G=VAR_GLOBAL	Com=Fault
 ++D=BOOL	N=A10_7_DryRun_FOR1_PU2	AT=IOBus://unit#3/Input Bit 16 bits/Input Bit 07	G=VAR_GLOBAL	Com=Dry running
-++D=BOOL	N=Switch3	G=VAR_GLOBAL
 ++D=BOOL	N=A10_6_DryRun_FOR1_PU1	AT=IOBus://unit#3/Input Bit 16 bits/Input Bit 06	G=VAR_GLOBAL	Com=Dry running
 ++D=BOOL	N=A10_9_Switch4_1S1	AT=IOBus://unit#3/Input Bit 16 bits/Input Bit 09	G=VAR_GLOBAL	Com=Fault
 ++D=BOOL	N=A10_10_Switch5_1S1	AT=IOBus://unit#3/Input Bit 16 bits/Input Bit 10	G=VAR_GLOBAL	Com=Fault

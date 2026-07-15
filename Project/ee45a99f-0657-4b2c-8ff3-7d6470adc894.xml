@@ -1,0 +1,65 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=HE_ActuatorControl	N=FB_ActuatorControl	G=VAR
+++D=HE_PID	N=FB_PID	G=VAR
+++D=HE_AlarmLogic	N=FB_AlarmLogic	G=VAR
+++D=R_TRIG	N=RE_Minute	G=VAR
+++D=HE_SP_AutoSwitch	N=FB_SP_AutoSwitch1	G=VAR
+++D=HE_SP_AutoSwitch	N=FB_SP_AutoSwitch2	G=VAR
+++D=HE_SP_AutoSwitch	N=FB_SP_AutoSwitch3	G=VAR
+++D=HE_SP_AutoSwitch	N=FB_SP_AutoSwitch4	G=VAR
+++D=TON	N=TON_StartAuto	G=VAR
+++D=TON	N=TON_StepIn	G=VAR
+++D=TON	N=TON_StepOut	G=VAR
+++D=REAL	N=Wrk_Output	G=VAR
+++D=REAL	N=Wrk_AutoOutput	R=1	G=VAR
+++D=BOOL	N=Wrk_StepIn	G=VAR
+++D=BOOL	N=Wrk_StepOut	G=VAR
+++D=ARRAY[0..15] OF BOOL	N=Wrk_ActuatorState	G=VAR
+++D=ARRAY[0..15] OF BOOL	N=Wrk_ActuatorEngage	R=1	G=VAR
+++D=USINT	N=Wrk_NumberOfReady	R=1	G=VAR
+++D=USINT	N=Wrk_NumberOfRunning	R=1	G=VAR
+++D=R_TRIG	N=RE_Alternate	G=VAR
+++D=BOOL	N=Wrk_Alternernate	G=VAR
+++D=TIME_OF_DAY	N=CurrentTime	G=VAR
+++D=REAL	N=Wrk_PV_Actual_Y0	G=VAR
+++D=REAL	N=Wrk_PV_Actual_Y1	G=VAR
+++D=BOOL	N=Wrk_PVNotAvailable	G=VAR
+++D=BOOL	N=Wrk_ConfigFault	G=VAR
+++D=UINT	N=Wrk_ActionState	G=VAR
+++D=UINT	N=Wrk_NumberPVUsed	G=VAR
+++D=UINT	N=Wrk_NumberSPUsed	G=VAR
+++D=BOOL	N=Wrk_NoActuatorReady	G=VAR
+++D=ARRAY[0..12] OF CTRL_ST\EXT_ALARM\EMBEDDED\AlarmData	N=Wrk_AlarmData	G=VAR
+++D=UINT	N=Wrk_AlarmToken	G=VAR
+++D=BOOL	N=Wrk_AlarmTriggered	G=VAR
+++D=BOOL	N=Wrk_AutotuneOngoing	G=VAR
+++D=UINT	N=Wrk_UpdateActuatorData_Index	G=VAR
+++D=BOOL	N=Wrk_AutoSwitch_Executed	G=VAR
+++D=BOOL	N=Wrk_AutoSwitch_InUse	G=VAR
+++D=UINT	N=Wrk_Sample_SP	G=VAR
+++D=_sDT	N=DateStruct	G=VAR
+++D=USINT	N=Sample_Day	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=BOOL	N=ENS	Ord=1	G=VAR_INPUT
+++D=CTRL_ST\MultiControl	N=Ext_MultiControl	Ord=2	G=VAR_IN_OUT	Com=Structure for multi control
+++D=ARRAY[*] OF INT_ST\Alarm	N=Int_Alarm	Ord=3	G=VAR_IN_OUT	Com=Internal alarm structure
+++D=ARRAY[*] OF CTRL_ST\AnalogValue	N=Ext_AnalogValue	Ord=4	G=VAR_IN_OUT	Com=Array of analog value for retriving PV values (Index set in SCADA)
+++D=ARRAY[*] OF INT_ST\ActuatorData	N=Int_ActuatorData	Ord=5	G=VAR_IN_OUT	Com=Internal structure for actuator data (NB! Max 16)
+++D=BOOL	N=Cfg_Mode	Ord=6	G=VAR_INPUT	Com=Configure muliple or single control (FALSE= Singel Control | TRUE= Multi control)
+++D=STRING[20]	N=Cfg_ControllerName	Ord=7	G=VAR_INPUT	Com=Name of Controller
+++D=UINT	N=Cfg_MainLocation	Ord=8	G=VAR_INPUT	Com=Index of main location (Index translation is common for each IGN project)
+++D=BOOL	N=Inp_SP1_AutoSwitchTrig_Custom	Ord=9	G=VAR_INPUT	Com=Custom trigger for switching to setpoint 1
+++D=STRING[30]	N=Cfg_SP1_AutoSwitchSuffix_Custom	Ord=10	G=VAR_INPUT
+++D=BOOL	N=Inp_SP2_AutoSwitchTrig_Custom	Ord=11	G=VAR_INPUT	Com=Custom trigger for switching to setpoint 2
+++D=STRING[30]	N=Cfg_SP2_AutoSwitchSuffix_Custom	Ord=12	G=VAR_INPUT
+++D=BOOL	N=Inp_SP3_AutoSwitchTrig_Custom	Ord=13	G=VAR_INPUT	Com=Custom trigger for switching to setpoint 3
+++D=STRING[30]	N=Cfg_SP3_AutoSwitchSuffix_Custom	Ord=14	G=VAR_INPUT
+++D=BOOL	N=Inp_SP4_AutoSwitchTrig_Custom	Ord=15	G=VAR_INPUT	Com=Custom trigger for switching to setpoint 4
+++D=STRING[30]	N=Cfg_SP4_AutoSwitchSuffix_Custom	Ord=16	G=VAR_INPUT
+++D=BOOL	N=Inp_AlmSuppress	Ord=17	G=VAR_INPUT	Com=Suppress alarm input
+++D=STRING[50]	N=Inp_AlmSuppressDesc	Ord=18	G=VAR_INPUT	Com=Alarm suppressed description
+++D=BOOL	N=Sts_Alarm	Ord=19	G=VAR_OUTPUT	Com=One or more active alarms
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

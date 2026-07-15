@@ -1,0 +1,14 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=UINT	N=Position	G=VAR
+++D=UINT	N=Index	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=EN	Ord=0	RO=1	G=VAR_INPUT
+++D=BOOL	N=ENO	Ord=1	RO=1	G=VAR_OUTPUT
+++D=STRING[256]	N=Inp_TextString	Ord=2	G=VAR_IN_OUT	Com=String that contains text to be replaced (ex 'Hi there)
+++D=STRING[256]	N=Inp_ReplaceFrom	Ord=3	G=VAR_INPUT	Com=String to replace from (ex 'Hi')
+++D=STRING[256]	N=Inp_ReplaceTo	Ord=4	G=VAR_INPUT	Com=String to replce to (ex 'Ho')
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
++GN=RETURN	GA=Return	GVT=ReturnGroup
+++D=BOOL	N=HE_StrReplace	G=RETURN

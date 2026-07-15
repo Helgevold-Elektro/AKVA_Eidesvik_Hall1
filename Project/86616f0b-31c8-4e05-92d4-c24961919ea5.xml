@@ -1,0 +1,12 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=TON	N=TON_ResetCycle	G=VAR
+++D=TOF	N=TOF_ResetTime	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=BOOL	N=ENS	Ord=1	G=VAR_INPUT
+++D=TIME	N=Cfg_ResetInterval	Ord=2	G=VAR_INPUT	Com=Config reset interval if fault (ex TIME#10s)
+++D=BOOL	N=Inp_ECB_Status	Ord=3	G=VAR_INPUT	Com=State value fuse block (FALSE=Fault | TRUE= OK)
+++D=BOOL	N=Out_Reset	Ord=4	G=VAR_OUTPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

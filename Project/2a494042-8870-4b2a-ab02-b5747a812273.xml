@@ -1,0 +1,20 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=_sDT	N=stDT	G=VAR
+++D=STRING[5]	N=sYear	G=VAR
+++D=STRING[3]	N=sMonth	G=VAR
+++D=STRING[3]	N=sDay	G=VAR
+++D=STRING[3]	N=sHour	G=VAR
+++D=STRING[3]	N=sMin	G=VAR
+++D=STRING[3]	N=sSec	G=VAR
+++D=STRING[4]	N=sMs	G=VAR
+++D=STRING[256]	N=sBuffer	G=VAR
+++D=UINT	N=iPos	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=EN	Ord=0	RO=1	G=VAR_INPUT
+++D=DATE_AND_TIME	N=DateTime	Ord=1	G=VAR_INPUT
+++D=STRING[256]	N=Format	Ord=2	G=VAR_INPUT	Com=Format e.g., 'YYYYMMDDhhmmss.ms'
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
++GN=RETURN	GA=Return	GVT=ReturnGroup
+++D=STRING[256]	N=F_DTToStringCustom	G=RETURN

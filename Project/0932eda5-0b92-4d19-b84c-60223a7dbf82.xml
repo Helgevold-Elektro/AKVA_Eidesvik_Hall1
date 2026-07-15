@@ -1,0 +1,24 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=INT	N=TokenID	IV=-1	G=VAR
+++D=UINT	N=Wrk_State	R=1	G=VAR
+++D=BOOL	N=Wrk_Port_State1_Raw	G=VAR
+++D=BOOL	N=Wrk_Port_State2_Raw	G=VAR
+++D=TIME	N=Wrk_TimeInState	G=VAR
+++D=BOOL	N=Wrk_SNMP_Error	G=VAR
+++D=TOF	N=TOF_CommOK	G=VAR
+++D=BOOL	N=Wrk_CommStatus	G=VAR	Com=TRUE = Comm OK
+++D=DWORD	N=Wrk_ErrorCode	G=VAR
+++D=UDINT	N=Wrk_Successes	G=VAR
+++D=UDINT	N=Wrk_Errors	G=VAR
+++D=UINT	N=Wrk_SampleState	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=BOOL	N=ENS	Ord=1	G=VAR_INPUT
+++D=INT_ST\SNMP_Telegram	N=Ext_Telegram	Ord=2	G=VAR_IN_OUT
+++D=STRING[50]	N=Cfg_IPAdr	Ord=3	G=VAR_INPUT	Com=Set ip adress (ex '10.128.100.1')
+++D=BOOL	N=Sts_PortError	Ord=4	G=VAR_OUTPUT	Com=One or more ports not OK (For ring networks, output into array of bool)
+++D=BOOL	N=Sts_CommOK	Ord=5	G=VAR_OUTPUT
+++D=BOOL	N=Sts_Error	Ord=6	G=VAR_OUTPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

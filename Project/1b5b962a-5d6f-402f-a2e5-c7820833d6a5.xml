@@ -4,8 +4,7 @@ _EN=Variables
 ++D=HE_SMS	N=SMS_Notification	G=VAR
 ++D=HE_ControllerStat	N=Controller_Stat	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
-++D=Control_ST\ST_ControllerStat	N=ControllerStat	G=VAR_EXTERNAL
-++D=ARRAY[0..200] OF Control_ST\INT_ST\INT_Alarm	N=INT_Alarm	G=VAR_EXTERNAL
-++D=ARRAY[0..10] OF Control_ST\ST_SMS_ShiftTeam	N=SMS_ShiftTeam	G=VAR_EXTERNAL
-++D=ARRAY[0..49] OF Control_ST\ST_SMS_Contacts	N=SMS_Contacts	G=VAR_EXTERNAL
-++D=Control_ST\ST_SMS_Settings	N=SMS_Settings	G=VAR_EXTERNAL
+++D=CTRL_ST\ControllerStat	N=ControllerStat	G=VAR_EXTERNAL
+++D=ARRAY[0..200] OF INT_ST\Alarm	N=Alarm	G=VAR_EXTERNAL
+++D=ARRAY[0..49] OF CTRL_ST\SMS_Contact	N=SMS_Contact	G=VAR_EXTERNAL
+++D=CTRL_ST\SMS_Settings	N=SMS_Settings	G=VAR_EXTERNAL

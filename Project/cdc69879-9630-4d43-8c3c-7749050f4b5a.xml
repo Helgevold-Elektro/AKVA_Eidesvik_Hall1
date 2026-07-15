@@ -1,0 +1,86 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=HE_AlarmLogic	N=FB_AlarmLogic	G=VAR
+++D=HE_Statistics	N=FB_FeedScrew1_Stat	G=VAR
+++D=HE_Statistics	N=FB_FeedScrew2_Stat	G=VAR
+++D=R_TRIG	N=RE_MidnightPulse	G=VAR
+++D=TON	N=TON_FeedScrew1_FeedbackConstant	G=VAR
+++D=TON	N=TON_FeedScrew2_FeedbackConstant	G=VAR
+++D=TON	N=TON_FeedScrew1_FeedbackMissing	G=VAR
+++D=TON	N=TON_FeedScrew2_FeedbackMissing	G=VAR
+++D=TON	N=TON_PulseTime_Screw2	G=VAR
+++D=TON	N=TON_CalibrationStartDelay	G=VAR
+++D=TON	N=TON_CalibrationStart_Pulse	G=VAR
+++D=TON	N=TON_CalibrationStart_Pause	G=VAR
+++D=TON	N=TON_CalibrationStop_Delay	G=VAR
+++D=BOOL	N=Wrk_CalibrationAlternate	G=VAR
+++D=TIME	N=CalibrationPulse_Time	G=VAR
+++D=TIME_OF_DAY	N=Current_Time	G=VAR
+++D=DATE	N=Current_Date	G=VAR
+++D=STRING[17]	N=Current_TimeStamp	G=VAR
+++D=_sDT	N=DateStruct	G=VAR
+++D=_sDT	N=DateStruct_Sample	R=1	G=VAR
+++D=BOOL	N=Wrk_OutputFeedScrew1	G=VAR
+++D=BOOL	N=Wrk_OutputFeedScrew2	G=VAR
+++D=REAL	N=Wrk_AppetiteFactor_Comp	R=1	G=VAR
+++D=DATE	N=Wrk_ResetGroup	R=1	G=VAR
+++D=REAL	N=Wrk_AVGWeight_Start	R=1	G=VAR
+++D=REAL	N=Wrk_Biomass_Start	R=1	G=VAR
+++D=REAL	N=Wrk_GroupTotalFeed	R=1	G=VAR
+++D=REAL	N=Wrk_FeedAmountWeek	R=1	G=VAR
+++D=REAL	N=Wrk_FeedAmountMonth	R=1	G=VAR
+++D=REAL	N=Wrk_FeedAmountYear	R=1	G=VAR
+++D=TON	N=TON_PauseTime	G=VAR
+++D=TON	N=TON_PulseTime	G=VAR
+++D=BOOL	N=Timer_Alternate	R=1	G=VAR
+++D=TIME	N=Wrk_TotalTime_Today_FeedScrew1	R=1	G=VAR
+++D=TIME	N=Wrk_TotalTime_Today_FeedScrew2	R=1	G=VAR
+++D=BOOL	N=Wrk_Fault_Interlock	G=VAR
+++D=BOOL	N=Wrk_Fault_FCRFactor	G=VAR
+++D=BOOL	N=Wrk_Fault_SGRFactor	G=VAR
+++D=BOOL	N=Wrk_Fault_FeedScrew1_NotAvailable	G=VAR
+++D=BOOL	N=Wrk_Fault_FeedScrew2_NotAvailable	G=VAR
+++D=BOOL	N=Wrk_FeedAmountImpossible	G=VAR
+++D=REAL	N=Wrk_FeedScrew1_CurrentAmount	R=1	G=VAR
+++D=REAL	N=Wrk_FeedScrew2_CurrentAmount	R=1	G=VAR
+++D=UINT	N=Wrk_ActionState	G=VAR
+++D=BOOL	N=Wrk_Dummy	G=VAR
+++D=TIME	N=Wrk_AvgWeight_TimeSinceLastSample	R=1	G=VAR
+++D=REAL	N=Wrk_AvgWeight_FeedLastCalc	R=1	G=VAR
+++D=ARRAY[0..12] OF CTRL_ST\EXT_ALARM\EMBEDDED\AlarmData	N=Wrk_AlarmData	G=VAR
+++D=UINT	N=Wrk_AlarmToken	G=VAR
+++D=BOOL	N=Wrk_AlarmTriggered	G=VAR
+++D=BOOL	N=Wrk_FeedSrew1_FeedbackMissing	G=VAR
+++D=BOOL	N=Wrk_FeedSrew1_FeedbackConstant	G=VAR
+++D=BOOL	N=Wrk_FeedSrew2_FeedbackConstant	G=VAR
+++D=BOOL	N=Wrk_FeedSrew2_FeedbackMissing	G=VAR
+++D=BOOL	N=Wrk_Calibration_StartScrew1	G=VAR
+++D=BOOL	N=Wrk_Calibration_StartScrew2	G=VAR
+++D=REAL	N=Wrk_Speed_FeedScrew1	G=VAR
+++D=REAL	N=Wrk_Speed_FeedScrew2	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=BOOL	N=ENS	Ord=1	G=VAR_INPUT
+++D=CTRL_ST\FeedControl	N=Ext_FeedControl	Ord=2	G=VAR_IN_OUT	Com=Feed control structure (NB! Specify index)
+++D=CTRL_ST\FeedControl_Common	N=Ext_FeedControl_Common	Ord=3	G=VAR_IN_OUT	Com=Feeding common structure
+++D=ARRAY[*] OF INT_ST\Alarm	N=Int_Alarm	Ord=4	G=VAR_IN_OUT	Com=Internal alarm structure
+++D=ARRAY[*] OF CTRL_ST\AnalogValue	N=Ext_AnalogValue	Ord=5	G=VAR_IN_OUT	Com=Array of analog value for retriving PV values (Index set in SCADA)
+++D=BOOL	N=Inp_Interlock	Ord=6	G=VAR_INPUT	Com=Interlock signal (FALSE= OK | TRUE= Interlocked)
+++D=BOOL	N=Cfg_InterlockInUse	Ord=7	G=VAR_INPUT	Com=Config interlock (FALSE= Not in use | TRUE= Used)
+++D=BOOL	N=Cfg_FeedScrewType	Ord=8	G=VAR_INPUT	Com=FALSE= Contactor (on-off) | TRUE= VFD (Common for both screws)
+++D=BOOL	N=Inp_FeedScrew1_Feedback	Ord=9	G=VAR_INPUT	Com=Feedback from feed screw 1
+++D=BOOL	N=Inp_FeedScrew1_Available	Ord=10	G=VAR_INPUT	Com=State feed screw 1 (Available auto and no fault)
+++D=BOOL	N=Inp_FeedScrew2_Feedback	Ord=11	G=VAR_INPUT	Com=Feedback from feed screw 2
+++D=BOOL	N=Inp_FeedScrew2_Available	Ord=12	G=VAR_INPUT	Com=State feed screw 2 (Available auto and no fault)
+++D=BOOL	N=Cfg_FeedScrew2_InUse	Ord=13	G=VAR_INPUT	Com=Feed screw 2 (FALSE= Not in use | TRUE= Feed srew 2 in use)
+++D=STRING[20]	N=Cfg_ControllerName	Ord=14	G=VAR_INPUT	Com=Name of Controller
+++D=UINT	N=Cfg_MainLocation	Ord=15	G=VAR_INPUT	Com=Index of main location (Index translation is common for each IGN project)
+++D=BOOL	N=Inp_AlmSuppress	Ord=16	G=VAR_INPUT	Com=Suppress alarm input
+++D=STRING[50]	N=Inp_AlmSuppressDesc	Ord=17	G=VAR_INPUT	Com=Alarm suppressed description
+++D=BOOL	N=Out_FeedScrew1_Start	Ord=18	G=VAR_OUTPUT	Com=Output start feed screw
+++D=REAL	N=Out_FeedScrew1_Output	Ord=19	G=VAR_OUTPUT	Com=Output reference for feed screw (Only when "Cfg_FeedScrew_Type" = TRUE)
+++D=BOOL	N=Out_FeedScrew2_Start	Ord=20	G=VAR_OUTPUT	Com=Output start feed screw
+++D=REAL	N=Out_FeedScrew2_Output	Ord=21	G=VAR_OUTPUT	Com=Output reference for feed screw (Only when "Cfg_FeedScrew_Type" = TRUE)
+++D=BOOL	N=Sts_Alarm	Ord=22	G=VAR_OUTPUT	Com=One or more active alarms
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

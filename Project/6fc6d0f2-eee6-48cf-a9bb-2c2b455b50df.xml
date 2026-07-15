@@ -1,0 +1,18 @@
+<StructuredTextModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Text>//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------&#xD;
+//	NAME:				HE_REAL_CheckValid&#xD;
+//	CREATOR:			Helgevold - William Veim&#xD;
+//&#xD;
+// REQUIREMENTS: NX controller&#xD;
+// DESCRTIPTION: 	Check that value is valid (other then NaN)-&gt; Else zero&#xD;
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------&#xD;
+//  VERSION LOG:&#xD;
+//	 VERSION			DATE				SIGN						DESCRIPTION&#xD;
+//	 1.0.0				2026-05-04		William Veim			Initial release&#xD;
+//&#xD;
+//================================================================================================================================&#xD;
+&#xD;
+IF Inp_REAL &gt; 0 THEN&#xD;
+	HE_REAL_CheckValid:=Inp_REAL;&#xD;
+ELSE&#xD;
+	HE_REAL_CheckValid:=0;&#xD;
+END_IF;</Text></StructuredTextModel>

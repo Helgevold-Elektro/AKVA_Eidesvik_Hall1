@@ -8,14 +8,14 @@
             <LibraryModel>
               <Name>HE_Library</Name>
               <NameSpace></NameSpace>
-              <Version>1.0.0</Version>
+              <Version>3.3.1</Version>
               <Revision>1</Revision>
-              <LibraryId>846a7b3e-fb07-4ae1-acba-1434d72a1523</LibraryId>
+              <LibraryId>7ad88fef-0b82-4e09-8932-4e27e42a8382</LibraryId>
               <Author>William, Daniel, Ruben &amp; Jan Magne</Author>
               <Company>HELGEVOLD ELEKTRO</Company>
               <DateCreated>2025-01-15T13:32:05.7446511+01:00</DateCreated>
-              <DateModified>2025-08-07T11:41:02.7365264+02:00</DateModified>
-              <Comment></Comment>
+              <DateModified>2026-07-15T15:03:13.1603092+02:00</DateModified>
+              <Comment>See release notes</Comment>
               <Password></Password>
               <AttachedFiles />
               <AttachedFilesRelativePaths />
@@ -26,41 +26,58 @@
                 <PublicName>HE_Hypotenuse</PublicName>
                 <PublicName>HE_TableScale</PublicName>
                 <PublicName>HE_CommFault</PublicName>
-                <PublicName>HE_LightControl</PublicName>
+                <PublicName>HE_ParseGenerator_DSE86xx</PublicName>
+                <PublicName>HE_FeedingCommon</PublicName>
+                <PublicName>HE_FeedControl</PublicName>
+                <PublicName>HE_LightControl_HD67840_Wrapper</PublicName>
                 <PublicName>HE_OxygenControl</PublicName>
                 <PublicName>HE_MultiControl</PublicName>
+                <PublicName>HE_DrumFilterControl</PublicName>
                 <PublicName>HE_DigitalControl</PublicName>
-                <PublicName>HE_AnalogControl</PublicName>
+                <PublicName>HE_AnalogControl_OmronNX</PublicName>
+                <PublicName>HE_AnalogControl_RawValue</PublicName>
+                <PublicName>HE_AnalogControl_SignalValue</PublicName>
+                <PublicName>HE_AnalogControl_ProcessValue</PublicName>
                 <PublicName>HE_AnalogInput_OmronNX</PublicName>
-                <PublicName>HE_AnalogInput_Advanced</PublicName>
-                <PublicName>HE_AnalogInput_Simple</PublicName>
-                <PublicName>HE_AnalogInput_Liquiline</PublicName>
+                <PublicName>HE_AnalogInput_RawValue</PublicName>
+                <PublicName>HE_AnalogInput_ProcessValue</PublicName>
+                <PublicName>HE_AnalogInput_MSYS_R3</PublicName>
+                <PublicName>HE_AnalogInput_ADAM_4x17</PublicName>
+                <PublicName>HE_AnalogInput_Sentec_OxyNor</PublicName>
+                <PublicName>HE_AnalogInput_EH_Liquiline</PublicName>
                 <PublicName>HE_DigitalInput</PublicName>
-                <PublicName>HE_PowerFuseBlock</PublicName>
+                <PublicName>HE_UPSData_Riello</PublicName>
+                <PublicName>HE_UPSData_Coromatic</PublicName>
+                <PublicName>HE_SwitchData_Westermo</PublicName>
+                <PublicName>HE_SwitchData_Schneider</PublicName>
+                <PublicName>HE_UVData_UltraAqua</PublicName>
+                <PublicName>HE_UVData_Wedeco</PublicName>
+                <PublicName>HE_MechanicalFilterData_Hydac</PublicName>
+                <PublicName>HE_GeneratorData_DSE86xx</PublicName>
+                <PublicName>HE_ResetECB</PublicName>
                 <PublicName>HE_PulseData</PublicName>
                 <PublicName>HE_Consumption</PublicName>
                 <PublicName>HE_Interlock</PublicName>
                 <PublicName>HE_Watchdog</PublicName>
                 <PublicName>HE_NXEIC202_Restart</PublicName>
-                <PublicName>HE_NXEIC202_Status</PublicName>
-                <PublicName>HE_FeedControl</PublicName>
-                <PublicName>HE_FeedingCommon</PublicName>
                 <PublicName>HE_ControllerStat</PublicName>
-                <PublicName>HE_VFD_Simulering_Wrapper</PublicName>
+                <PublicName>HE_VFD_Simulation_Wrapper</PublicName>
                 <PublicName>HE_VFD_AnaContr_Wrapper</PublicName>
                 <PublicName>HE_VFD_100Flow_Wrapper</PublicName>
-                <PublicName>HE_VFD_FC202_Wrapper</PublicName>
+                <PublicName>HE_VFD_FCx02_Wrapper</PublicName>
                 <PublicName>HE_VFD_CIM500_Wrapper</PublicName>
                 <PublicName>HE_VFD_CFW500_Wrapper</PublicName>
                 <PublicName>HE_VFD_CFW900_Wrapper</PublicName>
                 <PublicName>HE_VFD_ATV650_Wrapper</PublicName>
                 <PublicName>HE_VFD_ATV320_Wrapper</PublicName>
-                <PublicName>HE_VFD_ATV320_RuntimeData</PublicName>
                 <PublicName>HE_VFD_CalculatedFlow_P</PublicName>
                 <PublicName>HE_VFD_CalculatedFlow_Q</PublicName>
-                <PublicName>HE_SNMP_Get</PublicName>
-                <PublicName>HE_SNMP_GetAcyclic</PublicName>
+                <PublicName>HE_SNMP</PublicName>
+                <PublicName>HE_SNMP_Custom</PublicName>
+                <PublicName>HE_ExplicitMessage</PublicName>
                 <PublicName>HE_SMS</PublicName>
+                <PublicName>HE_NodeStat_NX_EIC202</PublicName>
+                <PublicName>HE_PortStatus_ATV6xx</PublicName>
               </PublicPartsNames>
               <InternalPartsNames />
               <BuildDevice>
@@ -83,13 +100,13 @@
               <IsSource>true</IsSource>
               <IsDisableSourceDisplay>false</IsDisableSourceDisplay>
               <IsIncludeReferredLibraries>true</IsIncludeReferredLibraries>
-              <LibraryFilePath>C:\Users\WilliamVeim\Helgevold Elektro\Onedrive - Automasjon\Bruksanvisninger\Omron\Sysmac Studio\Library\Library - AKVA\HE_Library.slr</LibraryFilePath>
-              <LibraryFileRelativePath>Helgevold Elektro\Onedrive - Automasjon\Bruksanvisninger\Omron\Sysmac Studio\Library\Library - AKVA\HE_Library.slr</LibraryFileRelativePath>
-              <LibrarySourceControlRelativeFilePath>..\..\..\..\..\..\..\..\Users\WilliamVeim\Helgevold Elektro\Onedrive - Automasjon\Bruksanvisninger\Omron\Sysmac Studio\Library\Library - AKVA\HE_Library.slr</LibrarySourceControlRelativeFilePath>
+              <LibraryFilePath>C:\Users\WilliamVeim\Helgevold Elektro\Onedrive - Automasjon\20 Bibliotek\Omron\Sysmac Studio - Library\Library - AKVA\HE_Library.slr</LibraryFilePath>
+              <LibraryFileRelativePath>Helgevold Elektro\Onedrive - Automasjon\20 Bibliotek\Omron\Sysmac Studio - Library\Library - AKVA\HE_Library.slr</LibraryFileRelativePath>
+              <LibrarySourceControlRelativeFilePath>..\..\..\..\..\..\..\..\Users\WilliamVeim\Helgevold Elektro\Onedrive - Automasjon\20 Bibliotek\Omron\Sysmac Studio - Library\Library - AKVA\HE_Library.slr</LibrarySourceControlRelativeFilePath>
               <AsOldVer>false</AsOldVer>
               <SchemaVersion>3</SchemaVersion>
               <Parameter1>false</Parameter1>
-              <ApplicationProductVersion>1.63.0.64007</ApplicationProductVersion>
+              <ApplicationProductVersion>1.67.0.64007</ApplicationProductVersion>
             </LibraryModel>
           </data>
         </ReferredLibrary>

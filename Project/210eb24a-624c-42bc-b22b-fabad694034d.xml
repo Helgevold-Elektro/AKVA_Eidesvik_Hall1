@@ -1,0 +1,17 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=BOOL	N=Wrk_Trigger	G=VAR
+++D=TON	N=TON_TrigActivate	G=VAR
+++D=TON	N=TON_TrigReturn	G=VAR
+++D=BOOL	N=Wrk_AutoSwitch	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=BOOL	N=ENS	Ord=1	G=VAR_INPUT
+++D=ARRAY[*] OF CTRL_ST\AnalogValue	N=Ext_AnalogValue	Ord=2	G=VAR_IN_OUT	Com=Array of analog value for retriving PV values (Index set in SCADA)
+++D=CTRL_ST\EXT_ENGINEERING\EMBEDDED\MultiControl_SetpointData	N=Inp_SetpointData	Ord=3	G=VAR_IN_OUT
+++D=BOOL	N=Inp_CustomTrigger	Ord=4	G=VAR_INPUT
+++D=STRING[30]	N=Inp_CustomTrigger_Suffix	Ord=5	G=VAR_INPUT
+++D=BOOL	N=Out_AutoSwitch	Ord=6	G=VAR_OUTPUT
+++D=BOOL	N=Sts_AutoSwitch_InUse	Ord=7	G=VAR_OUTPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

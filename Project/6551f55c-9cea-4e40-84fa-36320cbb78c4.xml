@@ -1,0 +1,45 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=HE_AlarmLogic	N=FB_AlarmLogic	G=VAR
+++D=UINT	N=Wrk_NumberFilterAvailable	G=VAR
+++D=BOOL	N=Wrk_FlushingSeq	R=1	G=VAR
+++D=BOOL	N=Wrk_RotationSeq	R=1	G=VAR
+++D=ARRAY[0..9] OF TIME	N=Wrk_TimeSinceLastFlush	R=1	G=VAR
+++D=ARRAY[0..9] OF BOOL	N=Wrk_StartRotationSeq	R=1	G=VAR
+++D=_sDT	N=DateStruct	G=VAR
+++D=_sDT	N=DateStruct_Sample	R=1	G=VAR
+++D=TIME	N=Wrk_HighestStandby_Comp	G=VAR
+++D=UINT	N=Wrk_IndexFilterLookup	G=VAR
+++D=R_TRIG	N=RE_FlushSeq	G=VAR
+++D=UINT	N=Wrk_Index	G=VAR
+++D=BOOL	N=Wrk_ForcedStart	G=VAR
+++D=TON	N=TON_FlushSeq_Start	G=VAR
+++D=TON	N=TON_FlushSeq_FlushDelay	G=VAR
+++D=TON	N=TON_FlushSeq_RotationDelay	G=VAR
+++D=TON	N=TON_FlushSeq_Duration	G=VAR
+++D=TON	N=TON_RotationSeq_Delay	G=VAR
+++D=TON	N=TON_RotationSeq_Duration	G=VAR
+++D=UINT	N=Wrk_FilterIndex_FlushSeq	G=VAR
+++D=UINT	N=Wrk_FilterIndex_FlushSeq_Sec	G=VAR
+++D=UINT	N=Wrk_FilterIndex_RotSeq	G=VAR
+++D=ARRAY[0..12] OF CTRL_ST\EXT_ALARM\EMBEDDED\AlarmData	N=Wrk_AlarmData	G=VAR
+++D=UINT	N=WrK_ActionState	G=VAR
+++D=UINT	N=Wrk_AlarmToken	G=VAR
+++D=BOOL	N=Wrk_AlarmTriggered	G=VAR
+++D=BOOL	N=Wrk_PVNotAvailable	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=BOOL	N=ENS	Ord=1	G=VAR_INPUT
+++D=CTRL_ST\DrumFilterControl	N=Ext_DrumFilterControl	Ord=2	G=VAR_IN_OUT	Com=Drum filter control structure 
+++D=ARRAY[*] OF INT_ST\Alarm	N=Int_Alarm	Ord=3	G=VAR_IN_OUT	Com=Internal alarm structure
+++D=ARRAY[*] OF CTRL_ST\AnalogValue	N=Ext_AnalogValue	Ord=4	G=VAR_IN_OUT	Com=Array of analog value for retriving PV values (Index set in SCADA)
+++D=ARRAY[*] OF INT_ST\ActuatorData	N=Int_ActuatorData_Motor	Ord=5	G=VAR_IN_OUT	Com=Internal structure for actuator data (NB! Max 10)
+++D=ARRAY[*] OF INT_ST\ActuatorData	N=Int_ActuatorData_Valve	Ord=6	G=VAR_IN_OUT	Com=Internal structure for actuator data (NB! Max 10) (Output reference data not used)
+++D=UINT	N=Cfg_NumOfFilter	Ord=7	G=VAR_INPUT	Com=Number of filter in use
+++D=STRING[20]	N=Cfg_ControllerName	Ord=8	G=VAR_INPUT	Com=Name of Controller
+++D=UINT	N=Cfg_MainLocation	Ord=9	G=VAR_INPUT	Com=Index of main location (Index translation is common for each IGN project)
+++D=BOOL	N=Inp_AlmSuppress	Ord=10	G=VAR_INPUT	Com=Suppress alarm input
+++D=STRING[50]	N=Inp_AlmSuppressDesc	Ord=11	G=VAR_INPUT	Com=Alarm suppressed description
+++D=BOOL	N=Sts_Alarm	Ord=12	G=VAR_OUTPUT	Com=One or more active alarms
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

@@ -1,0 +1,83 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=HE_Deadband	N=FB_Deadband	G=VAR
+++D=HE_AlarmLogic	N=FB_AlarmLogic	G=VAR
+++D=HE_AnalogFault	N=FB_AnalogFault	G=VAR
+++D=HE_Ramp_Gain	N=FB_RampGain	G=VAR
+++D=HE_Average	N=FB_FeedbackAverage	G=VAR
+++D=TON	N=TON_Timer	G=VAR
+++D=TOF	N=TOF_CPUStartup	G=VAR
+++D=TON	N=TON_RampEngage	G=VAR
+++D=R_TRIG	N=RE_MinMax_Adjusted	G=VAR
+++D=TIME_OF_DAY	N=Wrk_CurrentTime	G=VAR
+++D=_eDAYOFWEEK	N=DayOfWeek	G=VAR
+++D=_sDT	N=DateStruct	G=VAR
+++D=R_TRIG	N=RE_TimerStart	G=VAR
+++D=R_TRIG	N=RE_AutoEng	G=VAR
+++D=F_TRIG	N=FE_InterlockNormalState	G=VAR
+++D=ARRAY[0..11] OF CTRL_ST\EXT_ALARM\EMBEDDED\AlarmData	N=Wrk_AlarmData	G=VAR
+++D=BOOL	N=Wrk_InterlockNormalState	G=VAR
+++D=REAL	N=Wrk_ModeOutput	R=1	G=VAR
+++D=REAL	N=Wrk_Output	R=1	G=VAR
+++D=REAL	N=Wrk_OutputRamped	R=1	G=VAR
+++D=REAL	N=Wrk_OutputDeadband	R=1	G=VAR
+++D=BOOL	N=Wrk_Interlock	G=VAR
+++D=BOOL	N=Wrk_DeviationFault	G=VAR
+++D=REAL	N=Wrk_MinOutputSample	R=1	G=VAR
+++D=REAL	N=Wrk_MaxOutputSample	R=1	G=VAR
+++D=REAL	N=Dummy	IV=0.0	Const=1	G=VAR
+++D=DINT	N=Wrk_SampleValue	R=1	G=VAR
+++D=UINT	N=Wrk_ActionState	Ord=30	G=VAR
+++D=BOOL	N=Wrk_TimerMode_DayActive	G=VAR
+++D=USINT	N=Sample_Day	R=1	G=VAR
+++D=BOOL	N=Wrk_TimerStarted	R=1	G=VAR
+++D=BOOL	N=Wrk_AutoEng	R=1	G=VAR
+++D=BOOL	N=Wrk_MinOrMax_Adjusted	R=1	G=VAR
+++D=UINT	N=Wrk_AlarmToken	G=VAR
+++D=BOOL	N=Wrk_AlarmTriggered	G=VAR
+++D=BOOL	N=Wrk_AvailableAuto	G=VAR
+++D=REAL	N=Wrk_FeedbackValue	G=VAR
+++D=UINT	N=Wrk_NumOfValues	IV=20	G=VAR
+++D=UINT	N=Wrk_SamplingInterval	IV=100	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=BOOL	N=ENS	Ord=1	G=VAR_INPUT
+++D=CTRL_ST\AnalogControl	N=Ext_AnalogControl	Ord=2	G=VAR_IN_OUT
+++D=ARRAY[*] OF INT_ST\Alarm	N=Int_Alarm	Ord=3	G=VAR_IN_OUT	Com=Internal alarm structure
+++D=BOOL	N=Inp_Interlock	Ord=4	G=VAR_INPUT	Com=TRUE = Interlock. Output = Chosen interlock direction
+++D=BOOL	N=Cfg_Interlock_InUse	Ord=5	G=VAR_INPUT	Com=Interlock avaiable/in use
+++D=BOOL	N=Inp_LocalMode	Ord=6	G=VAR_INPUT	Com=Actuator in local mode (FALSE= Remote | TRUE= Local)
+++D=REAL	N=Inp_FeedbackValue	Ord=7	G=VAR_INPUT	Com=Feedback value (can be signal value or process value)
+++D=BOOL	N=Cfg_FeedbackValue_Type	Ord=8	G=VAR_INPUT	Com=Feedback value type (FALSE= Signal value | TRUE= Process value)
+++D=REAL	N=Cfg_FeedbackValue_Min	Ord=9	G=VAR_INPUT	Com=Feedback value minimum (ex 2mA)
+++D=REAL	N=Cfg_FeedbackValue_Max	Ord=10	G=VAR_INPUT	Com=Feedback value maximum (ex 22mA)
+++D=REAL	N=Cfg_FeedbackValue_X0	Ord=11	G=VAR_INPUT	Com=Feedback value X0 (ex 4mA)
+++D=REAL	N=Cfg_FeedbackValue_X1	Ord=12	G=VAR_INPUT	Com=Feedback value X1 (ex 20mA)
+++D=BOOL	N=Inp_FeedbackValue_Fault	Ord=13	G=VAR_INPUT
+++D=BOOL	N=Cfg_OutputValue_Type	Ord=14	G=VAR_INPUT	Com=Output value type (FALSE=Signal value | TRUE=Process value)
+++D=REAL	N=Cfg_OutputValue_Min	Ord=15	G=VAR_INPUT	Com=Output value minimum (ex 2mA)
+++D=REAL	N=Cfg_OutputValue_Max	Ord=16	G=VAR_INPUT	Com=Output value maximum (ex 22mA)
+++D=REAL	N=Cfg_OutputValue_Y0	Ord=17	G=VAR_INPUT	Com=Output value maximum (ex 4mA)
+++D=REAL	N=Cfg_OutputValue_Y1	Ord=18	G=VAR_INPUT	Com=Output value maximum (ex 20mA)
+++D=REAL	N=Inp_Auto_Gain	Ord=19	G=VAR_INPUT	Com=Gain in auto mode
+++D=BOOL	N=Inp_Auto_Engage	Ord=20	G=VAR_INPUT	Com=Engage auto input
+++D=STRING[20]	N=Cfg_ProcessTAG	Ord=21	G=VAR_INPUT
+++D=STRING[20]	N=Cfg_ControllerTAG	Ord=22	G=VAR_INPUT
+++D=STRING[20]	N=Cfg_ControlCabinet	Ord=23	G=VAR_INPUT
+++D=BOOL	N=Inp_AlmSuppress	Ord=24	G=VAR_INPUT	Com=Suppress alarm input
+++D=STRING[50]	N=Inp_AlmSuppressDesc	Ord=25	G=VAR_INPUT	Com=Alarm suppressed description
+++D=STRING[30]	N=Inp_State3_Desc	Ord=26	G=VAR_INPUT	Com=State description (ex 'Input stuck')
+++D=BOOL	N=Inp_State3_State	Ord=27	G=VAR_INPUT	Com=Actual state (False=OK, TRUE=Fault)
+++D=BOOL	N=Cfg_State3_InUse	Ord=28	G=VAR_INPUT	Com=Set TRUE if state in use
+++D=STRING[30]	N=Inp_State4_Desc	Ord=29	G=VAR_INPUT	Com=State description (ex 'Input stuck')
+++D=BOOL	N=Inp_State4_State	Ord=30	G=VAR_INPUT	Com=Actual state (False=OK, TRUE=Fault)
+++D=BOOL	N=Cfg_State4_InUse	Ord=31	G=VAR_INPUT	Com=Set TRUE if state in use
+++D=STRING[30]	N=Inp_State5_Desc	Ord=32	G=VAR_INPUT	Com=State description (ex 'Input stuck')
+++D=BOOL	N=Inp_State5_State	Ord=33	G=VAR_INPUT	Com=Actual state (False=OK, TRUE=Fault)
+++D=BOOL	N=Cfg_State5_InUse	Ord=34	G=VAR_INPUT	Com=Set TRUE if state in use
+++D=REAL	N=Out_Output	Ord=35	G=VAR_OUTPUT	Com=Output value
+++D=BOOL	N=Sts_AutoAvailable	Ord=36	G=VAR_OUTPUT	Com=In auto mode
+++D=BOOL	N=Sts_AlarmTriggered	Ord=37	G=VAR_OUTPUT	Com=One or more active alarms
+++D=UINT	N=Sts_AlarmToken	Ord=38	G=VAR_OUTPUT	Com=Alarm token (index)
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

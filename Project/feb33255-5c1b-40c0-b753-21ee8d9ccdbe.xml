@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <DataType Name="Data Types8" BaseType="" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="">
+    <DataType Name="EXT_AlarmGeneral" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Array size: [Antall alarmer]. [0] ikke i bruk" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="5" OffsetType="NJ">
+      <DataType Name="AlarmState" BaseType="ARRAY[0..11] OF CTRL_ST\EXT_GENERAL\EMBEDDED\AlarmStruct" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Cfg_AlarmActiveDelay" BaseType="UINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Delay alarm active (s)" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Cfg_AlarmReturnDelay" BaseType="UINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Delay alarm return (s)" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Sts_SuppressedDesc" BaseType="STRING[30]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Alarm suppressed description (e.g motor not running)" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Cfg_SupressDelayOff" BaseType="UINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Delay for return supress (s)" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Cfg_OnOff" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Cfg_SMS_OnlyDayTime" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="SMS only send at day shift team" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Cfg_SMS_ReturnNotification" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="SMS send return notification" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Cfg_SupressIfOff" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Supress alarm if equipment in off mode (Only visible for control components wx VFD, analog control...)" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Sts_SupressIfOff_Visible" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Status visibility supress if off (written from controller)" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Sts_Suppressed" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Alarm suppressed" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="EXT_AlarmAnalog" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="11" OffsetType="NJ">
+      <DataType Name="Cfg_Limit_LL" BaseType="REAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Low-low alarm threshold" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Cfg_Limit_HH" BaseType="REAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="High-high alarm threshold" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Cfg_Limit_L" BaseType="REAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Low alarm threshold" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Cfg_Limit_H" BaseType="REAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="High alarm threshold" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+  </DataType>
+</data>

@@ -1,0 +1,79 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=HE_RT100SMS	N=FB_RT100_SMS	G=VAR
+++D=HE_RT100Status	N=FB_RT100_Status	G=VAR
+++D=TIME_OF_DAY	N=Time_Current	G=VAR
+++D=DATE_AND_TIME	N=Date_Current	G=VAR
+++D=DATE	N=Current_Date	G=VAR
+++D=UINT	N=LocationIndex_LookUp	G=VAR
+++D=STRING[30]	N=LocationName	G=VAR
+++D=UINT	N=Wrk_SendList_LocationLookUp	G=VAR
+++D=_eDAYOFWEEK	N=DayOfWeek_Current	G=VAR
+++D=_eDAYOFWEEK	N=DayOfWeek_Sample	R=1	G=VAR
+++D=STRING[17]	N=Wrk_TimeStamp	G=VAR
+++D=UINT	N=Wrk_AlarmSearch	G=VAR
+++D=UINT	N=Wrk_LoopIndex	G=VAR
+++D=UINT	N=Wrk_SendList_Contacts_Index	G=VAR
+++D=INT	N=Wrk_AlarmSearch_HighestPri	G=VAR
+++D=UINT	N=Wrk_AlarmSend_Index	R=1	G=VAR
+++D=BOOL	N=Wrk_AlarmSend_Found	R=1	G=VAR
+++D=UINT	N=Wrk_AlarmSend_Priority	R=1	G=VAR
+++D=UINT	N=Wrk_AlarmSend_Number	G=VAR
+++D=INT	N=Wrk_AlarmPriority_Ranked	G=VAR
+++D=STRING[20]	N=Wrk_AlarmPriority	G=VAR
+++D=BOOL	N=Wrk_AlarmReturn_Found	G=VAR
+++D=UINT	N=Wrk_AlarmReturn_Index	G=VAR
+++D=UINT	N=Wrk_AlarmReturn_Number	G=VAR
+++D=UINT	N=Wrk_NumAlarmActive	G=VAR
+++D=UINT	N=Wrk_NumAlarmAck	G=VAR
+++D=UINT	N=Wrk_NumAlarmActive_Sample	R=1	G=VAR
+++D=STRING[161]	N=Wrk_SMS_Message	R=1	G=VAR
+++D=UINT	N=Wrk_SMS_Snd_RetryCount	R=1	G=VAR
+++D=UINT	N=Wrk_SMS_Rec_AlarmIndex	G=VAR
+++D=BOOL	N=Wrk_SMS_Rec_AlarmIndexFound	G=VAR
+++D=BOOL	N=Wrk_SMS_Rec_ContactFound	G=VAR
+++D=BOOL	N=Wrk_SMS_Rec_AlarmFound	G=VAR
+++D=UINT	N=Wrk_SMS_Rec_ContactPos	G=VAR
+++D=UINT	N=Wrk_SMS_Rec_AlarmNumber	G=VAR
+++D=ARRAY[0..50] OF STRING[20]	N=Wrk_SMS_SendBuffer_PhoneNumber	R=1	G=VAR
+++D=UINT	N=Wrk_SMS_SendBuffer_Pos	G=VAR
+++D=UINT	N=Wrk_Rec_ArrayPos	G=VAR
+++D=UINT	N=Wrk_Rec_ArrayContr	G=VAR
+++D=TIME	N=Wrk_TaskIntervalTime	G=VAR
+++D=UINT	N=Wrk_NumberAlarmUsed	G=VAR
+++D=UINT	N=Wrk_Contact_Index	G=VAR
+++D=UINT	N=Wrk_State	R=1	G=VAR
+++D=TIME	N=Wrk_TimeInState	R=1	G=VAR
+++D=UINT	N=Wrk_LB	G=VAR
+++D=UINT	N=Wrk_UB	G=VAR
+++D=BOOL	N=Wrk_SendAcknMessage	G=VAR
+++D=STRING[161]	N=Wrk_SendAcknMessage_Message	G=VAR
+++D=STRING[22]	N=Wrk_SendAcknMessage_Number	G=VAR
+++D=TOF	N=TOF_Siren	G=VAR
+++D=BOOL	N=Wrk_AlarmArrayOutOfRange	G=VAR
+++D=_sDT	N=Wrk_TimestampDT	G=VAR
+++D=R_TRIG	N=RE_SMSSend	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=BOOL	N=ENI	Ord=1	G=VAR_INPUT
+++D=ARRAY[*] OF INT_ST\Alarm	N=Int_Alarm	Ord=2	G=VAR_IN_OUT
+++D=ARRAY[*] OF CTRL_ST\SMS_Contact	N=Ext_Contacts	Ord=3	G=VAR_IN_OUT	Com=Max 50 contacts
+++D=CTRL_ST\SMS_Settings	N=Ext_Settings	Ord=4	G=VAR_IN_OUT
+++D=STRING[10]	N=Cfg_Indentification	Ord=5	G=VAR_INPUT	Com=Controller identification (Configured in RT100, se SMS "Agent: ")
+++D=STRING[15]	N=Cfg_IP_Adress	Ord=6	G=VAR_INPUT	Com=IP adress of RT100
+++D=STRING[17]	N=Cfg_TLSSession	Ord=7	G=VAR_INPUT	Com=TLSSession[#]
+++D=BOOL	N=Cfg_CheckStatus	IV=True	Ord=8	G=VAR_INPUT	Com=Check RT100 Status
+++D=BOOL	N=Cfg_CheckInbox	IV=True	Ord=9	G=VAR_INPUT	Com=Check RT100 SMS inbox for new message. FALSE=Slave, TRUE=Master (read state and incomming message)
+++D=TIME	N=Cfg_InboxMaxAge	IV=T#1h	Ord=10	G=VAR_INPUT	Com=Only if "Check inbox"=TRUE. Max age for recived messages before delete
+++D=TIME	N=Cfg_Master_ReadInbox_Interval	Ord=11	G=VAR_INPUT	Com=Spesify time intervall for read inbox
+++D=TIME	N=Cfg_Master_ReadState_Interval	Ord=12	G=VAR_INPUT	Com=Spesify time intervall for read RT100 state
+++D=BOOL	N=Cfg_BackupSending_InUse	Ord=13	G=VAR_INPUT	Com=Config if backup sender in use
+++D=BOOL	N=Cfg_ClearArray	E=UpDirection	Ord=14	G=VAR_INPUT	Com=Clear alarm array (if big amount of FB deleted) NB! Alarm sending will restart (New SMS send)
+++D=BOOL	N=Sts_ConnectionError	Ord=15	G=VAR_OUTPUT	Com=Connection error modem
+++D=BOOL	N=Sts_AlarmArrayOutOfRange	Ord=16	G=VAR_OUTPUT	Com=Alarm array out of range (all alarms used)
+++D=UINT	N=Sts_NumAlarmUsed	Ord=17	G=VAR_OUTPUT	Com=Number of used alarms
+++D=UINT	N=Sts_NumActiveAlarms	Ord=18	G=VAR_OUTPUT	Com=Number of active alarms
+++D=UINT	N=Sts_NumAcknAlarms	Ord=19	G=VAR_OUTPUT	Com=Number of acknowleged alarms
+++D=BOOL	N=Out_BackupSender	Ord=20	G=VAR_OUTPUT	Com=Output for activating backup sender (1s duration)
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

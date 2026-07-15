@@ -1,0 +1,18 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=TIME_OF_DAY	N=Current_Time	G=VAR
+++D=DATE	N=Current_Date	G=VAR
+++D=STRING[17]	N=Current_TimeStamp	G=VAR	Com=Include time = STRING[17] | Date only = STRING[13]
+++D=R_TRIG	N=RE_Running	G=VAR	Com=Rising edge for drift
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=BOOL	N=Inp_Feedback	Ord=1	G=VAR_INPUT
+++D=BOOL	N=Inp_Reset_Total	Ord=2	G=VAR_IN_OUT	Com=Resets total operating hours
+++D=BOOL	N=Inp_Reset_Service	Ord=3	G=VAR_IN_OUT	Com=Resets time since service
+++D=STRING[17]	N=Out_ResetDate_Total	R=1	Ord=4	G=VAR_OUTPUT	Com=Date of the previous total reset (Include time = STRING[17] | Date only = STRING[13])
+++D=TIME	N=Out_RunTime_Total	R=1	Ord=5	G=VAR_OUTPUT	Com=Total operating hours since reset
+++D=STRING[17]	N=Out_ResetDate_Service	R=1	Ord=6	G=VAR_OUTPUT	Com=Date of last service (Include time = STRING[17] | Date only = STRING[13])
+++D=TIME	N=Out_RunTime_Service	R=1	Ord=7	G=VAR_OUTPUT	Com=Total operating hours since service
+++D=ULINT	N=Out_NumOfStarts	R=1	Ord=8	G=VAR_OUTPUT	Com=Number of starts
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

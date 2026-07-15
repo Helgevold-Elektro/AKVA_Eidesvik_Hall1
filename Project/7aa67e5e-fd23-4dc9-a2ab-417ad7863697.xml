@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <data>
+    <LibraryModel>
+      <Name>HE_Library</Name>
+      <NameSpace></NameSpace>
+      <Version>3.3.1</Version>
+      <Revision>1</Revision>
+      <LibraryId>7ad88fef-0b82-4e09-8932-4e27e42a8382</LibraryId>
+      <Author>William, Daniel, Ruben &amp; Jan Magne</Author>
+      <Company>HELGEVOLD ELEKTRO</Company>
+      <DateCreated>2025-01-15T13:32:05.7446511+01:00</DateCreated>
+      <DateModified>2026-07-15T15:03:13.1603092+02:00</DateModified>
+      <Comment>See release notes</Comment>
+      <Password></Password>
+      <AttachedFiles />
+      <AttachedFilesRelativePaths />
+      <PublicPartsNames>
+        <PublicName>HE_Volume_Cube</PublicName>
+        <PublicName>HE_Difference</PublicName>
+        <PublicName>HE_CalcDewPoint</PublicName>
+        <PublicName>HE_Hypotenuse</PublicName>
+        <PublicName>HE_TableScale</PublicName>
+        <PublicName>HE_CommFault</PublicName>
+        <PublicName>HE_ParseGenerator_DSE86xx</PublicName>
+        <PublicName>HE_FeedingCommon</PublicName>
+        <PublicName>HE_FeedControl</PublicName>
+        <PublicName>HE_LightControl_HD67840_Wrapper</PublicName>
+        <PublicName>HE_OxygenControl</PublicName>
+        <PublicName>HE_MultiControl</PublicName>
+        <PublicName>HE_DrumFilterControl</PublicName>
+        <PublicName>HE_DigitalControl</PublicName>
+        <PublicName>HE_AnalogControl_OmronNX</PublicName>
+        <PublicName>HE_AnalogControl_RawValue</PublicName>
+        <PublicName>HE_AnalogControl_SignalValue</PublicName>
+        <PublicName>HE_AnalogControl_ProcessValue</PublicName>
+        <PublicName>HE_AnalogInput_OmronNX</PublicName>
+        <PublicName>HE_AnalogInput_RawValue</PublicName>
+        <PublicName>HE_AnalogInput_ProcessValue</PublicName>
+        <PublicName>HE_AnalogInput_MSYS_R3</PublicName>
+        <PublicName>HE_AnalogInput_ADAM_4x17</PublicName>
+        <PublicName>HE_AnalogInput_Sentec_OxyNor</PublicName>
+        <PublicName>HE_AnalogInput_EH_Liquiline</PublicName>
+        <PublicName>HE_DigitalInput</PublicName>
+        <PublicName>HE_UPSData_Riello</PublicName>
+        <PublicName>HE_UPSData_Coromatic</PublicName>
+        <PublicName>HE_SwitchData_Westermo</PublicName>
+        <PublicName>HE_SwitchData_Schneider</PublicName>
+        <PublicName>HE_UVData_UltraAqua</PublicName>
+        <PublicName>HE_UVData_Wedeco</PublicName>
+        <PublicName>HE_MechanicalFilterData_Hydac</PublicName>
+        <PublicName>HE_GeneratorData_DSE86xx</PublicName>
+        <PublicName>HE_ResetECB</PublicName>
+        <PublicName>HE_PulseData</PublicName>
+        <PublicName>HE_Consumption</PublicName>
+        <PublicName>HE_Interlock</PublicName>
+        <PublicName>HE_Watchdog</PublicName>
+        <PublicName>HE_NXEIC202_Restart</PublicName>
+        <PublicName>HE_ControllerStat</PublicName>
+        <PublicName>HE_VFD_Simulation_Wrapper</PublicName>
+        <PublicName>HE_VFD_AnaContr_Wrapper</PublicName>
+        <PublicName>HE_VFD_100Flow_Wrapper</PublicName>
+        <PublicName>HE_VFD_FCx02_Wrapper</PublicName>
+        <PublicName>HE_VFD_CIM500_Wrapper</PublicName>
+        <PublicName>HE_VFD_CFW500_Wrapper</PublicName>
+        <PublicName>HE_VFD_CFW900_Wrapper</PublicName>
+        <PublicName>HE_VFD_ATV650_Wrapper</PublicName>
+        <PublicName>HE_VFD_ATV320_Wrapper</PublicName>
+        <PublicName>HE_VFD_CalculatedFlow_P</PublicName>
+        <PublicName>HE_VFD_CalculatedFlow_Q</PublicName>
+        <PublicName>HE_SNMP</PublicName>
+        <PublicName>HE_SNMP_Custom</PublicName>
+        <PublicName>HE_ExplicitMessage</PublicName>
+        <PublicName>HE_SMS</PublicName>
+        <PublicName>HE_NodeStat_NX_EIC202</PublicName>
+        <PublicName>HE_PortStatus_ATV6xx</PublicName>
+      </PublicPartsNames>
+      <InternalPartsNames />
+      <BuildDevice>
+        <Category>Controller</Category>
+        <Family>Nex</Family>
+        <FullModel>NX502-1300</FullModel>
+        <MajorVersion>1</MajorVersion>
+        <MinorVersion>66</MinorVersion>
+        <Revision>0</Revision>
+        <DisplayVersion>1.66</DisplayVersion>
+        <Packages>
+          <Package Name="DBCon" Version="2.4" />
+          <Package Name="Motion" Version="1.66" />
+          <Package Name="OPCUA" Version="1.66" />
+          <Package Name="SecureSocket" Version="1.66" />
+          <Package Name="jre8" Version="8.3" />
+        </Packages>
+      </BuildDevice>
+      <DependencyId>ad35a0d8-4097-4efe-bd46-9a33fa6e7c06</DependencyId>
+      <IsSource>true</IsSource>
+      <IsDisableSourceDisplay>false</IsDisableSourceDisplay>
+      <IsIncludeReferredLibraries>true</IsIncludeReferredLibraries>
+      <LibraryFilePath>C:\Users\WilliamVeim\Helgevold Elektro\Onedrive - Automasjon\20 Bibliotek\Omron\Sysmac Studio - Library\Library - AKVA\HE_Library.slr</LibraryFilePath>
+      <LibraryFileRelativePath>Helgevold Elektro\Onedrive - Automasjon\20 Bibliotek\Omron\Sysmac Studio - Library\Library - AKVA\HE_Library.slr</LibraryFileRelativePath>
+      <LibrarySourceControlRelativeFilePath>..\..\..\..\..\..\..\..\Users\WilliamVeim\Helgevold Elektro\Onedrive - Automasjon\20 Bibliotek\Omron\Sysmac Studio - Library\Library - AKVA\HE_Library.slr</LibrarySourceControlRelativeFilePath>
+      <AsOldVer>false</AsOldVer>
+      <SchemaVersion>3</SchemaVersion>
+      <Parameter1>false</Parameter1>
+      <ApplicationProductVersion>1.67.0.64007</ApplicationProductVersion>
+    </LibraryModel>
+  </data>
+</data>

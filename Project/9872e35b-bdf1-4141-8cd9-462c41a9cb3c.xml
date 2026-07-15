@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <DataType Name="Data Types16" BaseType="" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="">
+    <DataType Name="AlarmData" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="32" OffsetType="NJ">
+      <DataType Name="SMS_AlarmState" BaseType="UINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="0=Idle | 1=active not sendt | 2=sendt to pri 1 | 3=sendt to pri 2 | 4=sendt to pri 3 | 5=sendt to pri 4 | 6=Send complete | 10=acknowleged" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="SMS_TimeToNextPri" BaseType="TIME" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Time unitl send to next priority" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="SMS_Suffix" BaseType="STRING[30]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Alarm suffix (ex 'Ciritcal high', 'Loop break')" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="SMS_Priority" BaseType="UINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Alarm priority code (0=Diagnostic | 1=Low | 2=Medium (Not in use) | 3=High | 4=Critical | 6=Good)" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="SMS_ReturnMessage" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Send return message" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="SMS_Group" BaseType="ARRAY[0..3] OF BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Cfg group (ex gurard, tech etc)" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+  </DataType>
+</data>

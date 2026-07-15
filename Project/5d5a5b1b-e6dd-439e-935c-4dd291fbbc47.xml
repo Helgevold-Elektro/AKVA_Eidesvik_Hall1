@@ -1,0 +1,12 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=CTRL_ST\DWORD2WORD2BYTE2BIT	N=ConvertionWord	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=EN	Ord=0	RO=1	G=VAR_INPUT
+++D=WORD	N=Word_1	Ord=1	G=VAR_INPUT
+++D=WORD	N=Word_2	Ord=2	G=VAR_INPUT
+++D=DWORD	N=UnvalidValue	Ord=3	G=VAR_INPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
++GN=RETURN	GA=Return	GVT=ReturnGroup
+++D=REAL	N=HE_WORD_CheckValid	G=RETURN

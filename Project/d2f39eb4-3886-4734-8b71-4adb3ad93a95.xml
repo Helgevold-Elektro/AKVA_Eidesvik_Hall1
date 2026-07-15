@@ -1,0 +1,26 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=INT	N=TokenID	IV=-1	G=VAR
+++D=UINT	N=Wrk_State	R=1	G=VAR
+++D=UDINT	N=Wrk_OpTime_Raw	R=1	G=VAR
+++D=BOOL	N=Wrk_OpTime_Valid	G=VAR
+++D=UDINT	N=Wrk_OpTime_Sucsess	G=VAR
+++D=WORD	N=Wrk_OpTime_ErrorID	G=VAR
+++D=UDINT	N=Wrk_RunTime_Raw	R=1	G=VAR
+++D=BOOL	N=Wrk_RunTime_Valid	G=VAR
+++D=UDINT	N=Wrk_RunTime_Sucsess	G=VAR
+++D=WORD	N=Wrk_RunTime_ErrorID	G=VAR
+++D=UDINT	N=Wrk_Energy_Raw	R=1	G=VAR
+++D=BOOL	N=Wrk_Energy_Valid	G=VAR
+++D=UDINT	N=Wrk_Energy_Sucsess	G=VAR
+++D=WORD	N=Wrk_Energy_ErrorID	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=BOOL	N=ENS	Ord=1	G=VAR_INPUT
+++D=INT_ST\ExplicitMessage_Telegram	N=Ext_Telegram	Ord=2	G=VAR_IN_OUT
+++D=STRING[64]	N=Cfg_RoutePath	Ord=3	G=VAR_INPUT	Com=Routing Parh '02\[IP ADDR]' ex. '02\10.128.218.11' for integrated Ethernet/IP port
+++D=UDINT	N=Val_OperatingTime	Ord=4	G=VAR_OUTPUT	Com=VFD operating time (h)
+++D=UDINT	N=Val_RunningTime	Ord=5	G=VAR_OUTPUT	Com=VFD running time (h)
+++D=UDINT	N=Val_EnergyCounter	Ord=6	G=VAR_OUTPUT	Com=VFD energy counter (kWh)
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

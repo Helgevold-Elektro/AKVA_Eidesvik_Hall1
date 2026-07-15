@@ -1,0 +1,12 @@
+<StructuredTextModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Text>//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ &#xD;
+//	NAME:			INTadd                                                                                                                                                                                                                                                                              &#xD;
+//	CREATOR:		Helgevold - Ruben Byman                                                                                                                                                                                                                                                          &#xD;
+//                                                                                                                                                                                                                                                                                                                            &#xD;
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ &#xD;
+//  VERSION LOG:                                                                                                                                                                                                                                                                                                   &#xD;
+//	VERSION		DATE				SIGN						DESCRIPTION                                                                                                                                                                                                                                 &#xD;
+//	1.0.0				2025-05-06		Ruben Byman			Initial release&#xD;
+//	1.0.01			2026-02-18		William Veim			Translation&#xD;
+//===============================================================================================================================&#xD;
+&#xD;
+HE_INTAdd := HE_Sec2Str((Inp_Hour*3600) + (Inp_Minute*60) + (Inp_MinuteAdd*60));</Text></StructuredTextModel>

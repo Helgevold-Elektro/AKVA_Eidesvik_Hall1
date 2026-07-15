@@ -1,0 +1,27 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=BOOL	N=PV_FindNew	G=VAR
+++D=CTRL_ST\WORD2BYTE2BIT	N=PV_InUse_CNT	G=VAR
+++D=DINT	N=IndexA	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=EN	Ord=0	RO=1	G=VAR_INPUT
+++D=ARRAY[*] OF CTRL_ST\AnalogValue	N=EXT_AnalogValue	Ord=1	G=VAR_IN_OUT	Com=Array of analog value for retriving PV values (Index set in SCADA)
+++D=UINT	N=PV_Select	Ord=2	G=VAR_IN_OUT
+++D=BOOL	N=PV_AutoSwitch	Ord=3	G=VAR_INPUT
+++D=UINT	N=PV_AutoSwitchState	Ord=4	G=VAR_INPUT
+++D=CTRL_ST\EXT_OPERATOR\EMBEDDED\AnalogValue_Simplified	N=PV_Actual	Ord=5	G=VAR_OUTPUT
+++D=REAL	N=PV_Actual_Y0	Ord=6	G=VAR_OUTPUT
+++D=REAL	N=PV_Actual_Y1	Ord=7	G=VAR_OUTPUT
+++D=BOOL	N=PV_NotAvailable	Ord=8	G=VAR_OUTPUT
+++D=UINT	N=PV_NumberUsed	Ord=9	G=VAR_OUTPUT
+++D=BOOL	N=PV_OnlyOneUsed	Ord=10	G=VAR_OUTPUT
+++D=BOOL	N=PV_MultipleUsed	Ord=11	G=VAR_OUTPUT
+++D=UINT	N=PV_Value1_Index	Ord=12	G=VAR_INPUT
+++D=UINT	N=PV_Value2_Index	Ord=13	G=VAR_INPUT
+++D=UINT	N=PV_Value3_Index	Ord=14	G=VAR_INPUT
+++D=UINT	N=PV_Value4_Index	Ord=15	G=VAR_INPUT
+++D=UINT	N=PV_Value5_Index	Ord=16	G=VAR_INPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
++GN=RETURN	GA=Return	GVT=ReturnGroup
+++D=BOOL	N=HE_PV_Select	G=RETURN

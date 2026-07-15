@@ -1,0 +1,66 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=HE_AlarmLogic	N=FB_AlarmLogic	G=VAR
+++D=HE_TaskTimeMonitor	N=FB_TaskTime	G=VAR
+++D=HE_TimeSync	N=FB_TimeSync	G=VAR
+++D=HE_SD_Backup	N=FB_SD_Backup	G=VAR
+++D=DATE	N=SD_Date_Sample	G=VAR
+++D=DATE	N=SD_Date_Actual	G=VAR
+++D=UINT	N=SD_Days_Sample	G=VAR
+++D=TIME_OF_DAY	N=SD_Time_Actual	G=VAR
+++D=BOOL	N=Wrk_TaskTime_Exceeded	G=VAR
+++D=BOOL	N=Wrk_PLC_Error	G=VAR
+++D=BOOL	N=Wrk_EIP_Error	G=VAR
+++D=BOOL	N=Wrk_NXB_Error	G=VAR
+++D=BOOL	N=Wrk_TimeSync_Fault	G=VAR
+++D=BOOL	N=Wrk_SDBackup_Fault	G=VAR
+++D=BOOL	N=Wrk_SMS_Error	G=VAR
+++D=UINT	N=Wrk_ActionState	G=VAR
+++D=ARRAY[0..10] OF STRING[30]	N=Wrk_AlarmSuffix	G=VAR
+++D=ARRAY[0..10] OF BOOL	N=Wrk_AlarmState	G=VAR
+++D=BOOL	N=Wrk_ArrayOutOfRange	G=VAR
+++D=TON	N=Wrk_CPUStartupDelay	G=VAR
+++D=TIME	N=Wrk_TimeDeviation	G=VAR
+++D=ARRAY[0..12] OF CTRL_ST\EXT_ALARM\EMBEDDED\AlarmData	N=Wrk_AlarmData	G=VAR
+++D=UINT	N=Wrk_AlarmToken	G=VAR
+++D=BOOL	N=Wrk_AlarmTriggered	G=VAR
+++D=WORD	N=Wrk_PLC_ErrSta	G=VAR
+++D=WORD	N=Wrk_NXB_ErrSta	G=VAR
+++D=WORD	N=Wrk_EIP_ErrSta	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=BOOL	N=ENS	Ord=1	G=VAR_INPUT
+++D=CTRL_ST\ControllerStat	N=Ext_ControllerStat	Ord=2	G=VAR_IN_OUT	Com=Data structure for controller data
+++D=ARRAY[*] OF INT_ST\Alarm	N=Int_Alarm	Ord=3	G=VAR_IN_OUT	Com=Internal alarm structure
+++D=BOOL	N=Inp_SMS_Error	Ord=4	G=VAR_INPUT
+++D=BOOL	N=Inp_AlarmArrayOutOfRange	Ord=5	G=VAR_INPUT	Com=Alarm array out of range (all alarms used)
+++D=BOOL	N=Cfg_HoldOutput	Ord=6	G=VAR_INPUT	Com=Hold device (and ETC output when syncronising)
+++D=BOOL	N=Cfg_TimeSync_Activate	Ord=7	G=VAR_INPUT	Com=Activate time sync from NTP
+++D=BOOL	N=Cfg_SDCard_InUse	Ord=8	G=VAR_INPUT
+++D=TIME_OF_DAY	N=Cfg_SDBackup_Time	Ord=9	G=VAR_INPUT	Com=Time on day for SD backup
+++D=UINT	N=Cfg_SDBackup_Days	Ord=10	G=VAR_INPUT	Com=Days between backup
+++D=STRING[20]	N=Cfg_ControllerName	Ord=11	G=VAR_INPUT	Com=Enter TAG of controller
+++D=STRING[20]	N=Cfg_ConnCab	Ord=12	G=VAR_INPUT	Com=Enter name of cabinet controller is placed
+++D=STRING[12]	N=Cfg_ControllerModel	Ord=13	G=VAR_INPUT	Com=Controller model (ex 'NX-502')
+++D=UINT	N=Cfg_MainLocation	Ord=14	G=VAR_INPUT	Com=Index of main location (Index translation is common for each IGN project)
+++D=DATE_AND_TIME	N=Out_TimeSync_ExcTime	Ord=15	G=VAR_OUTPUT
+++D=BOOL	N=Sts_HoldOutput	Ord=16	G=VAR_OUTPUT	Com=Hold output state
+++D=BOOL	N=Sts_TimeSync_Fault	Ord=17	G=VAR_OUTPUT
+++D=BOOL	N=Sts_ControllerFault	Ord=18	G=VAR_OUTPUT	Com=Controller fault state
+++D=BOOL	N=Sts_SDBackup_Fault	Ord=19	G=VAR_OUTPUT	Com=SD backup faulted
+++D=BOOL	N=Sts_TaskTime_Exceeded	Ord=20	G=VAR_OUTPUT	Com=Task time exceeded
+++D=BOOL	N=Sts_NXBusFault	Ord=21	G=VAR_OUTPUT
+++D=BOOL	N=Sts_EIPFault	Ord=22	G=VAR_OUTPUT
+++D=BOOL	N=Sts_Alarm	Ord=23	G=VAR_OUTPUT	Com=One or more active alarms
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
+++D=WORD	N=_PLC_ErrSta	Const=1	G=VAR_EXTERNAL
+++D=WORD	N=_NXB_ErrSta	Const=1	G=VAR_EXTERNAL
+++D=WORD	N=_EIP_ErrSta	Const=1	G=VAR_EXTERNAL
+++D=UDINT	N=_PowerOnCount	G=VAR_EXTERNAL
+++D=UDINT	N=_PowerOnHour	G=VAR_EXTERNAL
+++D=WORD	N=_DeviceOutHoldCfg	G=VAR_EXTERNAL
+++D=BOOL	N=_DeviceOutHoldStatus	Const=1	G=VAR_EXTERNAL
+++D=ARRAY[0..2] OF USINT	N=_SystemSWVersion	Const=1	G=VAR_EXTERNAL
+++D=BOOL	N=_SelfTest_HighTemperature	Const=1	G=VAR_EXTERNAL
+++D=BOOL	N=_SelfTest_LowFanRevolution	Const=1	G=VAR_EXTERNAL

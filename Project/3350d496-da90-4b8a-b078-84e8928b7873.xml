@@ -1,0 +1,26 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=HE_LightControl_Logic	N=FB_LightControl_Logic	G=VAR
+++D=BOOL	N=Wrk_CommFault	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=BOOL	N=ENS	Ord=1	G=VAR_INPUT
+++D=CTRL_ST\LightControl	N=Ext_LightControl	Ord=2	G=VAR_IN_OUT	Com=Light control structure
+++D=ARRAY[*] OF INT_ST\Alarm	N=Int_Alarm	Ord=3	G=VAR_IN_OUT	Com=Internal alarm structure
+++D=BOOL	N=Inp_Voltage_State	Ord=4	G=VAR_INPUT	Com=Voltage state (FALSE = Voltage fault | TRUE = Normal operation)
+++D=BOOL	N=Cfg_UPS_Present	Ord=5	G=VAR_INPUT	Com=UPS config (FALSE = No UPS | TRUE = UPS present)
+++D=BOOL	N=Inp_Interlock	Ord=6	G=VAR_INPUT	Com=Interlock signal (FALSE= OK | TRUE= Interlocked)
+++D=BOOL	N=Cfg_Interlock_InUse	Ord=7	G=VAR_INPUT	Com=Interlock avaiable/in use
+++D=STRING[20]	N=Cfg_ControllerName	Ord=8	G=VAR_INPUT	Com=Name of Controller
+++D=UINT	N=Cfg_MainLocation	Ord=9	G=VAR_INPUT	Com=Index of main location (Index translation is common for each IGN project)
+++D=UINT	N=Cfg_EIP_Interface	Ord=10	G=VAR_INPUT	Com=Controller EIP interface number (1=port 1 | 2=port 2)
+++D=USINT	N=Cfg_IP	Ord=11	G=VAR_INPUT	Com=Last octet in IP adress (e.g 69)
+++D=BOOL	N=Inp_AlmSuppress	Ord=12	G=VAR_INPUT	Com=Suppress alarm input
+++D=STRING[50]	N=Inp_AlmSuppressDesc	Ord=13	G=VAR_INPUT	Com=Alarm suppressed description
+++D=BYTE	N=Out_ByteOutput	Ord=14	G=VAR_OUTPUT	Com=Control byte (0-254) Scaled from min/max light gain
+++D=REAL	N=Out_Output	Ord=15	G=VAR_OUTPUT	Com=Output percent (0-100%)
+++D=BOOL	N=Sts_LightStarted	Ord=16	G=VAR_OUTPUT	Com=TRUE = Light is on, FALSE = Light is off
+++D=BOOL	N=Sts_LightMax	Ord=17	G=VAR_OUTPUT	Com=TRUE = Full brightness
+++D=BOOL	N=Sts_Alarm	Ord=18	G=VAR_OUTPUT	Com=One or more active alarms
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

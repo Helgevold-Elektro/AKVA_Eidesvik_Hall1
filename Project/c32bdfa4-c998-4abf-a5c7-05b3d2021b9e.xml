@@ -1,0 +1,22 @@
+<StructuredTextModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Text>//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ &#xD;
+//	NAME:			Erstatt                                                                                                                                                                                                                                                                            &#xD;
+//	CREATOR:		Helgevold - Daniel Årvik                                                                                                                                                                                                                                                              &#xD;
+//                                                                                                                                                                                                                                                                                                                            &#xD;
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ &#xD;
+//  VERSION LOG:                                                                                                                                                                                                                                                                                                   &#xD;
+//	VERSION		DATE				SIGN						DESCRIPTION                                                                                                                                                                                                                                 &#xD;
+//	1.0.0				2023-08-16		Daniel Årvik 			Initial release                                                                                                                                                                                                                                                                                                                                                                                                     &#xD;
+//===============================================================================================================================&#xD;
+&#xD;
+Position:=0;&#xD;
+&#xD;
+FOR Index:=0 TO LEN(Inp_TextString) DO&#xD;
+	&#xD;
+	Position:=0;&#xD;
+	Position:=FIND(Inp_TextString, Inp_ReplaceFrom);&#xD;
+	&#xD;
+	IF Position &gt; 0 THEN &#xD;
+		Inp_TextString:=REPLACE(Inp_TextString, Inp_ReplaceTo, LEN(Inp_ReplaceFrom), Index);&#xD;
+	END_IF;&#xD;
+&#xD;
+END_FOR;</Text></StructuredTextModel>

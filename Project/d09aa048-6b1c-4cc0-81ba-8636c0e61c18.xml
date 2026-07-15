@@ -1,0 +1,22 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=HE_Data_Logic	N=FB_Data_Logic	G=VAR
+++D=ARRAY[1..12] OF BOOL	N=Wrk_State	G=VAR
+++D=ARRAY[1..12] OF STRING[30]	N=Wrk_Suffix	G=VAR
+++D=BOOL	N=Wrk_CommState	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=BOOL	N=ENS	Ord=1	G=VAR_INPUT
+++D=CTRL_ST\UPS_Data	N=Ext_UPS_Data	Ord=2	G=VAR_IN_OUT
+++D=ARRAY[*] OF INT_ST\Alarm	N=Int_Alarm	Ord=3	G=VAR_IN_OUT	Com=Internal alarm structure
+++D=ARRAY[*] OF WORD	N=Inp_HoldingRegister	Ord=4	G=VAR_IN_OUT	Com=Holding register from MRTU reading (Min 85 WORD)
+++D=ARRAY[*] OF OEN\Modbus\sModbusReq	N=Inp_Request	Ord=5	G=VAR_IN_OUT	Com=Request data for MTRU reading (Min 1 req)
+++D=STRING[20]	N=Cfg_ProcessTAG	Ord=6	G=VAR_INPUT	Com=TAG of current component
+++D=STRING[20]	N=Cfg_ControllerName	Ord=7	G=VAR_INPUT	Com=Name of controller
+++D=STRING[20]	N=Cfg_ControlCabinet	Ord=8	G=VAR_INPUT	Com=Name of connected cabinet
+++D=UINT	N=Cfg_MainLocation	Ord=9	G=VAR_INPUT	Com=Index of main location (Index translation is common for each IGN project)
+++D=BOOL	N=Inp_AlmSuppress	Ord=10	G=VAR_INPUT	Com=Suppress alarm input
+++D=STRING[50]	N=Cfg_AlmSuppressDesc	Ord=11	G=VAR_INPUT	Com=Alarm suppressed description
+++D=BOOL	N=Sts_Alarm	Ord=12	G=VAR_OUTPUT	Com=One or more active alarms
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

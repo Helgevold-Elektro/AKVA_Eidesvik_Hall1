@@ -1,0 +1,37 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=HE_DigitalValue_Logic	N=FB_DigitalValue_Logic	G=VAR
+++D=BOOL	N=Wrk_CommFault	G=VAR
+++D=BOOL	N=Wrk_Owned	G=VAR
+++D=BOOL	N=Wrk_Observation	G=VAR
+++D=BOOL	N=Wrk_MinorFault	G=VAR
+++D=BOOL	N=Wrk_PartialFault	G=VAR
+++D=BOOL	N=Wrk_MajorFault	G=VAR
+++D=BOOL	N=Wrk_CommonError	G=VAR
+++D=BOOL	N=Wrk_IORefresh	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=BOOL	N=ENS	Ord=1	G=VAR_INPUT
+++D=CTRL_ST\DigitalValue	N=Ext_DigitalValue	Ord=2	G=VAR_IN_OUT
+++D=ARRAY[*] OF INT_ST\Alarm	N=Int_Alarm	Ord=3	G=VAR_IN_OUT	Com=Internal alarm structure
+++D=INT	N=Inp_EIC_Status	Ord=4	G=VAR_INPUT	Com=Status ord fra NX-EIC202 modul
+++D=UINT	N=Cfg_EIP_Interface	Ord=5	G=VAR_INPUT	Com=Controller EIP interface number (1=port 1 | 2=port 2)
+++D=UINT	N=Cfg_NodeIP	Ord=6	G=VAR_INPUT	Com=Last octet in IP adress (e.g 69)
+++D=STRING[20]	N=Cfg_ProcessTAG	Ord=7	G=VAR_INPUT
+++D=STRING[20]	N=Cfg_ControllerTAG	Ord=8	G=VAR_INPUT	Com=Enter TAG of controller
+++D=STRING[20]	N=Cfg_ControlCabinet	Ord=9	G=VAR_INPUT	Com=Enter name of cabinet controller is placed
+++D=UINT	N=Cfg_MainLocation	Ord=10	G=VAR_INPUT	Com=Index of main location (Index translation is common for each IGN project)
+++D=BOOL	N=Out_CommFault	Ord=11	G=VAR_OUTPUT	Com=TRUE = Communication Error
+++D=BOOL	N=Sts_Alarm	Ord=12	G=VAR_OUTPUT	Com=One or more active alarms
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
+++D=WORD	N=_PLC_ErrSta	Const=1	G=VAR_EXTERNAL
+++D=WORD	N=_NXB_ErrSta	Const=1	G=VAR_EXTERNAL
+++D=WORD	N=_EIP_ErrSta	Const=1	G=VAR_EXTERNAL
+++D=UDINT	N=_PowerOnCount	G=VAR_EXTERNAL
+++D=UDINT	N=_PowerOnHour	G=VAR_EXTERNAL
+++D=WORD	N=_DeviceOutHoldCfg	G=VAR_EXTERNAL
+++D=BOOL	N=_DeviceOutHoldStatus	Const=1	G=VAR_EXTERNAL
+++D=ARRAY[0..2] OF USINT	N=_SystemSWVersion	Const=1	G=VAR_EXTERNAL
+++D=BOOL	N=_SelfTest_HighTemperature	Const=1	G=VAR_EXTERNAL
+++D=BOOL	N=_SelfTest_LowFanRevolution	Const=1	G=VAR_EXTERNAL

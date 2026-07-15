@@ -1,0 +1,36 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=HE_DigitalValue_Logic	N=FB_DigitalValue_Logic	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=BOOL	N=ENS	Ord=1	G=VAR_INPUT
+++D=CTRL_ST\DigitalValue	N=Ext_DigitalValue	Ord=2	G=VAR_IN_OUT
+++D=ARRAY[*] OF INT_ST\Alarm	N=Int_Alarm	Ord=3	G=VAR_IN_OUT	Com=Internal alarm structure
+++D=BOOL	N=Inp_Value1	Ord=4	G=VAR_INPUT
+++D=STRING[30]	N=Cfg_Value1_Suffix	Ord=5	G=VAR_INPUT
+++D=BOOL	N=Inp_Value2	Ord=6	G=VAR_INPUT
+++D=STRING[30]	N=Cfg_Value2_Suffix	Ord=7	G=VAR_INPUT
+++D=BOOL	N=Inp_Value3	Ord=8	G=VAR_INPUT
+++D=STRING[30]	N=Cfg_Value3_Suffix	Ord=9	G=VAR_INPUT
+++D=BOOL	N=Inp_Value4	Ord=10	G=VAR_INPUT
+++D=STRING[30]	N=Cfg_Value4_Suffix	Ord=11	G=VAR_INPUT
+++D=BOOL	N=Inp_Value5	Ord=12	G=VAR_INPUT
+++D=STRING[30]	N=Cfg_Value5_Suffix	Ord=13	G=VAR_INPUT
+++D=BOOL	N=Inp_Value6	Ord=14	G=VAR_INPUT
+++D=STRING[30]	N=Cfg_Value6_Suffix	Ord=15	G=VAR_INPUT
+++D=BOOL	N=Inp_Value7	Ord=16	G=VAR_INPUT
+++D=STRING[30]	N=Cfg_Value7_Suffix	Ord=17	G=VAR_INPUT
+++D=BOOL	N=Inp_Value8	Ord=18	G=VAR_INPUT
+++D=STRING[30]	N=Cfg_Value8_Suffix	Ord=19	G=VAR_INPUT
+++D=BOOL	N=Inp_Value9	Ord=20	G=VAR_INPUT
+++D=STRING[30]	N=Cfg_Value9_Suffix	Ord=21	G=VAR_INPUT
+++D=BOOL	N=Inp_ModuleFault	IV=False	Ord=22	G=VAR_INPUT	Com=State of RIO/IO module (FALSE= OK | TRUE= Fault)
+++D=STRING[20]	N=Cfg_ProcessTAG	Ord=23	G=VAR_INPUT	Com=TAG of current component
+++D=STRING[20]	N=Cfg_ControllerName	Ord=24	G=VAR_INPUT	Com=Name of controller
+++D=STRING[20]	N=Cfg_ConnCabinet	Ord=25	G=VAR_INPUT	Com=Name of connected cabinet
+++D=UINT	N=Cfg_MainLocation	Ord=26	G=VAR_INPUT	Com=Index of main location (Index translation is common for each IGN project)
+++D=BOOL	N=Inp_AlmSuppress	Ord=27	G=VAR_INPUT	Com=Suppress alarm input
+++D=STRING[50]	N=Cfg_AlmSuppressDesc	Ord=28	G=VAR_INPUT	Com=Alarm suppressed description
+++D=BOOL	N=Sts_Alarm	Ord=29	G=VAR_OUTPUT	Com=One or more active alarms
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
