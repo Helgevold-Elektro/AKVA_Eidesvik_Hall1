@@ -61,3 +61,4 @@ _EN=Variables
 ++D=BOOL	N=A12_9_DrumFilter2	AT=IOBus://unit#5/Input Bit 16 bits/Input Bit 09	G=VAR_GLOBAL	Com=Drum filter 2 | Fault
 ++D=BOOL	N=A12_10_DrumFilter2	AT=IOBus://unit#5/Input Bit 16 bits/Input Bit 10	G=VAR_GLOBAL	Com=Drum filter 2 | Flushing
 ++D=BOOL	N=A12_11_Slamkolle	AT=IOBus://unit#5/Input Bit 16 bits/Input Bit 11	G=VAR_GLOBAL
+++D=NX11_1S1	N=EIP_NX11	NTP=PublicationInput	G=VAR_GLOBAL	Com=Nx Node i 1S1 ana
