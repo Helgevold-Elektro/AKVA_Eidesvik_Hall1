@@ -1,1 +1,2 @@
 ﻿{"CLs":[{"__type":"IST","EID":"9804470d-2e8e-46c6-ad76-f93513f9684b","H":130,"TXT":";","W":400}],"LRI":1,"RRI":2,"VLs":[]}
+{"CLs":[{"__type":"F","In":[{"__type":"PF","Arg":"EN"},{"__type":"PRM","Arg":"PORT","Ix":1,"Type":"UINT","Var":"1"},{"__type":"PRM","Arg":"IP","Ix":2,"Type":"UINT","Var":"11"}],"Ix":3,"Name":"HE_CommFault","Out":[{"__type":"PF","Arg":""}],"UD":true},{"__type":"ST","Var":"CommStatus_NX11_1S1","X":1}],"LRI":4,"RRI":5,"VLs":[]}

@@ -3,3 +3,4 @@ _EN=Variables
 +GN=VAR	GVT=DefaultGroup
 ++D=HE_ControllerStat	N=ControllerStat	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
+++D=BOOL	N=CommStatus_NX11_1S1	G=VAR_EXTERNAL

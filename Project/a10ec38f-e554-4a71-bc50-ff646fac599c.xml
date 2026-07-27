@@ -4,8 +4,26 @@ _EN=Variables
 ++D=HE_AnalogInput_OmronNX	N=Oxygen1_Kar1	G=VAR
 ++D=HE_OxygenControl	N=OxygenControl_Kar1	G=VAR
 ++D=HE_AnalogControl_OmronNX	N=SuperoxValve1	G=VAR
+++D=HE_DigitalControl	N=NødOx1Kar1	G=VAR
+++D=HE_DigitalControl	N=NødOx2Kar1	G=VAR
+++D=BOOL	N=Out_NødoxKar1	G=VAR
+++D=HE_AnalogControl_OmronNX	N=SuperoxValve2	G=VAR
+++D=INT_ST\ActuatorData_OxygenControl	N=ActuatorDataKar1	G=VAR
+++D=HE_AnalogInput_OmronNX	N=Oxygen2_Kar1	G=VAR
+++D=HE_AnalogInput_OmronNX	N=Oxygen1_Kar2	G=VAR
+++D=HE_AnalogInput_OmronNX	N=Oxygen2_Kar2	G=VAR
+++D=HE_OxygenControl	N=OxygenControl_Kar2_1502	G=VAR
+++D=HE_AnalogControl_OmronNX	N=SuperoxValve3	G=VAR
+++D=INT_ST\ActuatorData_OxygenControl	N=ActuatorDataKar2	G=VAR
+++D=HE_AnalogControl_OmronNX	N=SuperoxValve4	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=ARRAY[0..10] OF CTRL_ST\AnalogValue	N=AnalogValue	G=VAR_EXTERNAL
 ++D=ARRAY[0..200] OF INT_ST\Alarm	N=Alarm	G=VAR_EXTERNAL
 ++D=ARRAY[0..10] OF CTRL_ST\OxygenControl	N=OxygenControl	G=VAR_EXTERNAL
 ++D=ARRAY[0..10] OF CTRL_ST\AnalogControl	N=AnalogControl	G=VAR_EXTERNAL
+++D=ARRAY[0..10] OF CTRL_ST\DigitalControl	N=DigitalControl	G=VAR_EXTERNAL
+++D=STRING[20]	N=Cabinet_TAG	Const=1	G=VAR_EXTERNAL
+++D=Output_NX11_1S1	N=Output_NX_1S1	G=VAR_EXTERNAL
+++D=STRING[20]	N=PLS_Tag_Hall1	Const=1	G=VAR_EXTERNAL
+++D=Input_NX11_1S1	N=Input_NX_1S1	G=VAR_EXTERNAL
+++D=BOOL	N=CommStatus_NX11_1S1	G=VAR_EXTERNAL

@@ -1,0 +1,14 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=UINT	N=NumberOfFeeders	G=VAR
+++D=UINT	N=NumberOfFillingStations	G=VAR
+++D=UINT	N=NumberOfStorage	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=BOOL	N=ENS	Ord=1	G=VAR_INPUT
+++D=CTRL_ST\FeedDistribution_Common	N=Ext_FeedDistribution_Common	Ord=2	G=VAR_IN_OUT
+++D=ARRAY[*] OF CTRL_ST\FeedDistribution_Feeder	N=Ext_FeedDistribution_Feeder	Ord=3	G=VAR_IN_OUT
+++D=ARRAY[*] OF CTRL_ST\FeedDistribution_FillingStation	N=Ext_FeedDistribution_FillingStation	Ord=4	G=VAR_IN_OUT
+++D=ARRAY[*] OF CTRL_ST\FeedDistribution_Storage	N=Ext_FeedDistribution_Storage	Ord=5	G=VAR_IN_OUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

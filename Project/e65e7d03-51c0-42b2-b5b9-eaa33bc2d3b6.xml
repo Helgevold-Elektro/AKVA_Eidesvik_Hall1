@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <DataType Name="Data Types5" BaseType="" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="">
+    <DataType Name="sNodeDat" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="223" OffsetType="NJ">
+      <DataType Name="InUse" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="NodeAdr" BaseType="INT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="SdoList" BaseType="ARRAY[0..39] OF OEN\nECat\nSDO\sSDOList" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="IsEqual_ReadDat_WriteDat" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="sSdoList" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="142" OffsetType="NJ">
+      <DataType Name="InUse" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="SdoObj" BaseType="_sSDO_ACCESS" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="WriteDat" BaseType="ARRAY[0..7] OF BYTE" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="ReadDat" BaseType="ARRAY[0..7] OF BYTE" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Value_Size" BaseType="UINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Description" BaseType="STRING[20]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="IsEqual_ReadDat_WriteDat" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="sNodeInfo" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="222" OffsetType="NJ">
+      <DataType Name="Model" BaseType="STRING[25]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="sECCUnits" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="221" OffsetType="NJ">
+      <DataType Name="Unit" BaseType="ARRAY[1..125] OF OEN\nECat\nSDO\sUnitID" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="sUnitID" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="141" OffsetType="NJ">
+      <DataType Name="ID1" BaseType="WORD" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="ID2" BaseType="WORD" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+  </DataType>
+</data>

@@ -8,13 +8,13 @@
             <LibraryModel>
               <Name>HE_Library</Name>
               <NameSpace></NameSpace>
-              <Version>3.3.1</Version>
+              <Version>3.5.1</Version>
               <Revision>1</Revision>
-              <LibraryId>7ad88fef-0b82-4e09-8932-4e27e42a8382</LibraryId>
+              <LibraryId>7dabbfde-bd4d-4cd4-a195-1277e7418843</LibraryId>
               <Author>William, Daniel, Ruben &amp; Jan Magne</Author>
               <Company>HELGEVOLD ELEKTRO</Company>
               <DateCreated>2025-01-15T13:32:05.7446511+01:00</DateCreated>
-              <DateModified>2026-07-15T15:03:13.1603092+02:00</DateModified>
+              <DateModified>2026-07-24T14:48:50.3085251+02:00</DateModified>
               <Comment>See release notes</Comment>
               <Password></Password>
               <AttachedFiles />
@@ -27,6 +27,7 @@
                 <PublicName>HE_TableScale</PublicName>
                 <PublicName>HE_CommFault</PublicName>
                 <PublicName>HE_ParseGenerator_DSE86xx</PublicName>
+                <PublicName>HE_FeedDistribution</PublicName>
                 <PublicName>HE_FeedingCommon</PublicName>
                 <PublicName>HE_FeedControl</PublicName>
                 <PublicName>HE_LightControl_HD67840_Wrapper</PublicName>
@@ -52,7 +53,8 @@
                 <PublicName>HE_SwitchData_Schneider</PublicName>
                 <PublicName>HE_UVData_UltraAqua</PublicName>
                 <PublicName>HE_UVData_Wedeco</PublicName>
-                <PublicName>HE_MechanicalFilterData_Hydac</PublicName>
+                <PublicName>HE_MechFilterData_Aquaservice</PublicName>
+                <PublicName>HE_MechFilterData_HYDAC</PublicName>
                 <PublicName>HE_GeneratorData_DSE86xx</PublicName>
                 <PublicName>HE_ResetECB</PublicName>
                 <PublicName>HE_PulseData</PublicName>
@@ -100,9 +102,9 @@
               <IsSource>true</IsSource>
               <IsDisableSourceDisplay>false</IsDisableSourceDisplay>
               <IsIncludeReferredLibraries>true</IsIncludeReferredLibraries>
-              <LibraryFilePath>C:\Users\WilliamVeim\Helgevold Elektro\Onedrive - Automasjon\20 Bibliotek\Omron\Sysmac Studio - Library\Library - AKVA\HE_Library.slr</LibraryFilePath>
-              <LibraryFileRelativePath>Helgevold Elektro\Onedrive - Automasjon\20 Bibliotek\Omron\Sysmac Studio - Library\Library - AKVA\HE_Library.slr</LibraryFileRelativePath>
-              <LibrarySourceControlRelativeFilePath>..\..\..\..\..\..\..\..\Users\WilliamVeim\Helgevold Elektro\Onedrive - Automasjon\20 Bibliotek\Omron\Sysmac Studio - Library\Library - AKVA\HE_Library.slr</LibrarySourceControlRelativeFilePath>
+              <LibraryFilePath>C:\Users\FredrikBjerkenes\OneDrive - Helgevold Elektro\Automasjon\20 Bibliotek\Omron\Sysmac Studio - Library\Library - AKVA\HE_Library.slr</LibraryFilePath>
+              <LibraryFileRelativePath>OneDrive - Helgevold Elektro\Automasjon\20 Bibliotek\Omron\Sysmac Studio - Library\Library - AKVA\HE_Library.slr</LibraryFileRelativePath>
+              <LibrarySourceControlRelativeFilePath>..\..\..\..\..\Users\FredrikBjerkenes\OneDrive - Helgevold Elektro\Automasjon\20 Bibliotek\Omron\Sysmac Studio - Library\Library - AKVA\HE_Library.slr</LibrarySourceControlRelativeFilePath>
               <AsOldVer>false</AsOldVer>
               <SchemaVersion>3</SchemaVersion>
               <Parameter1>false</Parameter1>
