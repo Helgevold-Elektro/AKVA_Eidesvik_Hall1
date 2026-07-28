@@ -2,6 +2,41 @@
 _EN=Variables
 +GN=VAR	GVT=DefaultGroup
 ++D=HE_AnalogControl_OmronNX	N=Sjøvann_RegVentil	G=VAR
+++D=HE_DigitalInput	N=Inp_UV_Sjøvatn	G=VAR
+++D=HE_AnalogInput_OmronNX	N=Inp_Ana_UV_Sjøvatn	G=VAR
+++D=HE_AnalogInput_OmronNX	N=Inp_Ana_UV_Ferskvatn	G=VAR
+++D=HE_PulseData	N=Puls_Flow_FB2_FT1	G=VAR
+++D=HE_PulseData	N=Puls_Flow_FB1_FT1	G=VAR
+++D=HE_AnalogInput_OmronNX	N=Inp_ana_Intensitet_UV_ferskvann	G=VAR
+++D=HE_AnalogInput_OmronNX	N=Inp_ana_Intensitet_UV_Sjøvatn	G=VAR
+++D=HE_AnalogControl_OmronNX	N=Ferskvann_RegVentil	G=VAR
+++D=HE_Interlock	N=Interlock_Sjøvannsventil	G=VAR
+++D=HE_Interlock	N=Interlock_Ferskvannsventil	G=VAR
+++D=HE_MultiControl	N=Styr_FerskVann_Regventil	G=VAR
+++D=ARRAY[0..0] OF INT_ST\ActuatorData	N=ActuatorData_VentilFerskvann	G=VAR
+++D=HE_MultiControl	N=Styr_SjøvannVann_Regventil	G=VAR
+++D=ARRAY[0..0] OF INT_ST\ActuatorData	N=ActuatorData_VentilSjøvann	G=VAR
+++D=HE_DigitalInput	N=Inp_UV_Ferskvann	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=ARRAY[0..10] OF CTRL_ST\AnalogControl	N=AnalogControl	G=VAR_EXTERNAL
 ++D=ARRAY[0..200] OF INT_ST\Alarm	N=Alarm	G=VAR_EXTERNAL
+++D=ARRAY[0..10] OF CTRL_ST\DigitalValue	N=DigitalValue	G=VAR_EXTERNAL
+++D=BOOL	N=A12_1_FB2_UV1	G=VAR_EXTERNAL
+++D=BOOL	N=A12_2_FB2_UV1	G=VAR_EXTERNAL
+++D=BOOL	N=A12_3_FB2_UV1	G=VAR_EXTERNAL
+++D=ARRAY[0..10] OF CTRL_ST\AnalogValue	N=AnalogValue	G=VAR_EXTERNAL
+++D=Input_NX11_1S1	N=Input_NX_1S1	G=VAR_EXTERNAL
+++D=BOOL	N=CommStatus_NX11_1S1	G=VAR_EXTERNAL
+++D=STRING[20]	N=PLS_Tag_Hall1	Const=1	G=VAR_EXTERNAL
+++D=STRING[20]	N=Cabinet_TAG	Const=1	G=VAR_EXTERNAL
+++D=ARRAY[0..10] OF CTRL_ST\AccumulatedData	N=AccumulatedData	G=VAR_EXTERNAL
+++D=BOOL	N=A11_0_UV_FB1_FT1	G=VAR_EXTERNAL
+++D=BOOL	N=A11_1_UV_FB2_FT1	G=VAR_EXTERNAL
+++D=ARRAY[0..10] OF CTRL_ST\Interlock	N=Interlock	G=VAR_EXTERNAL
+++D=ARRAY[0..10] OF CTRL_ST\VFDControl	N=VFDControl	G=VAR_EXTERNAL
+++D=BOOL	N=A12_0_FB1_UV1	G=VAR_EXTERNAL
+++D=BOOL	N=A11_15_FB1_UV1	G=VAR_EXTERNAL
+++D=ARRAY[0..10] OF CTRL_ST\MultiControl	N=MultiControl	G=VAR_EXTERNAL
+++D=BOOL	N=A11_12_FB2_FX1	G=VAR_EXTERNAL
+++D=Output_NX11_1S1	N=Output_NX_1S1	G=VAR_EXTERNAL
+++D=BOOL	N=A11_9_FB1_FX1	G=VAR_EXTERNAL

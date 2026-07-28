@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <data Version="1">
   <DataType Name="Data Types" BaseType="" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="">
-    <DataType Name="Input_NX11_1S1" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="230" OffsetType="User">
+    <DataType Name="Input_NX11_1S1" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="252" OffsetType="User">
       <DataType Name="Status" BaseType="WORD" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="0" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
       <DataType Name="A50_0_Flow_ferskvann_til_UV_FB1_FT1" BaseType="INT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="2" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
       <DataType Name="A50_1_Flow_sjøvann_til_UV_FB2_FT1" BaseType="INT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="4" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
@@ -68,22 +68,23 @@
       <DataType Name="A57_6_Fra_1S1_Ledig_4063" BaseType="INT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="128" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
       <DataType Name="A57_7_Fra_1S1_Ledig_4064" BaseType="INT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="130" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
     </DataType>
-    <DataType Name="Output_NX11_1S1" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="229" OffsetType="User">
-      <DataType Name="Pådrag_ventil_saltvann_FB2_PV10" BaseType="INT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="0" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
-      <DataType Name="Pådrag_shunt_varmekrets_VAA1_MV3" BaseType="INT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="2" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
-      <DataType Name="Pådrag_superox_1_kar_1_OKS1_PV32" BaseType="INT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="4" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
-      <DataType Name="Pådrag_superox_2_kar_1_OKS1_PV52" BaseType="INT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="6" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
-      <DataType Name="Pådrag_superox_1_kar_2_OKS1_PV72" BaseType="INT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="8" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
-      <DataType Name="Pådrag_superox_2_kar_2_OKS1_PV92" BaseType="INT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="10" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
-      <DataType Name="Pådrag_lutpumpe_1" BaseType="INT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="12" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
-      <DataType Name="Pådrag_lutpumpe_2" BaseType="INT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="14" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
-      <DataType Name="Flow_til_UV_sjøvann" BaseType="INT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="16" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
-      <DataType Name="Flow_til_UV_ferskvann" BaseType="INT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="18" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
-      <DataType Name="Pådrag_ozon_generator" BaseType="INT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="20" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
-      <DataType Name="Til_1S1_Ledig_5012" BaseType="INT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="22" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
-      <DataType Name="Til_1S1_Ledig_5013" BaseType="INT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="24" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
-      <DataType Name="Til_1S1_Ledig_5014" BaseType="INT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="26" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
-      <DataType Name="Til_1S1_Ledig_5015" BaseType="INT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="28" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    <DataType Name="Output_NX11_1S1" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="251" OffsetType="User">
+      <DataType Name="Pådrag_ventil_ferskvann_FB1_PV10" BaseType="INT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="0" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Pådrag_ventil_saltvann_FB2_PV10" BaseType="INT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="2" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Pådrag_shunt_varmekrets_VAA1_MV3" BaseType="INT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="4" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Pådrag_superox_1_kar_1_OKS1_PV32" BaseType="INT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="6" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Pådrag_superox_2_kar_1_OKS1_PV52" BaseType="INT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="8" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Pådrag_superox_1_kar_2_OKS1_PV72" BaseType="INT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="10" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Pådrag_superox_2_kar_2_OKS1_PV92" BaseType="INT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="12" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Pådrag_lutpumpe_1" BaseType="INT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="14" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Pådrag_lutpumpe_2" BaseType="INT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="16" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Flow_til_UV_sjøvann" BaseType="INT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="18" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Flow_til_UV_ferskvann" BaseType="INT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="20" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Pådrag_ozon_generator" BaseType="INT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="22" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Til_1S1_Ledig_5012" BaseType="INT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="24" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Til_1S1_Ledig_5013" BaseType="INT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="26" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Til_1S1_Ledig_5014" BaseType="INT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="28" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Til_1S1_Ledig_5015" BaseType="INT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="30" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
     </DataType>
   </DataType>
 </data>

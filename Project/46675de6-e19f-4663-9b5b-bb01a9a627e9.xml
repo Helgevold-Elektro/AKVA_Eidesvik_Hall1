@@ -2,5 +2,7 @@
 _EN=Variables
 +GN=VAR	GVT=DefaultGroup
 ++D=HE_ControllerStat	N=ControllerStat	G=VAR
+++D=HE_ExplicitMessage	N=Telegram	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=BOOL	N=CommStatus_NX11_1S1	G=VAR_EXTERNAL
+++D=INT_ST\ExplicitMessage_Telegram	N=TelegramFC202	G=VAR_EXTERNAL

@@ -6,6 +6,9 @@ _EN=Variables
 ++D=ARRAY[0..10] OF CTRL_ST\OxygenControl	N=OxygenControl	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=ARRAY[0..10] OF CTRL_ST\LightControl	N=LightControl	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=ARRAY[0..10] OF CTRL_ST\VFDControl	N=VFDControl	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=ARRAY[0..35] OF IO_ST\VFD_Danfoss_FCx02_In	N=FC_202_Input	NTP=PublicationInput	G=VAR_GLOBAL
+++D=ARRAY[0..35] OF IO_ST\VFD_Danfoss_FCx02_Out	N=FC_202_Output	NTP=PublicationOutput	G=VAR_GLOBAL
+++D=INT_ST\ExplicitMessage_Telegram	N=TelegramFC202	G=VAR_GLOBAL
 ++D=ARRAY[0..10] OF CTRL_ST\MultiControl	N=MultiControl	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=ARRAY[0..10] OF CTRL_ST\FeedControl	N=FeedControl	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=ARRAY[0..10] OF CTRL_ST\AnalogValue	N=AnalogValue	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
