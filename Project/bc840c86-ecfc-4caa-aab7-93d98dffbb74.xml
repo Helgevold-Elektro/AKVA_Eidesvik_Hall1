@@ -1,4 +1,7 @@
 [SLWD version=1.0]
 _EN=Variables
 +GN=VAR	GVT=DefaultGroup
+++D=HE_VFD_FCx02_Wrapper	N=VFD_Avløpspumpe_FK1	G=VAR
+++D=HE_MultiControl	N=Styr_Avløpspumpe_FK1	G=VAR
+++D=ARRAY[0..0] OF INT_ST\ActuatorData	N=ActuatorData_AvløpspumpeFK1	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

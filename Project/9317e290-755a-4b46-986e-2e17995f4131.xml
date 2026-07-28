@@ -5,7 +5,7 @@ _EN=Variables
 ++D=CTRL_ST\ControllerStat	N=ControllerStat	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=ARRAY[0..10] OF CTRL_ST\OxygenControl	N=OxygenControl	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=ARRAY[0..10] OF CTRL_ST\LightControl	N=LightControl	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=ARRAY[0..10] OF CTRL_ST\VFDControl	N=VFDControl	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=ARRAY[0..35] OF CTRL_ST\VFDControl	N=VFDControl	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=ARRAY[0..35] OF IO_ST\VFD_Danfoss_FCx02_In	N=FC_202_Input	NTP=PublicationInput	G=VAR_GLOBAL
 ++D=ARRAY[0..35] OF IO_ST\VFD_Danfoss_FCx02_Out	N=FC_202_Output	NTP=PublicationOutput	G=VAR_GLOBAL
 ++D=INT_ST\ExplicitMessage_Telegram	N=TelegramFC202	G=VAR_GLOBAL
@@ -69,3 +69,4 @@ _EN=Variables
 ++D=STRING[20]	N=Cabinet_TAG	IV='+1S1'	Const=1	G=VAR_GLOBAL
 ++D=STRING[20]	N=PLS_Tag_Hall1	IV='PLS H1'	Const=1	G=VAR_GLOBAL
 ++D=BOOL	N=CommStatus_NX11_1S1	G=VAR_GLOBAL
+++D=Hall1_Lutstyring	N=LutStyringHall1	R=1	NTP=PublicationOnly	G=VAR_GLOBAL

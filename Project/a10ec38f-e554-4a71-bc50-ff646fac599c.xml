@@ -16,6 +16,12 @@ _EN=Variables
 ++D=HE_AnalogControl_OmronNX	N=SuperoxValve3	G=VAR
 ++D=INT_ST\ActuatorData_OxygenControl	N=ActuatorDataKar2	G=VAR
 ++D=HE_AnalogControl_OmronNX	N=SuperoxValve4	G=VAR
+++D=HE_MultiControl	N=Styr_OxygenPumper	G=VAR
+++D=HE_VFD_FCx02_Wrapper	N=VFD_Ox_Pumpe1	G=VAR
+++D=HE_VFD_FCx02_Wrapper	N=VFD_Ox_Pumpe2	G=VAR
+++D=HE_VFD_FCx02_Wrapper	N=VFD_Ox_Pumpe3	G=VAR
+++D=HE_VFD_FCx02_Wrapper	N=VFD_Ox_Pumpe4	G=VAR
+++D=ARRAY[0..3] OF INT_ST\ActuatorData	N=ActuatorData_OxygenPumper	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=ARRAY[0..10] OF CTRL_ST\AnalogValue	N=AnalogValue	G=VAR_EXTERNAL
 ++D=ARRAY[0..200] OF INT_ST\Alarm	N=Alarm	G=VAR_EXTERNAL
@@ -27,3 +33,8 @@ _EN=Variables
 ++D=STRING[20]	N=PLS_Tag_Hall1	Const=1	G=VAR_EXTERNAL
 ++D=Input_NX11_1S1	N=Input_NX_1S1	G=VAR_EXTERNAL
 ++D=BOOL	N=CommStatus_NX11_1S1	G=VAR_EXTERNAL
+++D=ARRAY[0..10] OF CTRL_ST\MultiControl	N=MultiControl	G=VAR_EXTERNAL
+++D=ARRAY[0..35] OF CTRL_ST\VFDControl	N=VFDControl	G=VAR_EXTERNAL
+++D=ARRAY[0..35] OF IO_ST\VFD_Danfoss_FCx02_In	N=FC_202_Input	G=VAR_EXTERNAL
+++D=ARRAY[0..35] OF IO_ST\VFD_Danfoss_FCx02_Out	N=FC_202_Output	G=VAR_EXTERNAL
+++D=INT_ST\ExplicitMessage_Telegram	N=TelegramFC202	G=VAR_EXTERNAL

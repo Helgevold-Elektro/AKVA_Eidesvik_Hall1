@@ -5,6 +5,11 @@ _EN=Variables
 ++D=HE_VFD_FCx02_Wrapper	N=Co2_AvtrekkCO2_2_2_1	G=VAR
 ++D=HE_MultiControl	N=Styr_Avtrekksvifter_Trinn2	G=VAR
 ++D=ARRAY[0..1] OF INT_ST\ActuatorData	N=ActuatorData_Avtrekk_Trinn_2	G=VAR
+++D=HE_VFD_FCx02_Wrapper	N=Co2_AvtrekkCO2_2_2_2	G=VAR
+++D=HE_MultiControl	N=Styr_Tilluft_Trinn1	G=VAR
+++D=ARRAY[0..0] OF INT_ST\ActuatorData	N=ActuatorData_Tilluft_Trinn1	G=VAR
+++D=HE_Interlock	N=Interlock_Vifter_Trinn_1	G=VAR
+++D=HE_VFD_FCx02_Wrapper	N=VFD_Tilluft_Trinn1	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=ARRAY[0..10] OF CTRL_ST\Interlock	N=Interlock	G=VAR_EXTERNAL
 ++D=ARRAY[0..10] OF CTRL_ST\AnalogValue	N=AnalogValue	G=VAR_EXTERNAL

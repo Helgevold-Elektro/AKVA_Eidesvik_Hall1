@@ -1,4 +1,23 @@
 [SLWD version=1.0]
 _EN=Variables
 +GN=VAR	GVT=DefaultGroup
+++D=HE_Interlock	N=Interlock_Lut	G=VAR
+++D=HE_MultiControl	N=Multicontrol_Lut	G=VAR
+++D=ARRAY[0..1] OF INT_ST\ActuatorData	N=ActuatorData_Lut	G=VAR
+++D=HE_AnalogControl_OmronNX	N=Ana_Control_LutPumpe1	G=VAR
+++D=HE_AnalogControl_OmronNX	N=Ana_Control_LutPumpe2	G=VAR
+++D=BOOL	N=Tomtanlegg	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
+++D=ARRAY[0..10] OF CTRL_ST\Interlock	N=Interlock	G=VAR_EXTERNAL
+++D=ARRAY[0..10] OF CTRL_ST\AnalogValue	N=AnalogValue	G=VAR_EXTERNAL
+++D=ARRAY[0..10] OF CTRL_ST\DigitalValue	N=DigitalValue	G=VAR_EXTERNAL
+++D=ARRAY[0..10] OF CTRL_ST\VFDControl	N=VFDControl	G=VAR_EXTERNAL
+++D=ARRAY[0..10] OF CTRL_ST\MultiControl	N=MultiControl	G=VAR_EXTERNAL
+++D=ARRAY[0..200] OF INT_ST\Alarm	N=Alarm	G=VAR_EXTERNAL
+++D=STRING[20]	N=PLS_Tag_Hall1	Const=1	G=VAR_EXTERNAL
+++D=ARRAY[0..10] OF CTRL_ST\AnalogControl	N=AnalogControl	G=VAR_EXTERNAL
+++D=Input_NX11_1S1	N=Input_NX_1S1	G=VAR_EXTERNAL
+++D=BOOL	N=CommStatus_NX11_1S1	G=VAR_EXTERNAL
+++D=STRING[20]	N=Cabinet_TAG	Const=1	G=VAR_EXTERNAL
+++D=Output_NX11_1S1	N=Output_NX_1S1	G=VAR_EXTERNAL
+++D=Hall1_Lutstyring	N=LutStyringHall1	G=VAR_EXTERNAL
