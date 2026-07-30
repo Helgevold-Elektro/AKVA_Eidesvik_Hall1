@@ -1,6 +1,7 @@
 [SLWD version=1.0]
 _EN=Variables
 +GN=VAR	GVT=DefaultGroup
+++D=HE_AnalogControl_OmronNX	N=Ana_Control_Shuntventil	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=ARRAY[0..10] OF CTRL_ST\VFDControl	N=VFDControl	G=VAR_EXTERNAL
 ++D=ARRAY[0..200] OF INT_ST\Alarm	N=Alarm	G=VAR_EXTERNAL
@@ -10,3 +11,5 @@ _EN=Variables
 ++D=ARRAY[0..10] OF CTRL_ST\MultiControl	N=MultiControl	G=VAR_EXTERNAL
 ++D=ARRAY[0..10] OF CTRL_ST\AnalogValue	N=AnalogValue	G=VAR_EXTERNAL
 ++D=STRING[20]	N=PLS_Tag_Hall1	Const=1	G=VAR_EXTERNAL
+++D=ARRAY[0..10] OF CTRL_ST\AnalogControl	N=AnalogControl	G=VAR_EXTERNAL
+++D=Input_NX11_1S1	N=Input_NX_1S1	G=VAR_EXTERNAL
