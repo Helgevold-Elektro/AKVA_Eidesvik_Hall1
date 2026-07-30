@@ -1,0 +1,20 @@
+<StructuredTextModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Text>&#xD;
+&#xD;
+CASE TyrblåserState OF &#xD;
+	&#xD;
+	10: 	// En tyrblåser eller flere i auto. &#xD;
+	IF TyrBlåser1Pri = 1 OR Tyrblåser2Pri = 1 THEN &#xD;
+		Pri1OK := TRUE; &#xD;
+					ELSIF&#xD;
+						IF TyrBlåser1Pri = 2 OR Tyrblåser2Pri = 2 THEN &#xD;
+							PRI2OK := TRUE; &#xD;
+						ELSIF&#xD;
+								Tyrblåser1_BM01 = 3 THEN &#xD;
+								TyrBlåser1Pri := 2; &#xD;
+						ELSIF Tyrblåser1_BM02 = 3 THEN &#xD;
+						Tyrblåser1_BM02 := 2;&#xD;
+						&#xD;
+						END_IF;&#xD;
+							&#xD;
+								&#xD;
+</Text></StructuredTextModel>

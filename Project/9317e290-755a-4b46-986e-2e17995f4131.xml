@@ -63,10 +63,78 @@ _EN=Variables
 ++D=BOOL	N=A12_8_DrumFilter2	AT=IOBus://unit#5/Input Bit 16 bits/Input Bit 08	G=VAR_GLOBAL	Com=Drum filter 2 | Running
 ++D=BOOL	N=A12_9_DrumFilter2	AT=IOBus://unit#5/Input Bit 16 bits/Input Bit 09	G=VAR_GLOBAL	Com=Drum filter 2 | Fault
 ++D=BOOL	N=A12_10_DrumFilter2	AT=IOBus://unit#5/Input Bit 16 bits/Input Bit 10	G=VAR_GLOBAL	Com=Drum filter 2 | Flushing
-++D=BOOL	N=A12_11_Slamkolle	AT=IOBus://unit#5/Input Bit 16 bits/Input Bit 11	G=VAR_GLOBAL
 ++D=Input_NX11_1S1	N=Input_NX_1S1	NTP=PublicationInput	G=VAR_GLOBAL	Com=Nx Node i 1S1 ana
 ++D=Output_NX11_1S1	N=Output_NX_1S1	NTP=PublicationOutput	G=VAR_GLOBAL
 ++D=STRING[20]	N=Cabinet_TAG	IV='+1S1'	Const=1	G=VAR_GLOBAL
 ++D=STRING[20]	N=PLS_Tag_Hall1	IV='PLS H1'	Const=1	G=VAR_GLOBAL
 ++D=BOOL	N=CommStatus_NX11_1S1	G=VAR_GLOBAL
 ++D=Hall1_Lutstyring	N=LutStyringHall1	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=A12_11_LutPumpe_1_Feil	AT=IOBus://unit#5/Input Bit 16 bits/Input Bit 11	G=VAR_GLOBAL
+++D=BOOL	N=A12_12_LutPumpe_1_Rele	AT=IOBus://unit#5/Input Bit 16 bits/Input Bit 12	G=VAR_GLOBAL
+++D=BOOL	N=A12_13_LutPumper_Lekkasje	AT=IOBus://unit#5/Input Bit 16 bits/Input Bit 13	G=VAR_GLOBAL
+++D=BOOL	N=A12_14_LutPumpe2_Feil	AT=IOBus://unit#5/Input Bit 16 bits/Input Bit 14	G=VAR_GLOBAL
+++D=BOOL	N=A12_15_LutPumpe_2_Rele	AT=IOBus://unit#5/Input Bit 16 bits/Input Bit 15	G=VAR_GLOBAL
+++D=BOOL	N=A13_0_Ventil_slamkol_åpen_FOR1_PV14	AT=IOBus://unit#6/Input Bit 16 bits/Input Bit 00	G=VAR_GLOBAL
+++D=BOOL	N=A13_1_Ventil_slamkollektor_lukket_FOR1_PV14	AT=IOBus://unit#6/Input Bit 16 bits/Input Bit 01	G=VAR_GLOBAL
+++D=BOOL	N=A13_2_Ventil_slamfortrykker_åpen_FOR2_PV5	AT=IOBus://unit#6/Input Bit 16 bits/Input Bit 02	G=VAR_GLOBAL
+++D=BOOL	N=A13_3_Ventil_slamfortrykker_lukket_FOR2_PV5	AT=IOBus://unit#6/Input Bit 16 bits/Input Bit 03	G=VAR_GLOBAL
+++D=BOOL	N=A13_4_Lavt_nivå_mottakstank_tynnslam_SLM1_LS2	AT=IOBus://unit#6/Input Bit 16 bits/Input Bit 04	G=VAR_GLOBAL
+++D=BOOL	N=A13_5_Høgt_nivå_slamtank_SLL1_LS2	AT=IOBus://unit#6/Input Bit 16 bits/Input Bit 05	G=VAR_GLOBAL
+++D=BOOL	N=A13_6_Trykkvakt_slamkollektor_FOR1_PS3	AT=IOBus://unit#6/Input Bit 16 bits/Input Bit 06	G=VAR_GLOBAL
+++D=BOOL	N=A13_7_Trykkvakt_slamfortrykker_FOR2_PS3	AT=IOBus://unit#6/Input Bit 16 bits/Input Bit 07	G=VAR_GLOBAL
+++D=BOOL	N=A13_8_Flowmåler_slam_SLM1_FT3	AT=IOBus://unit#6/Input Bit 16 bits/Input Bit 08	G=VAR_GLOBAL
+++D=BOOL	N=A13_9_BrannsentrallHall1_Feil	AT=IOBus://unit#6/Input Bit 16 bits/Input Bit 09	G=VAR_GLOBAL
+++D=BOOL	N=A13_10_Feil_fra_VVS_adm	AT=IOBus://unit#6/Input Bit 16 bits/Input Bit 10	G=VAR_GLOBAL
+++D=BOOL	N=A13_11_Aggregat1_Feil	AT=IOBus://unit#6/Input Bit 16 bits/Input Bit 11	G=VAR_GLOBAL
+++D=BOOL	N=A13_12_Aggregat1_Drift	AT=IOBus://unit#6/Input Bit 16 bits/Input Bit 12	G=VAR_GLOBAL
+++D=BOOL	N=A13_13_Aggregat1_IkkjeIAuto	AT=IOBus://unit#6/Input Bit 16 bits/Input Bit 13	G=VAR_GLOBAL
+++D=BOOL	N=A13_14_Spenningsvakt_HF01	AT=IOBus://unit#6/Input Bit 16 bits/Input Bit 14	G=VAR_GLOBAL
+++D=BOOL	N=A13_15_Feil_UPS_tavlerom	AT=IOBus://unit#6/Input Bit 16 bits/Input Bit 15	G=VAR_GLOBAL
+++D=BOOL	N=A14_0_Energianlegg_Feil	AT=IOBus://unit#7/Input Bit 16 bits/Input Bit 00	G=VAR_GLOBAL
+++D=BOOL	N=A14_1_Energianlegg_Drift	AT=IOBus://unit#7/Input Bit 16 bits/Input Bit 01	G=VAR_GLOBAL
+++D=BOOL	N=A14_2_Ventil_spedevann_mot_avløp_åpen	AT=IOBus://unit#7/Input Bit 16 bits/Input Bit 02	G=VAR_GLOBAL
+++D=BOOL	N=A14_3_Ventil_spedevann_mot_avløp_lukket	AT=IOBus://unit#7/Input Bit 16 bits/Input Bit 03	G=VAR_GLOBAL
+++D=BOOL	N=A14_4_Ventil_spedevann_mot_RAS_åpen	AT=IOBus://unit#7/Input Bit 16 bits/Input Bit 04	G=VAR_GLOBAL
+++D=BOOL	N=A14_5_Ventil_spedevann_mot_RAS_lukket	AT=IOBus://unit#7/Input Bit 16 bits/Input Bit 05	G=VAR_GLOBAL
+++D=BOOL	N=A14_6_Feil_overspenningsvern_HF01	AT=IOBus://unit#7/Input Bit 16 bits/Input Bit 06	G=VAR_GLOBAL
+++D=BOOL	N=A14_7_Feil_overspenningsvern_HF02	AT=IOBus://unit#7/Input Bit 16 bits/Input Bit 07	G=VAR_GLOBAL
+++D=BOOL	N=A14_8_Feil_Ozon_Generator	AT=IOBus://unit#7/Input Bit 16 bits/Input Bit 08	G=VAR_GLOBAL
+++D=BOOL	N=A14_9_FlowSwitch_HovudPU_1	AT=IOBus://unit#7/Input Bit 16 bits/Input Bit 09	G=VAR_GLOBAL
+++D=BOOL	N=A14_10_FlowSwitch_HovudPU_2	AT=IOBus://unit#7/Input Bit 16 bits/Input Bit 10	G=VAR_GLOBAL
+++D=BOOL	N=A14_11_FlowSwitch_HovudPU_3	AT=IOBus://unit#7/Input Bit 16 bits/Input Bit 11	G=VAR_GLOBAL
+++D=BOOL	N=A14_12_Aggregat2_Feil	AT=IOBus://unit#7/Input Bit 16 bits/Input Bit 12	G=VAR_GLOBAL
+++D=BOOL	N=A14_13_Feil_Ozon_Pumpe	AT=IOBus://unit#7/Input Bit 16 bits/Input Bit 13	G=VAR_GLOBAL
+++D=BOOL	N=A14_14_Ledig_4_14	AT=IOBus://unit#7/Input Bit 16 bits/Input Bit 14	G=VAR_GLOBAL
+++D=BOOL	N=A14_15_Ledig_4_15	AT=IOBus://unit#7/Input Bit 16 bits/Input Bit 15	G=VAR_GLOBAL
+++D=BOOL	N=A30_0_Alarm_sirene	AT=IOBus://unit#11/Output Bit 16 bits/Output Bit 00	G=VAR_GLOBAL
+++D=BOOL	N=A30_1_Alarm_Lys	AT=IOBus://unit#11/Output Bit 16 bits/Output Bit 01	G=VAR_GLOBAL
+++D=BOOL	N=A30_2_Resette_GSM_modem	AT=IOBus://unit#11/Output Bit 16 bits/Output Bit 02	G=VAR_GLOBAL
+++D=BOOL	N=A30_3_Start_stopp_lut_pumpe_1	AT=IOBus://unit#11/Output Bit 16 bits/Output Bit 03	G=VAR_GLOBAL
+++D=BOOL	N=A30_4_Start_stopp_lut_pumpe_2	AT=IOBus://unit#11/Output Bit 16 bits/Output Bit 04	G=VAR_GLOBAL
+++D=BOOL	N=A30_5_Ventil_resik_vann	AT=IOBus://unit#11/Output Bit 16 bits/Output Bit 05	G=VAR_GLOBAL
+++D=BOOL	N=A30_6_Ventil_slamkollektor	AT=IOBus://unit#11/Output Bit 16 bits/Output Bit 06	G=VAR_GLOBAL
+++D=BOOL	N=A30_7_Ventil_slamfortrykker	AT=IOBus://unit#11/Output Bit 16 bits/Output Bit 07	G=VAR_GLOBAL
+++D=BOOL	N=A30_8_Nødox_1_fiskekar_1	AT=IOBus://unit#11/Output Bit 16 bits/Output Bit 08	G=VAR_GLOBAL
+++D=BOOL	N=A30_9_Nødox_2_fiskekar_1	AT=IOBus://unit#11/Output Bit 16 bits/Output Bit 09	G=VAR_GLOBAL
+++D=BOOL	N=A30_10_Nødox_1_fiskekar_2	AT=IOBus://unit#11/Output Bit 16 bits/Output Bit 10	G=VAR_GLOBAL
+++D=BOOL	N=A30_11_Nødox_2_fiskekar_2	AT=IOBus://unit#11/Output Bit 16 bits/Output Bit 11	G=VAR_GLOBAL
+++D=BOOL	N=A30_12_Ventil_spedevann_mot_avløp	AT=IOBus://unit#11/Output Bit 16 bits/Output Bit 12	G=VAR_GLOBAL
+++D=BOOL	N=A30_13_Ventil_spedevann_mot_RAS	AT=IOBus://unit#11/Output Bit 16 bits/Output Bit 13	G=VAR_GLOBAL
+++D=BOOL	N=A30_14_Varmepumpe_start_stopp	AT=IOBus://unit#11/Output Bit 16 bits/Output Bit 14	G=VAR_GLOBAL
+++D=BOOL	N=A30_15_Spyling_trommelfilter_1	AT=IOBus://unit#11/Output Bit 16 bits/Output Bit 15	G=VAR_GLOBAL
+++D=BOOL	N=A31_0_Spyling_trommelfilter_2	AT=IOBus://unit#12/Output Bit 16 bits/Output Bit 00	G=VAR_GLOBAL
+++D=BOOL	N=A31_1_Ventil_forbruksvann	AT=IOBus://unit#12/Output Bit 16 bits/Output Bit 01	G=VAR_GLOBAL
+++D=BOOL	N=A31_2_Start_ozon_generator	AT=IOBus://unit#12/Output Bit 16 bits/Output Bit 02	G=VAR_GLOBAL
+++D=BOOL	N=A31_3_Start_ozon_pumpe	AT=IOBus://unit#12/Output Bit 16 bits/Output Bit 03	G=VAR_GLOBAL
+++D=BOOL	N=A31_4_FellesFeil_Fra_Hall1	AT=IOBus://unit#12/Output Bit 16 bits/Output Bit 04	G=VAR_GLOBAL
+++D=BOOL	N=A31_5_VP_Kjøle_Varme	AT=IOBus://unit#12/Output Bit 16 bits/Output Bit 05	G=VAR_GLOBAL
+++D=BOOL	N=A31_6_Varsellys_MBBR	AT=IOBus://unit#12/Output Bit 16 bits/Output Bit 06	G=VAR_GLOBAL
+++D=BOOL	N=A31_7_Varsellys_Pumperum	AT=IOBus://unit#12/Output Bit 16 bits/Output Bit 07	G=VAR_GLOBAL
+++D=BOOL	N=A31_8_Ledig	AT=IOBus://unit#12/Output Bit 16 bits/Output Bit 08	G=VAR_GLOBAL
+++D=BOOL	N=A31_9_Ledig	AT=IOBus://unit#12/Output Bit 16 bits/Output Bit 09	G=VAR_GLOBAL
+++D=BOOL	N=A31_10_Ledig	AT=IOBus://unit#12/Output Bit 16 bits/Output Bit 10	G=VAR_GLOBAL
+++D=BOOL	N=A31_11_Ledig	AT=IOBus://unit#12/Output Bit 16 bits/Output Bit 11	G=VAR_GLOBAL
+++D=BOOL	N=A31_12_Ledig	AT=IOBus://unit#12/Output Bit 16 bits/Output Bit 12	G=VAR_GLOBAL
+++D=BOOL	N=A31_13_Ledig	AT=IOBus://unit#12/Output Bit 16 bits/Output Bit 13	G=VAR_GLOBAL
+++D=BOOL	N=A31_14_Ledig	AT=IOBus://unit#12/Output Bit 16 bits/Output Bit 14	G=VAR_GLOBAL
+++D=BOOL	N=A31_15_Watchdog	AT=IOBus://unit#12/Output Bit 16 bits/Output Bit 15	G=VAR_GLOBAL

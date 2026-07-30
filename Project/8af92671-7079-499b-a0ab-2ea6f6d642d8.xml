@@ -1,0 +1,12 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=UINT	N=TyrblåserState	G=VAR
+++D=UINT	N=TyrBlåser1Pri	G=VAR
+++D=UINT	N=Tyrblåser2Pri	G=VAR
+++D=BOOL	N=Pri1OK	G=VAR
+++D=BOOL	N=PRI2OK	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=CTRL_ST\VFDControl	N=Tyrblåser1_BM01	Ord=0	G=VAR_INPUT
+++D=CTRL_ST\VFDControl	N=Tyrblåser1_BM02	Ord=1	G=VAR_INPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
