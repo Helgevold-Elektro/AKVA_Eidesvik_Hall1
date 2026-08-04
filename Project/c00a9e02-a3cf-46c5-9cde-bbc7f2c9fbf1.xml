@@ -6,6 +6,7 @@ _EN=Variables
 ++D=HE_VFD_FCx02_Wrapper	N=VFD_HovedPumpe3	G=VAR
 ++D=HE_MultiControl	N=Styr_Hovedpumper	G=VAR
 ++D=ARRAY[0..2] OF INT_ST\ActuatorData	N=ActuatorData_HovedPumper	G=VAR
+++D=HE_Interlock	N=Interlock_HovedPumper	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=ARRAY[0..35] OF CTRL_ST\VFDControl	N=VFDControl	G=VAR_EXTERNAL
 ++D=ARRAY[0..200] OF INT_ST\Alarm	N=Alarm	G=VAR_EXTERNAL
@@ -15,3 +16,5 @@ _EN=Variables
 ++D=ARRAY[0..10] OF CTRL_ST\MultiControl	N=MultiControl	G=VAR_EXTERNAL
 ++D=ARRAY[0..10] OF CTRL_ST\AnalogValue	N=AnalogValue	G=VAR_EXTERNAL
 ++D=STRING[20]	N=PLS_Tag_Hall1	Const=1	G=VAR_EXTERNAL
+++D=ARRAY[0..10] OF CTRL_ST\Interlock	N=Interlock	G=VAR_EXTERNAL
+++D=ARRAY[0..10] OF CTRL_ST\DigitalValue	N=DigitalValue	G=VAR_EXTERNAL
