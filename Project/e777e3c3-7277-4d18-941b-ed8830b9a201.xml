@@ -2,26 +2,23 @@
 _EN=Variables
 +GN=VAR	GVT=DefaultGroup
 ++D=HE_AnalogControl_OmronNX	N=Ana_Control_Shuntventil	G=VAR
-++D=HE_MultiControl	N=MultiControl_Energianlegg	G=VAR
+++D=HE_MultiControl	N=MultiControl_Energianlegg_Varming	G=VAR
+++D=HE_MultiControl	N=MultiControl_Energianlegg_Kjøling	G=VAR
 ++D=ARRAY[0..1] OF INT_ST\ActuatorData	N=ActuatorDataEnergianlegg	G=VAR
-++D=REAL	N=VPdiff1	G=VAR
-++D=REAL	N=VPdiff2	G=VAR
-++D=REAL	N=Trinn_Ned_TempDiff	G=VAR
-++D=REAL	N=Trinn_Opp_TempDiff	G=VAR
-++D=INT	N=ShuntTelleregTrinnOpp	G=VAR
-++D=INT	N=ShuntTelleregTrinnNed	G=VAR
-++D=INT	N=TidsForsinkelseTrinnOpp	G=VAR
-++D=INT	N=TidsForsinkelseTrinnNed	G=VAR
-++D=REAL	N=PådragøkTrinnOpp	G=VAR
-++D=REAL	N=PådragReduksjonTrinnned	G=VAR
+++D=Hall1_Shuntventil_EnergiAnlegg	N=TrinnStyringShunt	G=VAR
+++D=BOOL	N=Anlegg_I_VarmingAvPå	G=VAR
+++D=BOOL	N=Anlegg_I_KjølingAvPå	G=VAR
+++D=REAL	N=PådragPID	G=VAR
+++D=BOOL	N=Shunt_Tilgjenglig	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=ARRAY[0..35] OF CTRL_ST\VFDControl	N=VFDControl	G=VAR_EXTERNAL
 ++D=ARRAY[0..200] OF INT_ST\Alarm	N=Alarm	G=VAR_EXTERNAL
 ++D=ARRAY[0..35] OF IO_ST\VFD_Danfoss_FCx02_In	N=FC_202_Input	G=VAR_EXTERNAL
 ++D=ARRAY[0..35] OF IO_ST\VFD_Danfoss_FCx02_Out	N=FC_202_Output	G=VAR_EXTERNAL
 ++D=INT_ST\ExplicitMessage_Telegram	N=TelegramFC202	G=VAR_EXTERNAL
-++D=ARRAY[0..10] OF CTRL_ST\MultiControl	N=MultiControl	G=VAR_EXTERNAL
+++D=ARRAY[0..30] OF CTRL_ST\MultiControl	N=MultiControl	G=VAR_EXTERNAL
 ++D=ARRAY[0..10] OF CTRL_ST\AnalogValue	N=AnalogValue	G=VAR_EXTERNAL
 ++D=STRING[20]	N=PLS_Tag_Hall1	Const=1	G=VAR_EXTERNAL
 ++D=ARRAY[0..10] OF CTRL_ST\AnalogControl	N=AnalogControl	G=VAR_EXTERNAL
 ++D=Input_NX11_1S1	N=Input_NX_1S1	G=VAR_EXTERNAL
+++D=Hall_1_EnergiAnlegg	N=Hall1_Energianlegg	G=VAR_EXTERNAL

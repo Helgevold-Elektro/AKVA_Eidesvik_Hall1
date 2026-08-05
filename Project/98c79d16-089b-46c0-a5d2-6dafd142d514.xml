@@ -1,0 +1,23 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=INT	N=TrinnTellerOpp	G=VAR
+++D=INT	N=TrinnTellerNed	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=BOOL	N=ENI	Ord=1	G=VAR_INPUT
+++D=BOOL	N=Inp_TilgjengligAuto_Ventil	Ord=2	G=VAR_INPUT
+++D=BOOL	N=Inp_TilgjengligAuto_Regulator	Ord=3	G=VAR_INPUT
+++D=REAL	N=Inp_PådragØkning_TrinnOpp	Ord=4	G=VAR_INPUT
+++D=REAL	N=Inp_PådragReduksjon_TrinnNed	Ord=5	G=VAR_INPUT
+++D=REAL	N=Inp_GrenseTrinnOpp	Ord=6	G=VAR_INPUT
+++D=REAL	N=Inp_GrenseTrinnNed	Ord=7	G=VAR_INPUT
+++D=REAL	N=Inp_VarmepumpeDiff1	Ord=8	G=VAR_INPUT
+++D=REAL	N=Inp_VarmepumpeDiff2	Ord=9	G=VAR_INPUT
+++D=REAL	N=Inp_Grense_VP_Diff_TrinnOpp	Ord=10	G=VAR_INPUT
+++D=REAL	N=Inp_Grense_VP_Diff_TrinnNed	Ord=11	G=VAR_INPUT
+++D=REAL	N=Inp_Pådrag_Fra_PID	Ord=12	G=VAR_INPUT
+++D=REAL	N=Output	Ord=13	G=VAR_OUTPUT
+++D=UINT	N=TrinnIntervall	Ord=14	G=VAR_INPUT
+++D=TIME	N=TrinnIntervall_Timer	Ord=15	G=VAR_OUTPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

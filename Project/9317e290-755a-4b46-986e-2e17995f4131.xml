@@ -17,6 +17,7 @@ _EN=Variables
 ++D=ARRAY[0..10] OF CTRL_ST\DigitalControl	N=DigitalControl	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=ARRAY[0..10] OF CTRL_ST\AccumulatedData	N=AccumulatedData	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=ARRAY[0..10] OF CTRL_ST\Interlock	N=Interlock	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=Hall_1_EnergiAnlegg	N=Hall1_Energianlegg	G=VAR_GLOBAL
 ++D=ARRAY[0..49] OF CTRL_ST\SMS_Contact	N=SMS_Contact	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=CTRL_ST\SMS_Settings	N=SMS_Settings	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=CTRL_ST\FeedControl_Common	N=FeedControl_Common	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
