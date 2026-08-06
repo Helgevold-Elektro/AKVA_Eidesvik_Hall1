@@ -17,6 +17,7 @@ _EN=Variables
 ++D=HE_MultiControl	N=Styr_SjøvannVann_Regventil	G=VAR
 ++D=ARRAY[0..0] OF INT_ST\ActuatorData	N=ActuatorData_VentilSjøvann	G=VAR
 ++D=HE_DigitalInput	N=Inp_UV_Ferskvann	G=VAR
+++D=HE_AnalogInput_OmronNX	N=Ana_Salinitet_RAS	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=ARRAY[0..10] OF CTRL_ST\AnalogControl	N=AnalogControl	G=VAR_EXTERNAL
 ++D=ARRAY[0..200] OF INT_ST\Alarm	N=Alarm	G=VAR_EXTERNAL

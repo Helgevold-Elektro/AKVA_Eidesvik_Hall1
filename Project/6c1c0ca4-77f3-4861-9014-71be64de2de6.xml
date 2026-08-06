@@ -10,6 +10,8 @@ _EN=Variables
 ++D=ARRAY[0..0] OF INT_ST\ActuatorData	N=ActuatorData_Tilluft_Trinn1	G=VAR
 ++D=HE_Interlock	N=Interlock_Vifter_Trinn_1	G=VAR
 ++D=HE_VFD_FCx02_Wrapper	N=VFD_Tilluft_Trinn1	G=VAR
+++D=HE_AnalogInput_OmronNX	N=Ana_Trykkluft_til_Bioreaktor	G=VAR
+++D=HE_AnalogInput_OmronNX	N=Ana_Trykk_til_Co2_Trinn1	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=ARRAY[0..10] OF CTRL_ST\Interlock	N=Interlock	G=VAR_EXTERNAL
 ++D=ARRAY[0..10] OF CTRL_ST\AnalogValue	N=AnalogValue	G=VAR_EXTERNAL
@@ -21,3 +23,4 @@ _EN=Variables
 ++D=INT_ST\ExplicitMessage_Telegram	N=TelegramFC202	G=VAR_EXTERNAL
 ++D=ARRAY[0..10] OF CTRL_ST\MultiControl	N=MultiControl	G=VAR_EXTERNAL
 ++D=STRING[20]	N=PLS_Tag_Hall1	Const=1	G=VAR_EXTERNAL
+++D=STRING[20]	N=Cabinet_TAG	Const=1	G=VAR_EXTERNAL
