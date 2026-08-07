@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Module VenderID="1" ProductCode="1266262" Revision="16777216" IONodeID="e9308e4a-e8af-4e65-a24d-3699fa0b7423" DeviceName="N11" SerialNo="0" IsEnabled="1">
+<Module VenderID="1" ProductCode="1266262" Revision="16777216" IONodeID="e9308e4a-e8af-4e65-a24d-3699fa0b7423" DeviceName="A30" SerialNo="0" IsEnabled="1">
   <Parameter Index="20498" SubIndex="1" Value="0" />
   <IOPort IOPortID="879e2664-378e-4316-acc6-5b643f1965e7" Index="28674" SubIndex="1">
     <SubIOPort IOPortID="b7e210d3-2a92-4fb2-a81a-6e5db9c877ee" />

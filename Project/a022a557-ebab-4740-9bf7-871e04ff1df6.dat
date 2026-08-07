@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Module VenderID="1" ProductCode="2241027" Revision="16777216" IONodeID="792f2d43-b2c8-4303-9690-332f5076e035" DeviceName="N13_3" SerialNo="0" IsEnabled="1">
+<Module VenderID="1" ProductCode="2241027" Revision="16777216" IONodeID="792f2d43-b2c8-4303-9690-332f5076e035" DeviceName="A83" SerialNo="0" IsEnabled="1">
   <Parameter Index="16385" SubIndex="1" Value="1693450240" />
   <Parameter Index="16385" SubIndex="2" Value="4" />
   <Parameter Index="16385" SubIndex="3" Value="1693974528" />

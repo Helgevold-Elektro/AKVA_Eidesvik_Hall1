@@ -21,22 +21,22 @@ _EN=Variables
 ++D=ARRAY[0..49] OF CTRL_ST\SMS_Contact	N=SMS_Contact	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=CTRL_ST\SMS_Settings	N=SMS_Settings	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
 ++D=CTRL_ST\FeedControl_Common	N=FeedControl_Common	R=1	NTP=PublicationOnly	G=VAR_GLOBAL
-++D=BOOL	N=A10_0_SurgeArrestor_1S1	AT=IOBus://unit#3/Input Bit 16 bits/Input Bit 00	G=VAR_GLOBAL	Com=Fault
-++D=BOOL	N=A10_1_RedundancyModule_1S1	AT=IOBus://unit#3/Input Bit 16 bits/Input Bit 01	G=VAR_GLOBAL	Com=Fault
-++D=BOOL	N=A10_2_PowerSupply_1S1	AT=IOBus://unit#3/Input Bit 16 bits/Input Bit 02	G=VAR_GLOBAL	Com=Fault
-++D=BOOL	N=A10_3_Switch1_1S1	AT=IOBus://unit#3/Input Bit 16 bits/Input Bit 03	G=VAR_GLOBAL	Com=Fault
-++D=BOOL	N=A10_4_Switch2_1S1	AT=IOBus://unit#3/Input Bit 16 bits/Input Bit 04	G=VAR_GLOBAL	Com=Fault
-++D=BOOL	N=A10_5_Switch3_1S1	AT=IOBus://unit#3/Input Bit 16 bits/Input Bit 05	G=VAR_GLOBAL	Com=Fault
-++D=BOOL	N=A10_7_DryRun_FOR1_PU2	AT=IOBus://unit#3/Input Bit 16 bits/Input Bit 07	G=VAR_GLOBAL	Com=Dry running
-++D=BOOL	N=A10_6_DryRun_FOR1_PU1	AT=IOBus://unit#3/Input Bit 16 bits/Input Bit 06	G=VAR_GLOBAL	Com=Dry running
-++D=BOOL	N=A10_9_Switch4_1S1	AT=IOBus://unit#3/Input Bit 16 bits/Input Bit 09	G=VAR_GLOBAL	Com=Fault
-++D=BOOL	N=A10_10_Switch5_1S1	AT=IOBus://unit#3/Input Bit 16 bits/Input Bit 10	G=VAR_GLOBAL	Com=Fault
-++D=BOOL	N=A10_8_Spare	AT=IOBus://unit#3/Input Bit 16 bits/Input Bit 08	G=VAR_GLOBAL
-++D=BOOL	N=A10_11_Spare	AT=IOBus://unit#3/Input Bit 16 bits/Input Bit 11	G=VAR_GLOBAL
-++D=BOOL	N=A10_12_Spare	AT=IOBus://unit#3/Input Bit 16 bits/Input Bit 12	G=VAR_GLOBAL
-++D=BOOL	N=A10_13_Spare	AT=IOBus://unit#3/Input Bit 16 bits/Input Bit 13	G=VAR_GLOBAL
-++D=BOOL	N=A10_14_Spare	AT=IOBus://unit#3/Input Bit 16 bits/Input Bit 14	G=VAR_GLOBAL
-++D=BOOL	N=A10_15_Spare	AT=IOBus://unit#3/Input Bit 16 bits/Input Bit 15	G=VAR_GLOBAL
+++D=BOOL	N=A10_0_SurgeArrestor_1S1	AT=IOBus://unit#2/Input Bit 16 bits/Input Bit 00	G=VAR_GLOBAL	Com=Fault
+++D=BOOL	N=A10_1_RedundancyModule_1S1	AT=IOBus://unit#2/Input Bit 16 bits/Input Bit 01	G=VAR_GLOBAL	Com=Fault
+++D=BOOL	N=A10_2_PowerSupply_1S1	AT=IOBus://unit#2/Input Bit 16 bits/Input Bit 02	G=VAR_GLOBAL	Com=Fault
+++D=BOOL	N=A10_3_Switch1_1S1	AT=IOBus://unit#2/Input Bit 16 bits/Input Bit 03	G=VAR_GLOBAL	Com=Fault
+++D=BOOL	N=A10_4_Switch2_1S1	AT=IOBus://unit#2/Input Bit 16 bits/Input Bit 04	G=VAR_GLOBAL	Com=Fault
+++D=BOOL	N=A10_5_Switch3_1S1	AT=IOBus://unit#2/Input Bit 16 bits/Input Bit 05	G=VAR_GLOBAL	Com=Fault
+++D=BOOL	N=A10_7_DryRun_FOR1_PU2	AT=IOBus://unit#2/Input Bit 16 bits/Input Bit 07	G=VAR_GLOBAL	Com=Dry running
+++D=BOOL	N=A10_6_DryRun_FOR1_PU1	AT=IOBus://unit#2/Input Bit 16 bits/Input Bit 06	G=VAR_GLOBAL	Com=Dry running
+++D=BOOL	N=A10_9_Switch4_1S1	AT=IOBus://unit#2/Input Bit 16 bits/Input Bit 09	G=VAR_GLOBAL	Com=Fault
+++D=BOOL	N=A10_10_Switch5_1S1	AT=IOBus://unit#2/Input Bit 16 bits/Input Bit 10	G=VAR_GLOBAL	Com=Fault
+++D=BOOL	N=A10_8_Spare	AT=IOBus://unit#2/Input Bit 16 bits/Input Bit 08	G=VAR_GLOBAL
+++D=BOOL	N=A10_11_Spare	AT=IOBus://unit#2/Input Bit 16 bits/Input Bit 11	G=VAR_GLOBAL
+++D=BOOL	N=A10_12_Spare	AT=IOBus://unit#2/Input Bit 16 bits/Input Bit 12	G=VAR_GLOBAL
+++D=BOOL	N=A10_13_Spare	AT=IOBus://unit#2/Input Bit 16 bits/Input Bit 13	G=VAR_GLOBAL
+++D=BOOL	N=A10_14_Spare	AT=IOBus://unit#2/Input Bit 16 bits/Input Bit 14	G=VAR_GLOBAL
+++D=BOOL	N=A10_15_Spare	AT=IOBus://unit#2/Input Bit 16 bits/Input Bit 15	G=VAR_GLOBAL
 ++D=BOOL	N=A11_0_UV_FB1_FT1	AT=IOBus://unit#4/Input Bit 16 bits/Input Bit 00	G=VAR_GLOBAL	Com=Puls freshwater (1p/m3)
 ++D=BOOL	N=A11_1_UV_FB2_FT1	AT=IOBus://unit#4/Input Bit 16 bits/Input Bit 01	G=VAR_GLOBAL	Com=Puls flow seawater (1p/m3)
 ++D=BOOL	N=A11_2_DAK1_LS1	AT=IOBus://unit#4/Input Bit 16 bits/Input Bit 02	G=VAR_GLOBAL	Com=High level drain sump
@@ -139,3 +139,99 @@ _EN=Variables
 ++D=BOOL	N=A31_13_Ledig	AT=IOBus://unit#12/Output Bit 16 bits/Output Bit 13	G=VAR_GLOBAL
 ++D=BOOL	N=A31_14_Ledig	AT=IOBus://unit#12/Output Bit 16 bits/Output Bit 14	G=VAR_GLOBAL
 ++D=BOOL	N=A31_15_Watchdog	AT=IOBus://unit#12/Output Bit 16 bits/Output Bit 15	G=VAR_GLOBAL
+++D=INT	N=A50_0_Flow_ferskvann_til_UV_FB1_FT1	AT=IOBus://unit#17/Ch1 Analog Input Value	G=VAR_GLOBAL
+++D=INT	N=A50_1_Flow_sjøvann_til_UV_FB2_FT1	AT=IOBus://unit#17/Ch2 Analog Input Value	G=VAR_GLOBAL
+++D=INT	N=A50_2_Nivå_Fiskekar_1_FK1_LT1	AT=IOBus://unit#17/Ch3 Analog Input Value	G=VAR_GLOBAL
+++D=INT	N=A50_3_Nivå_Fiskekar_2_FK2_LT1	AT=IOBus://unit#17/Ch4 Analog Input Value	G=VAR_GLOBAL
+++D=INT	N=A51_0_Nivå_kjemitank_DOS1_LT1	AT=IOBus://unit#19/Ch1 Analog Input Value	G=VAR_GLOBAL
+++D=INT	N=A51_1_Trykk_Luft_Bioreaktor_LTL1_PT1	AT=IOBus://unit#19/Ch2 Analog Input Value	G=VAR_GLOBAL
+++D=INT	N=A51_2_Trykk_Luft_CO2_LTL2_PT1	AT=IOBus://unit#19/Ch3 Analog Input Value	G=VAR_GLOBAL
+++D=INT	N=A51_3_Trykk_vann_Til_fiskekar_UT1_PT1	AT=IOBus://unit#19/Ch4 Analog Input Value	G=VAR_GLOBAL
+++D=INT	N=A52_0_Temp_Til_Glyk_VVX_mot_Ras_VAA1_TT11	AT=IOBus://unit#20/Ch1 Analog Input Value	G=VAR_GLOBAL
+++D=INT	N=A52_1_Temp_Fra_Glyk_VVX_mot_Ras_VAA_TT13	AT=IOBus://unit#20/Ch2 Analog Input Value	G=VAR_GLOBAL
+++D=INT	N=A52_2_Temp_fra_Ras_til_Energi_VAA1_TT1	AT=IOBus://unit#20/Ch3 Analog Input Value	G=VAR_GLOBAL
+++D=INT	N=A52_3_Temp_Til_Ras_fra_Energi_VAA1_TT3	AT=IOBus://unit#20/Ch4 Analog Input Value	G=VAR_GLOBAL
+++D=INT	N=A53_0_Temp_Fiskekar_1	AT=IOBus://unit#21/Ch1 Analog Input Value	G=VAR_GLOBAL
+++D=INT	N=A53_1_Temp_Fiskekar_2	AT=IOBus://unit#21/Ch2 Analog Input Value	G=VAR_GLOBAL
+++D=INT	N=A53_2_Oxygen_nivå_Kar_1	AT=IOBus://unit#21/Ch3 Analog Input Value	G=VAR_GLOBAL
+++D=INT	N=A53_3_Ph_Kar_1	AT=IOBus://unit#21/Ch4 Analog Input Value	G=VAR_GLOBAL
+++D=INT	N=A54_0_Oxygen_nivå_Kar_2	AT=IOBus://unit#22/Ch1 Analog Input Value	G=VAR_GLOBAL
+++D=INT	N=A54_1_Ph_Kar_2	AT=IOBus://unit#22/Ch2 Analog Input Value	G=VAR_GLOBAL
+++D=INT	N=A54_2_Nivå_Pumpesump_SensorB	AT=IOBus://unit#22/Ch3 Analog Input Value	G=VAR_GLOBAL
+++D=INT	N=A54_3_Ph_i_MBBR1	AT=IOBus://unit#22/Ch4 Analog Input Value	G=VAR_GLOBAL
+++D=INT	N=A55_0_Ph_i_MBBR2	AT=IOBus://unit#23/Ch1 Analog Input Value	G=VAR_GLOBAL
+++D=INT	N=A55_1_Salinitet_i_RAS_Anlegg	AT=IOBus://unit#23/Ch2 Analog Input Value	G=VAR_GLOBAL
+++D=INT	N=A55_2_Pos_ventil_ferskvann_FB1_PV10	AT=IOBus://unit#23/Ch3 Analog Input Value	G=VAR_GLOBAL
+++D=INT	N=A55_3_Pos_ventil_sjøvann_FB2_PV10	AT=IOBus://unit#23/Ch4 Analog Input Value	G=VAR_GLOBAL
+++D=INT	N=A56_0_Nivå_Pumpesump_SensorA	AT=IOBus://unit#24/Ch1 Analog Input Value	G=VAR_GLOBAL
+++D=INT	N=A56_1_Pos_Kar1_superOxVen_1_OKS1_PV32	AT=IOBus://unit#24/Ch2 Analog Input Value	G=VAR_GLOBAL
+++D=INT	N=A56_2_Pos_Kar1superOxVen_2_OKS1_PV52	AT=IOBus://unit#24/Ch3 Analog Input Value	G=VAR_GLOBAL
+++D=INT	N=A56_3_Pos_Kar2_superOxVen_1_OKS1_PV72	AT=IOBus://unit#24/Ch4 Analog Input Value	G=VAR_GLOBAL
+++D=INT	N=A57_0_Pos_Kar2_superOxVen_2_OKS1_PV92	AT=IOBus://unit#25/Ch1 Analog Input Value	G=VAR_GLOBAL
+++D=INT	N=A57_1_UV_Intensitet_Fersk_FB1_FX1	AT=IOBus://unit#25/Ch2 Analog Input Value	G=VAR_GLOBAL
+++D=INT	N=A57_2_UV_Intensitet_Sjø_FB2_FX1	AT=IOBus://unit#25/Ch3 Analog Input Value	G=VAR_GLOBAL
+++D=INT	N=A57_3_H2S_Sensor_DRK1_QT1	AT=IOBus://unit#25/Ch4 Analog Input Value	G=VAR_GLOBAL
+++D=INT	N=A58_0_Trykk_Oxygen_Tilførsel_TT04	AT=IOBus://unit#26/Ch1 Analog Input Value	G=VAR_GLOBAL
+++D=INT	N=A58_1_Nivå_Oxygentank_LT04	AT=IOBus://unit#26/Ch2 Analog Input Value	G=VAR_GLOBAL
+++D=INT	N=A58_2_Flow_Lutpumpe_1	AT=IOBus://unit#26/Ch3 Analog Input Value	G=VAR_GLOBAL
+++D=INT	N=A58_3_Flow_Lutpumpe_2	AT=IOBus://unit#26/Ch4 Analog Input Value	G=VAR_GLOBAL
+++D=INT	N=A59_0_Temp_Sjøv_Til_energi_VAA1_TT21	AT=IOBus://unit#28/Ch1 Analog Input Value	G=VAR_GLOBAL
+++D=INT	N=A59_1_Temp_Sjøv_Fra_energi_VAA1_TT23	AT=IOBus://unit#28/Ch2 Analog Input Value	G=VAR_GLOBAL
+++D=INT	N=A59_2_Temp_Glykol_Til_VVX_mot_Ras_VAA1_TT31	AT=IOBus://unit#28/Ch3 Analog Input Value	G=VAR_GLOBAL
+++D=INT	N=A59_3_Temp_Glykol_Fra_VVX_mot_Ras_VAA1_TT33	AT=IOBus://unit#28/Ch4 Analog Input Value	G=VAR_GLOBAL
+++D=INT	N=A60_0_Nivå_mottakstank_tynnslam_SLM_LT1	AT=IOBus://unit#29/Ch1 Analog Input Value	G=VAR_GLOBAL
+++D=INT	N=A60_1_Nivå_slamkollektor_FOR1_LT1	AT=IOBus://unit#29/Ch2 Analog Input Value	G=VAR_GLOBAL
+++D=INT	N=A60_2_TS_måler_slamkollektor_FOR1_QT2	AT=IOBus://unit#29/Ch3 Analog Input Value	G=VAR_GLOBAL
+++D=INT	N=A60_3_TS_måler_slamfortykker_FOR2_QT2	AT=IOBus://unit#29/Ch4 Analog Input Value	G=VAR_GLOBAL
+++D=INT	N=A61_0_Nivå_i_slamfortykker_FOR2_LT1	AT=IOBus://unit#30/Ch1 Analog Input Value	G=VAR_GLOBAL
+++D=INT	N=A61_1_Nivå_slamlager_SLL1_LT1	AT=IOBus://unit#30/Ch2 Analog Input Value	G=VAR_GLOBAL
+++D=INT	N=A61_2_Flow_Slam_SLM1_FT3	AT=IOBus://unit#30/Ch3 Analog Input Value	G=VAR_GLOBAL
+++D=INT	N=A61_3_Trykk_superox_OX1_PT1	AT=IOBus://unit#30/Ch4 Analog Input Value	G=VAR_GLOBAL
+++D=INT	N=A62_0_Oxsensor_2_kar1_FK1_QT3	AT=IOBus://unit#31/Ch1 Analog Input Value	G=VAR_GLOBAL
+++D=INT	N=A62_1_Oxsensor_2_kar2_FK2_QT3	AT=IOBus://unit#31/Ch2 Analog Input Value	G=VAR_GLOBAL
+++D=INT	N=A62_2_Trykk_oxygentank	AT=IOBus://unit#31/Ch3 Analog Input Value	G=VAR_GLOBAL
+++D=INT	N=A62_3_Temperatur_MBBR_1	AT=IOBus://unit#31/Ch4 Analog Input Value	G=VAR_GLOBAL
+++D=INT	N=A63_0_Fra_1S1_Temperatur_Råvann	AT=IOBus://unit#32/Ch1 Analog Input Value	G=VAR_GLOBAL
+++D=INT	N=A63_1_Fra_1S1_Temperatur_Lut	AT=IOBus://unit#32/Ch2 Analog Input Value	G=VAR_GLOBAL
+++D=INT	N=A63_2_Fra_1S1_Trykk_ferskvann_fra_DuptVann	AT=IOBus://unit#32/Ch3 Analog Input Value	G=VAR_GLOBAL
+++D=INT	N=A63_3_Fra_1S1_Temperatur_MBBR_2	AT=IOBus://unit#32/Ch4 Analog Input Value	G=VAR_GLOBAL
+++D=INT	N=A64_0_Fra_1S1_Trykk_sjøvann_inn	AT=IOBus://unit#33/Ch1 Analog Input Value	G=VAR_GLOBAL
+++D=INT	N=A64_1_Fra_1S1_Trykk_trykkluft_til_ventiler	AT=IOBus://unit#33/Ch2 Analog Input Value	G=VAR_GLOBAL
+++D=INT	N=A64_2_Fra_1S1_Ozon_sensor	AT=IOBus://unit#33/Ch3 Analog Input Value	G=VAR_GLOBAL
+++D=INT	N=A64_3_Fra_1S1_ClampOnFlow_Energi	AT=IOBus://unit#33/Ch4 Analog Input Value	G=VAR_GLOBAL
+++D=INT	N=A65_0_Fra_1S1_TrykkSuperOx_SensorB	AT=IOBus://unit#34/Ch1 Analog Input Value	G=VAR_GLOBAL
+++D=INT	N=A65_1_Fra_1S1_TrykkSamlestokk_SensorB	AT=IOBus://unit#34/Ch2 Analog Input Value	G=VAR_GLOBAL
+++D=INT	N=A65_2_Fra_1S1_Ledig_4063	AT=IOBus://unit#34/Ch3 Analog Input Value	G=VAR_GLOBAL
+++D=INT	N=A65_3_Fra_1S1_Ledig_4064	AT=IOBus://unit#34/Ch4 Analog Input Value	G=VAR_GLOBAL
+++D=BOOL	N=A10_Faulted	G=VAR_GLOBAL
+++D=BOOL	N=CIF_Faulted	G=VAR_GLOBAL
+++D=BOOL	N=A11_Faulted	G=VAR_GLOBAL
+++D=BOOL	N=A12_Faulted	G=VAR_GLOBAL
+++D=BOOL	N=A13_Faulted	G=VAR_GLOBAL
+++D=BOOL	N=A14_Faulted	G=VAR_GLOBAL
+++D=BOOL	N=A15_Faulted	G=VAR_GLOBAL
+++D=BOOL	N=A30_Faulted	G=VAR_GLOBAL
+++D=BOOL	N=A31_Faulted	G=VAR_GLOBAL
+++D=BOOL	N=A32_Faulted	G=VAR_GLOBAL
+++D=BOOL	N=A33_Faulted	G=VAR_GLOBAL
+++D=BOOL	N=A34_Faulted	G=VAR_GLOBAL
+++D=BOOL	N=A50_Faulted	G=VAR_GLOBAL
+++D=BOOL	N=A51_Faulted	G=VAR_GLOBAL
+++D=BOOL	N=A52_Faulted	G=VAR_GLOBAL
+++D=BOOL	N=A53_Faulted	G=VAR_GLOBAL
+++D=BOOL	N=A54_Faulted	G=VAR_GLOBAL
+++D=BOOL	N=A55_Faulted	G=VAR_GLOBAL
+++D=BOOL	N=A56_Faulted	G=VAR_GLOBAL
+++D=BOOL	N=A57_Faulted	G=VAR_GLOBAL
+++D=BOOL	N=A58_Faulted	G=VAR_GLOBAL
+++D=BOOL	N=A59_Faulted	G=VAR_GLOBAL
+++D=BOOL	N=A60_Faulted	G=VAR_GLOBAL
+++D=BOOL	N=A61_Faulted	G=VAR_GLOBAL
+++D=BOOL	N=A62_Faulted	G=VAR_GLOBAL
+++D=BOOL	N=A63_Faulted	G=VAR_GLOBAL
+++D=BOOL	N=A64_Faulted	G=VAR_GLOBAL
+++D=BOOL	N=A65_Faulted	G=VAR_GLOBAL
+++D=BOOL	N=A80_Faulted	G=VAR_GLOBAL
+++D=BOOL	N=A81_Faulted	G=VAR_GLOBAL
+++D=BOOL	N=A82_Faulted	G=VAR_GLOBAL
+++D=BOOL	N=A83_Faulted	G=VAR_GLOBAL

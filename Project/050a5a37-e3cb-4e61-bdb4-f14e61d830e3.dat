@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Module VenderID="1" ProductCode="2175492" Revision="16777216" IONodeID="be0ccb90-c850-4dbd-9837-96d7d0b9b241" DeviceName="A52" SerialNo="0" IsEnabled="1">
+  <Parameter Index="16385" SubIndex="1" Value="1693450240" />
+  <Parameter Index="16385" SubIndex="2" Value="4" />
+  <Parameter Index="16385" SubIndex="3" Value="1693974528" />
+  <Parameter Index="16385" SubIndex="4" Value="4" />
+  <Parameter Index="16385" SubIndex="5" Value="1694695424" />
+  <Parameter Index="16385" SubIndex="6" Value="3" />
+  <Parameter Index="16385" SubIndex="7" Value="1694760960" />
+  <Parameter Index="16385" SubIndex="8" Value="3" />
+  <Parameter Index="16385" SubIndex="9" Value="1694826496" />
+  <Parameter Index="16385" SubIndex="10" Value="3" />
+  <Parameter Index="16385" SubIndex="11" Value="1694892032" />
+  <Parameter Index="16385" SubIndex="12" Value="3" />
+  <Parameter Index="20482" SubIndex="1" Value="True" />
+  <Parameter Index="20482" SubIndex="2" Value="True" />
+  <Parameter Index="20482" SubIndex="3" Value="True" />
+  <Parameter Index="20482" SubIndex="4" Value="True" />
+  <Parameter Index="20483" SubIndex="1" Value="0" />
+  <Parameter Index="20483" SubIndex="2" Value="0" />
+  <Parameter Index="20483" SubIndex="3" Value="0" />
+  <Parameter Index="20483" SubIndex="4" Value="0" />
+  <Parameter Index="20484" SubIndex="1" Value="0" />
+  <Parameter Index="20484" SubIndex="2" Value="0" />
+  <Parameter Index="20484" SubIndex="3" Value="0" />
+  <Parameter Index="20484" SubIndex="4" Value="0" />
+  <IOPort IOPortID="975a4a0a-6f4c-454a-9d95-21479fc13cdf" Index="24576" SubIndex="1" />
+  <IOPort IOPortID="2425a665-7e2c-4f18-97d9-146d0f27a185" Index="24576" SubIndex="2" />
+  <IOPort IOPortID="53fe09e8-703f-400d-a73d-3f647368d17d" Index="24576" SubIndex="3" />
+  <IOPort IOPortID="8ed4e927-a6cb-4a6e-a536-dad77026c226" Index="24576" SubIndex="4" />
+  <IOAllocation Index="6656">
+    <IOEntry>
+      <IOPortReference IOPortID="975a4a0a-6f4c-454a-9d95-21479fc13cdf" />
+    </IOEntry>
+    <IOEntry>
+      <IOPortReference IOPortID="2425a665-7e2c-4f18-97d9-146d0f27a185" />
+    </IOEntry>
+    <IOEntry>
+      <IOPortReference IOPortID="53fe09e8-703f-400d-a73d-3f647368d17d" />
+    </IOEntry>
+    <IOEntry>
+      <IOPortReference IOPortID="8ed4e927-a6cb-4a6e-a536-dad77026c226" />
+    </IOEntry>
+  </IOAllocation>
+</Module>

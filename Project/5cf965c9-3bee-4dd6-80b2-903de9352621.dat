@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Module VenderID="1" ProductCode="2175492" Revision="16777216" IONodeID="57dd16ad-a270-49b5-a5c3-50354a991b07" DeviceName="A62" SerialNo="0" IsEnabled="1">
+  <Parameter Index="16385" SubIndex="1" Value="1693450240" />
+  <Parameter Index="16385" SubIndex="2" Value="4" />
+  <Parameter Index="16385" SubIndex="3" Value="1693974528" />
+  <Parameter Index="16385" SubIndex="4" Value="4" />
+  <Parameter Index="16385" SubIndex="5" Value="1694695424" />
+  <Parameter Index="16385" SubIndex="6" Value="3" />
+  <Parameter Index="16385" SubIndex="7" Value="1694760960" />
+  <Parameter Index="16385" SubIndex="8" Value="3" />
+  <Parameter Index="16385" SubIndex="9" Value="1694826496" />
+  <Parameter Index="16385" SubIndex="10" Value="3" />
+  <Parameter Index="16385" SubIndex="11" Value="1694892032" />
+  <Parameter Index="16385" SubIndex="12" Value="3" />
+  <Parameter Index="20482" SubIndex="1" Value="True" />
+  <Parameter Index="20482" SubIndex="2" Value="True" />
+  <Parameter Index="20482" SubIndex="3" Value="True" />
+  <Parameter Index="20482" SubIndex="4" Value="True" />
+  <Parameter Index="20483" SubIndex="1" Value="0" />
+  <Parameter Index="20483" SubIndex="2" Value="0" />
+  <Parameter Index="20483" SubIndex="3" Value="0" />
+  <Parameter Index="20483" SubIndex="4" Value="0" />
+  <Parameter Index="20484" SubIndex="1" Value="0" />
+  <Parameter Index="20484" SubIndex="2" Value="0" />
+  <Parameter Index="20484" SubIndex="3" Value="0" />
+  <Parameter Index="20484" SubIndex="4" Value="0" />
+  <IOPort IOPortID="b8ae33cd-4f5b-48d0-a2f4-c68c16b6fd5b" Index="24576" SubIndex="1" />
+  <IOPort IOPortID="b76e0dde-3b43-40ae-9f25-eb108f951ef1" Index="24576" SubIndex="2" />
+  <IOPort IOPortID="90f4d83d-a63a-413d-8f1c-15866a8f0f5c" Index="24576" SubIndex="3" />
+  <IOPort IOPortID="e302040c-d02e-4a45-976f-a07ad445f970" Index="24576" SubIndex="4" />
+  <IOAllocation Index="6656">
+    <IOEntry>
+      <IOPortReference IOPortID="b8ae33cd-4f5b-48d0-a2f4-c68c16b6fd5b" />
+    </IOEntry>
+    <IOEntry>
+      <IOPortReference IOPortID="b76e0dde-3b43-40ae-9f25-eb108f951ef1" />
+    </IOEntry>
+    <IOEntry>
+      <IOPortReference IOPortID="90f4d83d-a63a-413d-8f1c-15866a8f0f5c" />
+    </IOEntry>
+    <IOEntry>
+      <IOPortReference IOPortID="e302040c-d02e-4a45-976f-a07ad445f970" />
+    </IOEntry>
+  </IOAllocation>
+</Module>
